@@ -1,5 +1,4 @@
 import { Card } from '@/components/ui/card';
-import { Footer } from '../components/footer';
 
 const featuredPackages = [
   {
@@ -108,8 +107,8 @@ const AboutPage = () => {
             </p>
             <p className='text-2xl text-center'>
               With our expert safety diver/tour guides and commitment to safety
-              and environmental conservation, you’ll experience the thrill of
-              diving in some of the most biodiverse and pristine waters of
+              and environmental conservation, you&apos;ll experience the thrill
+              of diving in some of the most biodiverse and pristine waters of
               Philippine's best.
             </p>
           </div>

@@ -1,19 +1,9 @@
-import { Button } from '@/components/ui/button';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Book } from './book';
-import { ImageCarousel } from './image-carousel';
 import PortraitVideoCard from './video';
-import { Check, CheckCircle, Map, MapPin, X } from 'lucide-react';
+import { CheckCircle, Map, X } from 'lucide-react';
 import { ListBox } from './list-box';
-import Image from 'next/image';
 import { ImageGallery } from './image-gallery';
 
 type Props = {
@@ -38,11 +28,13 @@ export function PackageTab({ packages }: Props) {
     <Tabs defaultValue={pax[0].id} className='w-full'>
       <TabsList className='grid w-full grid-cols-3'>
         {packages.map((pax) => (
-          <TabsTrigger value={pax.id}>{pax.name}</TabsTrigger>
+          <TabsTrigger key={pax.id} value={pax.id}>
+            {pax.name}
+          </TabsTrigger>
         ))}
       </TabsList>
       {packages.map((pax) => (
-        <TabsContent value={pax.id}>
+        <TabsContent key={pax.id} value={pax.id}>
           <Card className='bg-stone-50 shadow-none border-none'>
             <CardHeader>
               <CardTitle className='text-2xl text-sky-700'>

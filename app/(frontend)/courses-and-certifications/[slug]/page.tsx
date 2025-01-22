@@ -1,13 +1,4 @@
-import { Button } from '@/components/ui/button';
 import { getServiceBySlug } from '@/lib/helper';
-import {
-  Calendar,
-  Currency,
-  CurrencyIcon,
-  DollarSign,
-  MapPinIcon,
-  SquareDashed,
-} from 'lucide-react';
 import { ImageCarousel } from '../../components/image-carousel';
 import { Book } from '../../components/book';
 import { redirect } from 'next/navigation';
@@ -54,7 +45,7 @@ const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
                     </span>
                     <ul className='text-stone-600'>
                       {service.poolReqs.map((pool) => (
-                        <li>- {pool}</li>
+                        <li key={pool}>- {pool}</li>
                       ))}
                     </ul>
                   </div>
@@ -64,7 +55,7 @@ const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
                     </span>
                     <ul className='text-stone-600'>
                       {service.openWaterReqs.map((water) => (
-                        <li>- {water}</li>
+                        <li key={water}>- {water}</li>
                       ))}
                     </ul>
                   </div>

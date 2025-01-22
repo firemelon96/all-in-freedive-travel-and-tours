@@ -1,15 +1,5 @@
-import { ImageCarousel } from '@/app/(frontend)/components/image-carousel';
 import { PackageTab } from '@/app/(frontend)/components/package-tab';
-import { Button } from '@/components/ui/button';
 import { getServiceBySlug } from '@/lib/helper';
-import {
-  Calendar,
-  Currency,
-  CurrencyIcon,
-  DollarSign,
-  MapPinIcon,
-  SquareDashed,
-} from 'lucide-react';
 
 const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const slug = (await params).slug;

@@ -1,6 +1,5 @@
-import { Button } from '@/components/ui/button';
 import { getServiceBySlug } from '@/lib/helper';
-import { Calendar, DollarSign, Dot, DotIcon, MapPinIcon } from 'lucide-react';
+import { Dot } from 'lucide-react';
 import PortraitVideoCard from '../../components/video';
 import { Book } from '../../components/book';
 import { redirect } from 'next/navigation';

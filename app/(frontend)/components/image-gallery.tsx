@@ -6,7 +6,7 @@ export const ImageGallery = ({ images }: { images: string[] }) => {
       <h2 className='text-xl text-sky-800 font-semibold'>Image Gallery</h2>
       <div className='grid grid-cols-3 gap-2 aspect-square'>
         {images.map((img) => (
-          <div className='relative'>
+          <div key={img} className='relative'>
             <Image src={img} fill className='object-cover' alt={img} />
           </div>
         ))}

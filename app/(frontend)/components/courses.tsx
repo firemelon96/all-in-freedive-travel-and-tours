@@ -45,6 +45,7 @@ export const Courses = () => {
               title={course.title}
               description={course.description[0]}
               url={course.images[0]}
+              slug={course.slug}
             />
           ))}
         </div>

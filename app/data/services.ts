@@ -77,7 +77,13 @@ export const servicesData = [
       'Environmental Fees and Entrance Fees ',
       'Photo and Videos during the course.',
     ],
-    images: [],
+    images: [
+      '/res/mw-1/mw00.avif',
+      '/res/mw-1/mw01.avif',
+      '/res/mw-1/mw02.avif',
+      '/res/mw-1/mw03.avif',
+      '/res/mw-1/mw04.avif',
+    ],
     poolReqs: [
       'Basic swimming ability (comfortable swimming 200 meters unassisted).',
       'Static Apnea: Hold your breath for at least 1 minute and 30 seconds.',
@@ -108,7 +114,13 @@ export const servicesData = [
       'Environmental Fees and Entrance Fees ',
       'Photo and Videos during the course.',
     ],
-    images: [],
+    images: [
+      '/res/mw-2/mw200.avif',
+      '/res/mw-2/mw201.avif',
+      '/res/mw-2/mw202.avif',
+      '/res/mw-2/mw203.avif',
+      '/res/mw-2/mw204.avif',
+    ],
     poolReqs: [
       'Basic swimming ability (comfortable swimming 200 meters unassisted).',
       'Static Apnea: Hold your breath for at least 1 minute and 30 seconds.',
@@ -265,5 +277,58 @@ export const servicesData = [
           'https://res.cloudinary.com/dutkzg9la/video/upload/v1737384640/package-c_d7mq0q.mp4',
       },
     ],
+  },
+
+  //freediving expeditions
+  {
+    slug: 'busuanga-freedive-expedition',
+    title: 'Busuanga Freedive Expedition',
+    location: 'Coron, Palawan, Philippines',
+    duration: '1 Day',
+    price: '30,000 php | 560 USD',
+    type: '',
+    description: [
+      'A jumpacked 3 Days  ultimate adventure that combines the thrill of freediving and spearfishing with the rustic charm of overnight camping on two of the most stunning islands in Palawan, Black Island and Pass Island. This type of tour is perfect for those who want to experience the natural beauty of Busuanga, enjoy world-class freediving, and immerse themselves in the outdoor lifestyle.',
+    ],
+    highlights: [
+      'Overnight Camping and Spearfishing at Black Island (also known as Malajon Island)',
+      'Overnight Camping and Spearfishing in Pass Island.',
+      'Experience Day and Night Spearfishing ',
+      'Eat the local way and experience real Filipino flavors.',
+      'Island Hopping and Kayaking',
+      'Calm and Peaceful Diving with Dugong (Seacow)',
+      'Experience Thermocline in Barracuda Lake.',
+      'Freediving in World War II Shipwrecks.',
+    ],
+    paxInclusion: [],
+    images: [],
+    videoUrl:
+      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737531927/busuanga_kgubo1.mov',
+  },
+  {
+    slug: 'apo-reef-freedive-expedition',
+    title: 'Apo Reef Freedive Expedition',
+    location: 'Coron, Palawan, Philippines',
+    duration: '1 Day',
+    price: '30,000 pesos | $550',
+    type: '',
+    description: [
+      'A specialized freediving tour package designed for freediving enthusiasts.',
+      'Apo Reef is located in Occidental Mindoro, Philippines, is the second-largest contiguous coral reef system in the world and a UNESCO World Heritage site. It’s renowned for its vibrant marine biodiversity, crystal-clear waters, and stunning coral formations, making it a prime destination for underwater adventures.',
+    ],
+    highlights: [
+      'Explore the stunning underwater landscapes, including drop-offs, caves, and coral gardens',
+      'Encounters with marine species such as sea turtles, reef sharks, and schools of fish.',
+      'Visits to nearby islands like Apo Island and Pandan Island.',
+      'Beach camping, mangrove exploration and stargazing every night',
+      'Scenic view from lighthouse offering panoramic views of the reef and surrounding waters.',
+      'Freediving in the Taiwanese Shipwreck',
+      'Experience diving in this iconic dive site that offers a unique opportunity to explore a sunken vessel surrounded by vibrant marine life.',
+    ],
+    specials: [''],
+    paxInclusion: [],
+    images: [],
+    videoUrl:
+      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737531924/Apo_Reef_rnh8fx.mp4',
   },
 ];
