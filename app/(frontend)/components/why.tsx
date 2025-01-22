@@ -18,16 +18,16 @@ export const Why = () => {
           </div>
           <div className='col-span-2 flex flex-col justify-start gap-4'>
             <WhyCard
-              count={whyUs.at(0)?.count!}
-              title={whyUs.at(0)?.title!}
-              description={whyUs.at(0)?.description!}
+              count={1}
+              title='Customizable Itineraries'
+              description='Whether youre looking for relaxation, adventure, or a mix of both, we tailor every tour to suit your interests.'
             />
           </div>
           <div className='col-span-2'>
             <WhyCard
-              count={whyUs.at(1)?.count!}
-              title={whyUs.at(1)?.title!}
-              description={whyUs.at(1)?.description!}
+              count={2}
+              title='Expert Guides'
+              description='Our team consists of certified freedivers/tourguides that are knowledgeable and dedicated in ensuring a safe, enjoyable, and educational journey.'
             />
           </div>
           <div className='col-span-2'>
@@ -39,9 +39,9 @@ export const Why = () => {
           </div>
           <div className='col-span-2'>
             <WhyCard
-              count={whyUs.at(2)?.count!}
-              title={whyUs.at(2)?.title!}
-              description={whyUs.at(2)?.description!}
+              count={3}
+              title='Premium Experiences'
+              description='From seamless transfers, elegant and budget accommodations to exclusive island-hopping and local food excursions, we ensure every detail of your tour is designed for the discerning traveler.'
             />
           </div>
         </div>

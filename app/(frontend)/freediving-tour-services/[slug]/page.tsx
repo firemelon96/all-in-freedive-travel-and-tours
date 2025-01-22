@@ -31,7 +31,7 @@ const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
                 </p>
               ))}
             </div>
-            {service?.highlights && (
+            {service?.highlights && service.highlights.length > 0 && (
               <div className='p-2 bg-sky-50 space-y-4 rounded-sm'>
                 <h5 className='text-2xl text-sky-800 font-semibold'>
                   Highlights

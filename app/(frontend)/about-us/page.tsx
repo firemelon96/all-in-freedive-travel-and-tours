@@ -19,7 +19,7 @@ const featuredPackages = [
   {
     name: 'Cebu',
     description:
-      'Home to both rich history and magnificent dive sites, our Cebu Tour Package combines cultural explorations of historical landmarks like Magellan’s Cross, taste the famous Lechon, and experience vibrant marine ecosystems at Moalboal, and go canyoneering at Badian.',
+      'Home to both rich history and magnificent dive sites, our Cebu Tour Package combines cultural explorations of historical landmarks like Magellans Cross, taste the famous Lechon, and experience vibrant marine ecosystems at Moalboal, and go canyoneering at Badian.',
   },
   {
     name: 'Bohol',
@@ -29,7 +29,7 @@ const featuredPackages = [
   {
     name: 'Balabac',
     description:
-      'An untouched paradise, Balabac Tour Package showcases some of the Philippines’ most pristine beaches and crystal-clear waters. Enjoy a secluded escape with island-hopping tours to stunning spots like Onuk Island, perfect for snorkeling and exploring remote white-sand beaches and sparkling sandbars.',
+      'An untouched paradise, Balabac Tour Package showcases some of the Philippines most pristine beaches and crystal-clear waters. Enjoy a secluded escape with island-hopping tours to stunning spots like Onuk Island, perfect for snorkeling and exploring remote white-sand beaches and sparkling sandbars.',
   },
   {
     name: 'Puerto Princesa',
@@ -59,7 +59,7 @@ const AboutPage = () => {
           <p className='mt-5'>
             At All In Travel and Freediving Tour Services, we specialize in
             crafting unforgettable, premium travel experiences across the
-            Philippines. Whether you’re seeking the thrill of freediving in
+            Philippines. Whether you&apos;re seeking the thrill of freediving in
             crystal-clear waters, exploring stunning islands on a luxurious
             island-hopping tour, or embarking on scenic land adventures, we
             offer the best of both land and sea. Our bespoke tours are designed
@@ -67,8 +67,8 @@ const AboutPage = () => {
             tropical paradise.
           </p>
           <p>
-            We are passionate about showcasing the Philippines’ diversity,
-            offering exclusive tours to the country’s top destinations,
+            We are passionate about showcasing the Philippines&apos; diversity,
+            offering exclusive tours to the country&apos;s top destinations,
             including Batanes, Boracay, Siargao, Cebu, Bohol, Balabac, Puerto
             Princesa, Coron, and El Nido. Each location is handpicked for its
             natural beauty, unique charm, and rich cultural heritage.
@@ -99,11 +99,11 @@ const AboutPage = () => {
           <div className='space-y-4 max-w-4xl mx-auto '>
             <p className='text-2xl text-center '>
               As specialists in freediving, we offer tailored tours to some of
-              the best dive spots in the Philippines. Whether you’re a beginner
-              or an experienced diver, our freediving tours will introduce you
-              to the world’s most vibrant marine ecosystems, from the calm
-              waters of Coron and Busuanga to Apo Reef and its stunning coral
-              reefs.
+              the best dive spots in the Philippines. Whether you&apos;re a
+              beginner or an experienced diver, our freediving tours will
+              introduce you to the world&apos;s most vibrant marine ecosystems,
+              from the calm waters of Coron and Busuanga to Apo Reef and its
+              stunning coral reefs.
             </p>
             <p className='text-2xl text-center'>
               With our expert safety diver/tour guides and commitment to safety
