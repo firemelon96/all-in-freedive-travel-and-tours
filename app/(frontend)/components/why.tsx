@@ -1,14 +1,8 @@
-import { whys } from '@/app/data/why-choose-us';
 import { Headline } from './headlines';
 import { ImageCard } from './image-card';
 import { WhyCard } from './why-card';
 
 export const Why = () => {
-  const whyUs = whys.map((why, i) => ({
-    count: i + 1,
-    title: why.title,
-    description: why.description,
-  }));
   return (
     <section className='container mx-auto scroll-mt-10' id='why-choose-us'>
       <div className='py-10'>

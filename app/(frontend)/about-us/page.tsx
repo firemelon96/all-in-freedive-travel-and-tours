@@ -109,7 +109,7 @@ const AboutPage = () => {
               With our expert safety diver/tour guides and commitment to safety
               and environmental conservation, you&apos;ll experience the thrill
               of diving in some of the most biodiverse and pristine waters of
-              Philippine's best.
+              Philippine&apos;s best.
             </p>
           </div>
         </div>
