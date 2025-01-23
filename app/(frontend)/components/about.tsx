@@ -14,7 +14,7 @@ export const About = () => {
           <div className='row-span-2 col-span-2 space-y-2'>
             <span className='uppercase text-xl'>About us</span>
             <h1 className='text-5xl font-bold'>
-              Dicover Our Deep-Sea Passion.
+              Where Journeys Meet the Depths of Discovery.
             </h1>
             <p className='text-xl text-justify'>
               At All In Travel and Freediving Tour Services, we specialize in

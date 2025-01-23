@@ -144,7 +144,7 @@ export const servicesData = [
     title:
       'Discover the Serenity below the Surface: Freediving Adventures in Coron',
     location: 'Coron, Palawan, Philippines',
-    duration: '2 Days',
+    duration: '5 Days and 4 Nights',
     type: '',
     description: [
       'If youre looking for the perfect destination that offers a transformative experience—combining world-class diving conditions and a tranquil environment—Coron is ideal for freediving schools. Whether youre catering to beginners, intermediate, or experienced freedivers seeking a serene escape, aiming to improve their diving skills, or exploring the breathtaking beauty of Palawans underwater world, Coron promises a memorable freediving retreat.',
@@ -247,7 +247,7 @@ export const servicesData = [
       },
       {
         id: 'package-c',
-        name: 'Package C - Busuanga Freediving Tours Dive with Dugong',
+        name: 'Package C - Busuanga Freediving Tours - Dive with Dugong',
         location: 'Coron, Palawan, Philippines',
         price: '',
         duration: '1 Day',
@@ -270,8 +270,6 @@ export const servicesData = [
           '/res/package-c/pc02.avif',
           '/res/package-c/pc03.avif',
           '/res/package-c/pc04.avif',
-          '/res/package-c/pc05.avif',
-          '/res/package-c/pc06.avif',
         ],
         videoUrl:
           'https://res.cloudinary.com/dutkzg9la/video/upload/v1737384640/package-c_d7mq0q.mp4',
@@ -284,7 +282,7 @@ export const servicesData = [
     slug: 'busuanga-freedive-expedition',
     title: 'Busuanga Freedive Expedition',
     location: 'Coron, Palawan, Philippines',
-    duration: '1 Day',
+    duration: '3 Days and 2 Nights',
     price: '30,000 php | 560 USD',
     type: '',
     description: [
@@ -293,12 +291,12 @@ export const servicesData = [
     highlights: [
       'Overnight Camping and Spearfishing at Black Island (also known as Malajon Island)',
       'Overnight Camping and Spearfishing in Pass Island.',
-      'Experience Day and Night Spearfishing ',
-      'Eat the local way and experience real Filipino flavors.',
-      'Island Hopping and Kayaking',
+      'Experience Day and Night Spearfishing.',
+      'Eat the local way and experience the real taste of Filipino flavors.',
+      'Island Hopping and Kayaking.',
       'Calm and Peaceful Diving with Dugong (Seacow)',
       'Experience Thermocline in Barracuda Lake.',
-      'Freediving in World War II Shipwrecks.',
+      'Freediving in historical World War II Shipwrecks.',
     ],
     paxInclusion: [],
     images: [],

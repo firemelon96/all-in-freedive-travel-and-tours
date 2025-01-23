@@ -78,7 +78,7 @@ const AboutPage = () => {
           <h3 className='text-4xl text-sky-800 font-semibold text-center'>
             Our Featured Tour Packages
           </h3>
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
             {featuredPackages.map((pax) => (
               <Card
                 key={pax.name}
