@@ -73,6 +73,10 @@ export const menuItems = [
             name: 'Busuanga Freedive Expedition',
             href: '/freediving-tour-services/freediving-expeditions/busuanga-freedive-expedition',
           },
+          {
+            name: 'Apo Reef Freedive Expedition',
+            href: '/freediving-tour-services/freediving-expeditions/apo-reef-freedive-expedition',
+          },
         ],
       },
     ],
@@ -80,40 +84,40 @@ export const menuItems = [
   {
     name: 'Travel and Tour Services',
     href: '/travel-and-tour-services',
-    submenu: [
-      {
-        name: 'Coron, Palawan, Philippines',
-        href: '/travel-and-tour-services/coron-palawan-philippines',
-      },
-      {
-        name: 'El nido, Palawan, Philippines',
-        href: '/travel-and-tour-services/elnido-palawan-philippines',
-      },
-      {
-        name: 'Balabac, Palawan, Philippines',
-        href: '/travel-and-tour-services/balabac-palawan-philippines',
-      },
-      {
-        name: 'Puerto Princesa, Palawan, Philippines',
-        href: '/travel-and-tour-services/puerto-princesa-palawan-philippines',
-      },
-      {
-        name: 'Bohol, Philippines',
-        href: '/travel-and-tour-services/bohol-philippines',
-      },
-      {
-        name: 'Cebu, Philippines',
-        href: '/travel-and-tour-services/cebu-philippines',
-      },
-      {
-        name: 'Siargao, Philippines',
-        href: '/travel-and-tour-services/siargao-philippines',
-      },
-      {
-        name: 'Batanes, Philippines',
-        href: '/travel-and-tour-services/batanes-philippines',
-      },
-    ],
+    // submenu: [
+    //   {
+    //     name: 'Coron, Palawan, Philippines',
+    //     href: '/travel-and-tour-services/coron-palawan-philippines',
+    //   },
+    //   {
+    //     name: 'El nido, Palawan, Philippines',
+    //     href: '/travel-and-tour-services/elnido-palawan-philippines',
+    //   },
+    //   {
+    //     name: 'Balabac, Palawan, Philippines',
+    //     href: '/travel-and-tour-services/balabac-palawan-philippines',
+    //   },
+    //   {
+    //     name: 'Puerto Princesa, Palawan, Philippines',
+    //     href: '/travel-and-tour-services/puerto-princesa-palawan-philippines',
+    //   },
+    //   {
+    //     name: 'Bohol, Philippines',
+    //     href: '/travel-and-tour-services/bohol-philippines',
+    //   },
+    //   {
+    //     name: 'Cebu, Philippines',
+    //     href: '/travel-and-tour-services/cebu-philippines',
+    //   },
+    //   {
+    //     name: 'Siargao, Philippines',
+    //     href: '/travel-and-tour-services/siargao-philippines',
+    //   },
+    //   {
+    //     name: 'Batanes, Philippines',
+    //     href: '/travel-and-tour-services/batanes-philippines',
+    //   },
+    // ],
   },
   {
     name: 'Contact',

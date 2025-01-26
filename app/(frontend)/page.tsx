@@ -1,6 +1,6 @@
 import Hero from './components/hero';
 import { About } from './components/about';
-import { TravelTours } from './components/services';
+import { TravelTours } from './components/travel-tours';
 import { Courses } from './components/courses';
 import { Contact } from './components/contact';
 import { Why } from './components/why';

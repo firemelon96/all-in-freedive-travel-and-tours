@@ -301,7 +301,7 @@ export const servicesData = [
     paxInclusion: [],
     images: [],
     videoUrl:
-      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737531927/busuanga_kgubo1.mov',
+      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737680897/busuanga-new_mb27t2.mp4',
   },
   {
     slug: 'apo-reef-freedive-expedition',

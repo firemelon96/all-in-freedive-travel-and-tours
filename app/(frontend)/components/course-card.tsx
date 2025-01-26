@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ImageCard } from './image-card';
 import Link from 'next/link';
+import { ellipsis } from '@/lib/helper';
 
 type Props = {
   title: string;
@@ -11,10 +12,6 @@ type Props = {
 };
 
 export const CourseCard = ({ slug, title, description, url }: Props) => {
-  const ellipsis = (text: string, count: number) => {
-    const paragraph = text.slice(0, count);
-    return `${paragraph}...`;
-  };
   return (
     <Card className='p-2 bg-transparent flex gap-2 text-white max-h-56'>
       <div className='flex flex-col gap-2 w-2/3'>
