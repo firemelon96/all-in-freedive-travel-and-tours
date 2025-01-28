@@ -22,13 +22,13 @@ const SinglePage = async ({ params }: Props) => {
   if (!tour) redirect('/');
   return (
     <section className='container mx-auto space-y-2'>
-      <div className='h-96 bg-sky-50'>
+      <div className='h-96 bg-sky-50 m-2'>
         <ImageBanner images={tour?.images} />
       </div>
-      <div className='flex gap-4'>
+      <div className='flex flex-col-reverse md:flex-row gap-4 m-2'>
         <div className='flex-1'>
-          <div className='text-2xl font-semibold flex items-center gap-2'>
-            {tour?.title} <Badge>{tour?.price}</Badge>
+          <div className='text-2xl font-semibold flex items-center gap-2 flex-col sm:flex-row'>
+            <p>{tour?.title}</p> <Badge>{tour?.price}</Badge>
           </div>
           <div className='p-2'>
             <p>{tour?.description}</p>
@@ -45,9 +45,11 @@ const SinglePage = async ({ params }: Props) => {
             <CollapsibleBox termsAndConditions={tour.terms_and_conditions} />
           </div>
         </div>
-        <div className='w-96'>
-          <Card className='bg-sky-100 shadow-none border-none'>
-            <CardHeader>{tour?.title}</CardHeader>
+        <div className='md:w-96 w-full'>
+          <Card className='bg-sky-100 shadow-none border-none text-center md:text-start'>
+            <CardHeader className='text-xl font-semibold'>
+              {tour?.title}
+            </CardHeader>
             <CardContent>
               <p>{tour?.price}</p>
             </CardContent>

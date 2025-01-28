@@ -12,7 +12,7 @@ const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
   return (
     <section className='container mx-auto'>
-      <div className='flex mt-5'>
+      <div className='flex flex-col-reverse md:flex-row mt-5'>
         <div className=' w-full p-4 space-y-4'>
           <div className='space-y-4'>
             <h1 className='text-4xl text-sky-700 font-bold uppercase'>
