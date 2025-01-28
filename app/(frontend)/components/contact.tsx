@@ -11,7 +11,7 @@ export const Contact = () => {
           backgroundSize: 'cover',
         }}
       ></div>
-      <div className='flex flex-col items-center justify-center w-full space-y-4 text-white absolute inset-y-0'>
+      <div className='flex flex-col items-center justify-center w-full space-y-4 text-white absolute inset-y-0 mx-2'>
         <Headline
           label='Contact us'
           heading='Start Your Journey with Us Today'

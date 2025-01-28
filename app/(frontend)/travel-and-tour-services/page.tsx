@@ -3,6 +3,7 @@ import { TourCard } from '../components/tour-card';
 import { Filter } from './_components/filter';
 import { TourType } from './_components/tour-type';
 import { getTravelTours } from '@/lib/helper';
+import { BannerImage } from '@/components/banner-image';
 
 type Props = {
   searchParams: Promise<{ location: string; type: string }>;
@@ -18,9 +19,7 @@ const TourPage = async ({ searchParams }: Props) => {
   // const tourData =
   return (
     <>
-      <div className='w-full h-40 flex justify-center items-center bg-sky-50'>
-        <h1 className='text-5xl font-bold text-sky-800'>Travel and Tours</h1>
-      </div>
+      <BannerImage title='Travel and Tours' />
       <section className='container mx-auto'>
         <div className='flex flex-col gap-4 my-10'>
           <div className='flex p-2 space-x-4 bg-slate-50'>

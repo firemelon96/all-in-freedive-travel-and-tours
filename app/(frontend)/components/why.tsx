@@ -5,7 +5,7 @@ import { WhyCard } from './why-card';
 export const Why = () => {
   return (
     <section className='container mx-auto scroll-mt-10' id='why-choose-us'>
-      <div className='py-10'>
+      <div className='py-10 mx-2'>
         <div className='grid md:grid-cols-4 gap-4 md:grid-rows-3 rounded-2xl overflow-hidden'>
           <div className='row-span-2 col-span-2 h-64 md:h-full'>
             <ImageCard url='/contact-model.png' />

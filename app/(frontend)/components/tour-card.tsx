@@ -22,7 +22,7 @@ export const TourCard = ({ title, slug, description, image }: Props) => {
           className='object-cover h-72'
         />
         <div className='flex flex-col p-2 text-center gap-2 py-4'>
-          <h2 className='text-xl font-semibold'>{title}</h2>
+          <h2 className='text-xl font-semibold truncate'>{title}</h2>
           <p className=''>{ellipsis(description, 90)}</p>
         </div>
       </Card>
