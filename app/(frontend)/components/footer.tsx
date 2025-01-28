@@ -5,39 +5,43 @@ export const Footer = () => {
   return (
     <footer className='bg-blue-950'>
       <section className='container mx-auto py-10'>
-        <div className='flex flex-col md:flex-row text-center items-center md:text-start md:items-start'>
-          <div className='flex-1'>
+        <div className='flex flex-col md:flex-row text-center items-center md:text-start md:items-start gap-4'>
+          <div className='flex-1 mx-2'>
             <div className='flex items-center justify-center md:items-start md:justify-start'>
               <Image src='/logo.png' width={150} height={60} alt='logo' />
             </div>
-            <p className='text-white'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              officia, deserunt autem accusamus obcaecati tenetur. Tenetur,
-              culpa. Porro quod vero molestiae, itaque at nesciunt? Fugit
-              quibusdam quod illo in autem?
+            <p className='text-white text-justify'>
+              At All&apos;in Freediving and Tour Services, we specialize in
+              crafting unforgettable, premium travel experiences across the
+              Philippines. Whether you&apos;re seeking the thrill of freediving
+              in crystal-clear waters, exploring stunning islands on a luxurious
+              island-hopping tour, or embarking on scenic land adventures, we
+              offer the best of both land and sea. Our bespoke tours are
+              designed to bring you closer to the unparalleled beauty and
+              culture of this tropical paradise.
             </p>
           </div>
-          <div className='w-1/4 flex flex-col items-center'>
+          <div className='md:w-1/4 flex flex-col items-center'>
             <h4 className='text-2xl text-sky-600'>Important links</h4>
-            <ul className='text-white'>
+            <ul className='text-white space-y-3'>
               {menuItems.map((route) => (
                 <li key={route.href}>{route.name}</li>
               ))}
             </ul>
           </div>
-          <div className='w-1/4 flex flex-col items-center'>
+          <div className='md:w-1/4 flex flex-col items-center'>
             <h4 className='text-2xl text-sky-600'>Useful links</h4>
-            <ul className='text-white'>
-              <li>Terms and Aggreement</li>
+            <ul className='text-white space-y-3'>
+              <li>Terms and Agreement</li>
               <li>Policy and Privacy</li>
               <li>Legalities</li>
             </ul>
           </div>
-          <div className='w-1/4 flex flex-col items-center'>
+          <div className='md:w-1/4 flex flex-col items-center'>
             <h4 className='text-2xl text-sky-600'>Open hours</h4>
             <ul className='text-white'>
               <li>5:00 Am to 5:00 Pm</li>
-              <li></li>
+              <li>Coron, Palawan - Region IV-B (MIMAROPA)</li>
             </ul>
           </div>
         </div>

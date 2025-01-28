@@ -26,7 +26,7 @@ export function PackageTab({ packages }: Props) {
 
   return (
     <Tabs defaultValue={pax[0].id} className='w-full'>
-      <TabsList className='grid w-full grid-cols-3'>
+      <TabsList className='grid w-full h-full grid-cols-1 md:grid-cols-3'>
         {packages.map((pax) => (
           <TabsTrigger key={pax.id} value={pax.id}>
             {pax.name}
@@ -42,8 +42,8 @@ export function PackageTab({ packages }: Props) {
               </CardTitle>
             </CardHeader>
             <CardContent className='space-y-2'>
-              <div className='flex'>
-                <div className='w-1/2'>
+              <div className='flex flex-col-reverse md:flex-row gap-2'>
+                <div className='md:w-1/2 w-full'>
                   <div className='space-y-4'>
                     <Book
                       location={pax.location}
@@ -68,7 +68,7 @@ export function PackageTab({ packages }: Props) {
                     <ImageGallery images={pax.images} />
                   </div>
                 </div>
-                <div className='w-1/2 mx-16'>
+                <div className='md:w-1/2 md:mx-16'>
                   <PortraitVideoCard videoUrl={pax.videoUrl || ''} />
                 </div>
               </div>

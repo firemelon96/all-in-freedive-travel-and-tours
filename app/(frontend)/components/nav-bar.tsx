@@ -11,7 +11,7 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
   const toggleSubmenu = (name: string) =>
     setOpenSubmenu(openSubmenu === name ? null : name);
 

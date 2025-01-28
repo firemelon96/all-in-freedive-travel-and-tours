@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Headline } from './headlines';
+import Link from 'next/link';
 
 export const Contact = () => {
   return (
@@ -16,11 +17,13 @@ export const Contact = () => {
           label='Contact us'
           heading='Start Your Journey with Us Today'
         />
-        <p className='max-w-xl text-center'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        <p className='sm:max-w-xl text-center'>
+          Your next adventure is just a message away—contact us today and
+          let&apos;s make it unforgettable!
         </p>
-        <Button className='bg-sky-500 text-white'>Get Started</Button>
+        <Button variant='primary' asChild>
+          <Link href='/contact'>Get Started</Link>
+        </Button>
       </div>
     </section>
   );

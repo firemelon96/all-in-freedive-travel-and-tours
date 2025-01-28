@@ -72,7 +72,7 @@ export function Navbar() {
                     {/* <Home /> */}
                     <Image src='/logo.svg' height={50} width={150} alt='logo' />
                     <div className='mb-2 mt-4 text-lg font-medium'>
-                      All in Travel and Freediving Tour Services
+                      All&apos;in Freediving and Tour Services
                     </div>
                     <p className='text-sm leading-tight text-muted-foreground'>
                       Where Journeys Meet the Depths of Discovery.

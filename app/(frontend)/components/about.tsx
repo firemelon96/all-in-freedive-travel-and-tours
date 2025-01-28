@@ -17,7 +17,7 @@ export const About = () => {
               Where Journeys Meet the Depths of Discovery.
             </h1>
             <p className='text-xl text-justify'>
-              At All In Travel and Freediving Tour Services, we specialize in
+              At All&apos;in Freediving and Tour Services, we specialize in
               crafting unforgettable, premium travel experiences across the
               Philippines. Whether you&apos;re seeking the thrill of freediving
               in crystal-clear waters, exploring stunning islands on a luxurious

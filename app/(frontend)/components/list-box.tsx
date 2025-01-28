@@ -16,7 +16,7 @@ export const ListBox = ({ label, items, icon: Icon }: Props) => {
             key={item}
             className='flex gap-2 items-start text-xl text-slate-700'
           >
-            <Icon /> {item}
+            <Icon className='' /> <p className='flex-1'>{item}</p>
           </li>
         ))}
       </ul>
