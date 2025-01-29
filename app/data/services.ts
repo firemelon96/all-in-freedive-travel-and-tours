@@ -208,10 +208,10 @@ export const servicesData = [
         ],
         paxExclusions: ['Freediving Gears'],
         images: [
-          '/res/package-a/PA00.png',
-          '/res/package-a/pa01.png',
-          '/res/package-a/pa02.jpeg',
-          '/res/package-a/pa03.jpeg',
+          '/res/package-a/PA00.avif',
+          '/res/package-a/PA01.avif',
+          '/res/package-a/PA02.avif',
+          '/res/package-a/PA03.avif',
         ],
         videoUrl:
           'https://res.cloudinary.com/dutkzg9la/video/upload/v1737384615/package-a_o46ogy.mp4',
