@@ -30,7 +30,7 @@ export const Testimonial = () => {
             />
             <Carousel plugins={[plugin.current]} opts={{ loop: true }}>
               <CarouselContent>
-                {testimonials.map((entry, i) => (
+                {testimonials.map((entry) => (
                   <CarouselItem className='' key={entry.name}>
                     <ReviewCard
                       name={entry.name}
