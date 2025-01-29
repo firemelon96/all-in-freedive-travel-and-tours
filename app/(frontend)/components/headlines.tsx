@@ -14,13 +14,13 @@ type Props = {
 
 export const Headline = ({ label, heading, className }: Props) => {
   return (
-    <div className='text-center text-white flex flex-col gap-4'>
+    <div className='text-center text-white flex flex-col gap-4 mx-4'>
       <span className={cn(' text-3xl', className, dancingScript.className)}>
         {label}
       </span>
       <h1
         className={cn(
-          `text-6xl font-bold max-w-xl mx-auto`,
+          `sm:text-6xl text-5xl font-bold max-w-xl mx-auto`,
           className,
           dancingScript.className
         )}

@@ -7,13 +7,13 @@ export const About = () => {
   return (
     <div className='relative scroll-mt-10 mx-2' id='about'>
       <div className='container mx-auto py-10'>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:grid-rows-3 rounded-2xl overflow-hidden'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:grid-rows-3 mx-4 rounded-2xl overflow-hidden'>
           <div className='row-span-2 col-span-2 h-64 md:h-full'>
             <ImageCard url='/about-img00.png' />
           </div>
-          <div className='row-span-2 col-span-2 space-y-2'>
+          <div className='row-span-2 col-span-2 space-y-2 justify-items-center sm:justify-items-start text-center sm:text-start'>
             <span className='uppercase text-xl'>About us</span>
-            <h1 className='text-5xl font-bold'>
+            <h1 className='sm:text-5xl text-4xl font-bold'>
               Where Journeys Meet the Depths of Discovery.
             </h1>
             <p className='text-xl text-justify'>

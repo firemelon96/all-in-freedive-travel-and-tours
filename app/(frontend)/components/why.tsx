@@ -5,33 +5,31 @@ import { WhyCard } from './why-card';
 export const Why = () => {
   return (
     <section className='container mx-auto scroll-mt-10' id='why-choose-us'>
-      <div className='py-10 mx-2'>
-        <div className='grid md:grid-cols-4 gap-4 md:grid-rows-3 rounded-2xl overflow-hidden'>
-          <div className='row-span-2 col-span-2 h-64 md:h-full'>
-            <ImageCard url='/contact-model.png' />
+      <div className='py-10 mx-4'>
+        <div className='flex flex-col md:flex-row rounded-2xl gap-4 overflow-hidden'>
+          <div className='flex flex-col-reverse md:flex-col gap-2 md:w-1/2 w-full'>
+            <div className='h-64 md:h-full'>
+              <ImageCard url='/contact-model.png' />
+            </div>
+            <div className='col-span-2'>
+              <Headline
+                className='text-slate-700 text-center md:text-start'
+                label='Why Choose Us'
+                heading='Why Choose Us for Your Dive'
+              />
+            </div>
           </div>
-          <div className='col-span-2 flex flex-col justify-start gap-4'>
+          <div className='flex flex-col md:w-1/2 gap-2 w-full'>
             <WhyCard
               count={1}
               title='Customizable Itineraries'
               description='Whether youre looking for relaxation, adventure, or a mix of both, we tailor every tour to suit your interests.'
             />
-          </div>
-          <div className='col-span-2'>
             <WhyCard
               count={2}
               title='Expert Guides'
               description='Our team consists of certified freedivers/tourguides that are knowledgeable and dedicated in ensuring a safe, enjoyable, and educational journey.'
             />
-          </div>
-          <div className='col-span-2'>
-            <Headline
-              className='text-slate-700 text-start'
-              label='Why Choose Us'
-              heading='Why Choose Us for Your Dive'
-            />
-          </div>
-          <div className='col-span-2'>
             <WhyCard
               count={3}
               title='Premium Experiences'

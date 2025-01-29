@@ -5,12 +5,12 @@ export const Footer = () => {
   return (
     <footer className='bg-blue-950'>
       <section className='container mx-auto py-10'>
-        <div className='flex flex-col md:flex-row text-center items-center md:text-start md:items-start gap-4'>
-          <div className='flex-1 mx-2'>
+        <div className='flex flex-col mx-4 md:flex-row text-center items-center md:text-start md:items-start gap-4'>
+          <div className='md:w-1/2 w-full '>
             <div className='flex items-center justify-center md:items-start md:justify-start'>
               <Image src='/logo.png' width={150} height={60} alt='logo' />
             </div>
-            <p className='text-white text-justify'>
+            <p className='text-white md:text-justify text-center'>
               At All&apos;in Freediving and Tour Services, we specialize in
               crafting unforgettable, premium travel experiences across the
               Philippines. Whether you&apos;re seeking the thrill of freediving
@@ -21,7 +21,7 @@ export const Footer = () => {
               culture of this tropical paradise.
             </p>
           </div>
-          <div className='md:w-1/4 flex flex-col items-center'>
+          <div className='md:w-1/4 flex flex-col md:items-start items-center'>
             <h4 className='text-2xl text-sky-600'>Important links</h4>
             <ul className='text-white space-y-3'>
               {menuItems.map((route) => (
@@ -29,7 +29,7 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className='md:w-1/4 flex flex-col items-center'>
+          <div className='md:w-1/4 flex flex-col md:items-start items-center'>
             <h4 className='text-2xl text-sky-600'>Useful links</h4>
             <ul className='text-white space-y-3'>
               <li>Terms and Agreement</li>
@@ -37,7 +37,7 @@ export const Footer = () => {
               <li>Legalities</li>
             </ul>
           </div>
-          <div className='md:w-1/4 flex flex-col items-center'>
+          <div className='md:w-1/4 flex flex-col md:items-start items-center'>
             <h4 className='text-2xl text-sky-600'>Open hours</h4>
             <ul className='text-white'>
               <li>5:00 Am to 5:00 Pm</li>

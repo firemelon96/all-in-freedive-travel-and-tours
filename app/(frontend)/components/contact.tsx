@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 export const Contact = () => {
   return (
-    <section className='h-screen relative bg-blue-600/30'>
+    <section className='relative bg-blue-600/30'>
       <div
-        className='h-screen w-full z-0 bg-cover bg-center bg-fixed bg-no-repeat'
+        className='h-screen z-0 bg-cover overflow-hidden bg-center bg-fixed bg-no-repeat'
         style={{
           backgroundImage: `url(/turtle.gif)`,
           backgroundSize: 'cover',

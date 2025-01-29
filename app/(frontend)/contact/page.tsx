@@ -6,16 +6,19 @@ import { Phone } from 'lucide-react';
 const ContactPage = () => {
   return (
     <>
-      <BannerImage title='Contact us' />
-      <section className='container my-10 mx-auto '>
-        <div className='space-y-4 mx-2'>
+      <BannerImage
+        title='Contact us'
+        imageUrl='https://res.cloudinary.com/dutkzg9la/image/upload/v1738146307/GRNT-0663_clvsfu.avif'
+      />
+      <section className='container my-10 mx-auto space-y-4'>
+        <div className='space-y-4 mx-4'>
           <h1 className='text-3xl font-semibold text-sky-800'>Contact us</h1>
           <p>
             Want to get in touch? Wed love to hear from you. Heres how you can
             reach us.
           </p>
         </div>
-        <div className='flex mx-2 flex-col md:flex-row gap-4'>
+        <div className='flex mx-4 flex-col md:flex-row gap-4'>
           <div className='w-full md:w-1/2 '>
             <Card className='p-4 items-center justify-center flex flex-col gap-4'>
               <Phone className='size-10' />

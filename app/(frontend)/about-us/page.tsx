@@ -1,3 +1,4 @@
+import { BannerImage } from '@/components/banner-image';
 import { Card } from '@/components/ui/card';
 
 const featuredPackages = [
@@ -51,11 +52,12 @@ const featuredPackages = [
 const AboutPage = () => {
   return (
     <>
-      <div className='h-36 bg-sky-100 flex items-center justify-center'>
-        <h1 className='text-4xl text-sky-700 font-bold uppercase'>About us</h1>
-      </div>
+      <BannerImage
+        title='About us'
+        imageUrl='https://res.cloudinary.com/dutkzg9la/image/upload/v1738145286/GRNT-0711-2_odhkma.jpg'
+      />
       <section className='container mx-auto '>
-        <div className='space-y-4 text-2xl text-center mx-2'>
+        <div className='space-y-4 text-2xl text-center mx-4'>
           <p className='mt-5'>
             At All&apos;in Freediving and Tour Services, we specialize in
             crafting unforgettable, premium travel experiences across the
@@ -78,7 +80,7 @@ const AboutPage = () => {
           <h3 className='text-4xl text-sky-800 font-semibold text-center'>
             Our Featured Tour Packages
           </h3>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mx-2'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mx-4'>
             {featuredPackages.map((pax) => (
               <Card
                 key={pax.name}

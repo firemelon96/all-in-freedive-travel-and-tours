@@ -38,7 +38,7 @@ export const Courses = () => {
         heading='Explore the Depths with Expert Scuba Diving Courses'
       />
       <div className='container mx-auto text-white'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mx-2'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mx-4'>
           {courses.map((course, i) => (
             <CourseCard
               key={i}

@@ -1,4 +1,5 @@
 import { PackageTab } from '@/app/(frontend)/components/package-tab';
+import { BannerImage } from '@/components/banner-image';
 import { getServiceBySlug } from '@/lib/helper';
 import { redirect } from 'next/navigation';
 
@@ -10,11 +11,10 @@ const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
   return (
     <div>
-      <div className='h-36 bg-sky-100 flex items-center justify-center'>
-        <h1 className='text-4xl text-sky-700 font-bold uppercase'>
-          {service.title}
-        </h1>
-      </div>
+      <BannerImage
+        title='Fun Dive with Us'
+        imageUrl='https://res.cloudinary.com/dutkzg9la/image/upload/v1738146514/DJI_20240323164452_0115_D_ckpjkr.avif'
+      />
       <section className='container mx-auto'>
         <div className='flex '>
           <div className=' w-full space-y-4'>
@@ -30,7 +30,9 @@ const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
                 ))}
               </div>
 
-              <PackageTab packages={service?.packages || []} />
+              <div className='mx-4'>
+                <PackageTab packages={service?.packages || []} />
+              </div>
             </div>
           </div>
         </div>

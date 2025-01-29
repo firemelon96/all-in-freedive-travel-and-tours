@@ -19,7 +19,10 @@ const TourPage = async ({ searchParams }: Props) => {
   // const tourData =
   return (
     <>
-      <BannerImage title='Travel and Tours' />
+      <BannerImage
+        title='Travel and Tours'
+        imageUrl='https://res.cloudinary.com/dutkzg9la/image/upload/v1738146307/GRNT-0110_czspcd.avif'
+      />
       <section className='container mx-auto'>
         <div className='flex flex-col gap-4 my-10'>
           <div className='flex p-2 space-x-4 bg-slate-50'>

@@ -3,9 +3,9 @@ import { Headline } from './headlines';
 
 const Hero = () => {
   return (
-    <section className='min-h-screen relative'>
+    <section className='relative'>
       <div
-        className=' h-screen w-full z-0 bg-cover bg-center bg-fixed bg-no-repeat'
+        className=' md:h-screen h-[600px] w-full z-0 bg-cover bg-center bg-fixed bg-no-repeat'
         style={{
           backgroundImage: `url(/hero.avif)`,
         }}

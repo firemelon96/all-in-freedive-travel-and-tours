@@ -9,34 +9,41 @@ import { ImageCard } from './image-card';
 import { ReviewCard } from './review-card';
 import AutoPlay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
+import { testimonials } from '@/app/data/testimonial';
 
 export const Testimonial = () => {
   const plugin = useRef(AutoPlay({ delay: 5000, stopOnInteraction: false }));
   return (
     <section className='container mx-auto scroll-mt-10' id='testimonials'>
-      <div className='py-10 mx-2'>
-        <div className='grid md:grid-cols-4 gap-4 md:grid-rows-3 rounded-2xl overflow-hidden'>
-          <div className='row-span-3 col-span-2 bg-red-50 h-96 md:h-full'>
-            <ImageCard url='/testimonial.jpg' />
+      <div className='py-10 mx-4'>
+        <div className='flex flex-col-reverse  gap-4 md:flex-row rounded-2xl overflow-hidden'>
+          <div className='flex flex-col gap-2 md:w-1/2 w-full'>
+            <div className=' bg-red-50 h-64 md:h-full'>
+              <ImageCard url='/testimonial.jpg' />
+            </div>
           </div>
-          <div className='col-span-2 flex flex-col justify-start gap-4'>
+          <div className='flex flex-col md:w-1/2 w-full gap-2'>
             <Headline
               label='Testimonial'
               heading='What our Client are Saying'
-              className='text-slate-700 text-start'
+              className='text-slate-700 text-center md:text-start'
             />
-          </div>
-          <div className='col-span-2 row-span-2'>
             <Carousel plugins={[plugin.current]} opts={{ loop: true }}>
               <CarouselContent>
-                {Array.from({ length: 3 }).map((_, i) => (
-                  <CarouselItem className='' key={i}>
-                    <ReviewCard />
+                {testimonials.map((entry, i) => (
+                  <CarouselItem className='' key={entry.name}>
+                    <ReviewCard
+                      name={entry.name}
+                      title={entry.title}
+                      message={entry.message}
+                      profileImage={entry.profileImage}
+                    />
                   </CarouselItem>
                 ))}
               </CarouselContent>
             </Carousel>
           </div>
+          {/* <div className='col-span-2 row-span-2'></div> */}
         </div>
       </div>
     </section>
