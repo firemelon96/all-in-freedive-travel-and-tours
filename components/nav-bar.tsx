@@ -54,15 +54,155 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
+const routeCopy = [
+  {
+    title: 'About',
+    href: '#about',
+    submenu: [
+      {
+        name: 'About Us',
+        href: '/#about',
+      },
+      {
+        name: 'Meet the Team',
+        href: '/meet-the-team',
+      },
+      {
+        name: 'FAQ',
+        href: '/#faqs',
+      },
+      {
+        name: 'Why choose us?',
+        href: '/#why-choose-us',
+      },
+      {
+        name: 'Testimonials',
+        href: '/#testimonials',
+      },
+    ],
+  },
+  {
+    name: 'Courses and Certification',
+    href: '#courses',
+    submenu: [
+      {
+        name: 'Introduction to Freediving',
+        href: '/courses-and-certifications/introduction-to-freediving',
+      },
+      {
+        name: 'Line Training',
+        href: '/courses-and-certifications/line-training',
+      },
+      {
+        name: 'Molchanovs Wave 1',
+        href: '/courses-and-certifications/molchonovs-wave-1',
+      },
+      {
+        name: 'Molchanovs Wave 2',
+        href: '/courses-and-certifications/molchonovs-wave-2',
+      },
+    ],
+  },
+  {
+    name: 'Freediving Tour Services',
+    href: '#retreats',
+    submenu: [
+      {
+        name: 'Freediving Tours',
+        href: '/freediving-tour-services/coron-palawan',
+        submenu: [
+          {
+            name: 'Coron Palawan, Philippines',
+            href: '/freediving-tour-services/freediving-tours/coron-palawan-philippines',
+          },
+        ],
+      },
+      {
+        name: 'Freediving Retreat',
+        href: '/freediving-tour-services/freediving-retreat',
+      },
+      {
+        name: 'Freediving Expeditions',
+        href: '/freediving-tour-services/freediving-expeditions',
+        submenu: [
+          {
+            name: 'Busuanga Freedive Expedition',
+            href: '/freediving-tour-services/freediving-expeditions/busuanga-freedive-expedition',
+          },
+          {
+            name: 'Apo Reef Freedive Expedition',
+            href: '/freediving-tour-services/freediving-expeditions/apo-reef-freedive-expedition',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Travel and Tour Services',
+    href: '/travel-and-tour-services',
+  },
+  {
+    name: 'Contact',
+    href: '/contact',
+  },
+];
+
 export function Navbar() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
+          <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className='grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
+              <li className='row-span-4'>
+                <NavigationMenuLink asChild>
+                  <Link
+                    className='flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
+                    href='/'
+                  >
+                    {/* <Icons.logo className="h-6 w-6" /> */}
+                    {/* <Home /> */}
+                    <Image src='/logo.svg' height={50} width={150} alt='logo' />
+                    <div className='mb-2 mt-4 text-lg font-medium'>
+                      All&apos;in Freediving and Tour Services
+                    </div>
+                    <p className='text-sm leading-tight text-muted-foreground'>
+                      Where Journeys Meet the Depths of Discovery.
+                    </p>
+                  </Link>
+                </NavigationMenuLink>
+              </li>
+
+              <ListItem href='/' title='Introduction'>
+                hello
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        {routeCopy.map((route) => (
+          <NavigationMenuItem key={route.href}>
+            <NavigationMenuTrigger>{route.title}</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className='grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
+                {route.submenu?.map((menu) => (
+                  <ListItem
+                    key={menu.href}
+                    href={menu.href}
+                    title='Introduction'
+                  >
+                    {menu.name}
+                  </ListItem>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        ))}
+        <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className='grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
-              <li className='row-span-3'>
+              <li className='row-span-4'>
                 <NavigationMenuLink asChild>
                   <Link
                     className='flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
@@ -85,6 +225,9 @@ export function Navbar() {
               </ListItem>
               <ListItem href='/docs/installation' title='Installation'>
                 How to install dependencies and structure your app.
+              </ListItem>
+              <ListItem href='/docs/primitives/typography' title='Typography'>
+                Styles for headings, paragraphs, lists...etc
               </ListItem>
               <ListItem href='/docs/primitives/typography' title='Typography'>
                 Styles for headings, paragraphs, lists...etc
