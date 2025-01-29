@@ -11,10 +11,10 @@ export const Footer = () => {
               <Image src='/logo.png' width={150} height={60} alt='logo' />
             </div>
             <p className='text-white md:text-justify text-center'>
-              At All&apos;in Freediving and Tour Services, we specialize in
-              crafting unforgettable, premium travel experiences across the
-              Philippines. Whether you&apos;re seeking the thrill of freediving
-              in crystal-clear waters, exploring stunning islands on a luxurious
+              At All In Freediving and Tour Services, we specialize in crafting
+              unforgettable, premium travel experiences across the Philippines.
+              Whether you&apos;re seeking the thrill of freediving in
+              crystal-clear waters, exploring stunning islands on a luxurious
               island-hopping tour, or embarking on scenic land adventures, we
               offer the best of both land and sea. Our bespoke tours are
               designed to bring you closer to the unparalleled beauty and
@@ -22,7 +22,7 @@ export const Footer = () => {
             </p>
           </div>
           <div className='md:w-1/4 flex flex-col md:items-start items-center'>
-            <h4 className='text-2xl text-sky-600'>Important links</h4>
+            <h4 className='text-2xl text-sky-600'>Important Links</h4>
             <ul className='text-white space-y-3'>
               {menuItems.map((route) => (
                 <li key={route.href}>{route.name}</li>
@@ -30,7 +30,7 @@ export const Footer = () => {
             </ul>
           </div>
           <div className='md:w-1/4 flex flex-col md:items-start items-center'>
-            <h4 className='text-2xl text-sky-600'>Useful links</h4>
+            <h4 className='text-2xl text-sky-600'>Useful Links</h4>
             <ul className='text-white space-y-3'>
               <li>Terms and Agreement</li>
               <li>Policy and Privacy</li>
@@ -38,9 +38,9 @@ export const Footer = () => {
             </ul>
           </div>
           <div className='md:w-1/4 flex flex-col md:items-start items-center'>
-            <h4 className='text-2xl text-sky-600'>Open hours</h4>
+            <h4 className='text-2xl text-sky-600'>Open Hours</h4>
             <ul className='text-white'>
-              <li>5:00 Am to 5:00 Pm</li>
+              <li>7:00 Am to 10:00 Pm</li>
               <li>Coron, Palawan - Region IV-B (MIMAROPA)</li>
             </ul>
           </div>

@@ -29,7 +29,7 @@ const TeamPage = () => {
       </div>
       <section className='container mx-auto'>
         <p className='text-2xl text-center mt-10'>
-          At All&apos;in Freediving and Tour Services, our team is made up of
+          At All In Freediving and Tour Services, our team is made up of
           passionate travel experts, experienced freediving instructor, and
           knowledgeable local guides. We share a deep love for the Philippines
           and are dedicated to offering premium, immersive travel experiences

@@ -13,9 +13,8 @@ export const Why = () => {
             </div>
             <div className='col-span-2'>
               <Headline
-                className='text-slate-700 text-center md:text-start'
-                label='Why Choose Us'
-                heading='Why Choose Us for Your Dive'
+                className='text-slate-700 my-2 text-center md:text-start'
+                heading='Why Choose Us'
               />
             </div>
           </div>

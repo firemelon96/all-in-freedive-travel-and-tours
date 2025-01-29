@@ -7,8 +7,7 @@ export const Faq = () => {
     <section className='bg-sky-50 py-10 scroll-mt-10' id='faqs'>
       <div className='container mx-auto space-y-6'>
         <Headline
-          label="faq's"
-          heading='Frequently Asked Question'
+          heading='Frequently Asked Questions'
           className='text-slate-700'
         />
 

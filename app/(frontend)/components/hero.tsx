@@ -12,8 +12,8 @@ const Hero = () => {
       ></div>
       <div className='flex flex-col items-center justify-center w-full space-y-4 text-white absolute inset-y-0'>
         <Headline
-          className=''
-          label="All'in Freediving and Tour Services"
+          className='tracking-wider'
+          label='All In Freediving and Tour Services'
           heading='Travel Beyond Limits, Dive Beyond Depths.'
         />
 

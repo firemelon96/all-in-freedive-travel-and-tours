@@ -16,19 +16,21 @@ export const About = () => {
             <h1 className='sm:text-5xl text-4xl font-bold'>
               Where Journeys Meet the Depths of Discovery.
             </h1>
-            <p className='text-xl text-justify'>
-              At All&apos;in Freediving and Tour Services, we specialize in
-              crafting unforgettable, premium travel experiences across the
-              Philippines. Whether you&apos;re seeking the thrill of freediving
-              in crystal-clear waters, exploring stunning islands on a luxurious
+            <p className='text-xl font-light text-justify'>
+              At All In Freediving and Tour Services, we specialize in crafting
+              unforgettable, premium travel experiences across the Philippines.
+              Whether you&apos;re seeking the thrill of freediving in
+              crystal-clear waters, exploring stunning islands on a luxurious
               island-hopping tour, or embarking on scenic land adventures, we
               offer the best of both land and sea. Our bespoke tours are
               designed to bring you closer to the unparalleled beauty and
               culture of this tropical paradise.
             </p>
-            <Button variant='outline' asChild>
-              <Link href='/about-us'>Read more...</Link>
-            </Button>
+            <div className='w-full'>
+              <Button variant='outline' asChild className='w-full md:w-auto'>
+                <Link href='/about-us'>Read more...</Link>
+              </Button>
+            </div>
           </div>
           <div className='col-span-1'>
             <TextCard count={1900} label='Happy Clients' />

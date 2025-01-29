@@ -59,9 +59,9 @@ const AboutPage = () => {
       <section className='container mx-auto '>
         <div className='space-y-4 text-2xl text-center mx-4'>
           <p className='mt-5'>
-            At All&apos;in Freediving and Tour Services, we specialize in
-            crafting unforgettable, premium travel experiences across the
-            Philippines. Whether you&apos;re seeking the thrill of freediving in
+            At All in Freediving and Tour Services, we specialize in crafting
+            unforgettable, premium travel experiences across the Philippines.
+            Whether you&apos;re seeking the thrill of freediving in
             crystal-clear waters, exploring stunning islands on a luxurious
             island-hopping tour, or embarking on scenic land adventures, we
             offer the best of both land and sea. Our bespoke tours are designed

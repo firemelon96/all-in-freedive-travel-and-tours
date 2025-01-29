@@ -24,9 +24,9 @@ export const Testimonial = () => {
           </div>
           <div className='flex flex-col md:w-1/2 w-full gap-2'>
             <Headline
-              label='Testimonial'
+              label='Testimonials'
               heading='What our Client are Saying'
-              className='text-slate-700 text-center md:text-start'
+              className='text-slate-700 '
             />
             <Carousel plugins={[plugin.current]} opts={{ loop: true }}>
               <CarouselContent>
