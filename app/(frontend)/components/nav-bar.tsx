@@ -51,6 +51,7 @@ export function Navbar() {
         ) : (
           <Link
             href={item.href}
+            onClick={() => setIsMobileMenuOpen(false)}
             className='block px-3 py-2 text-base font-medium text-sky-700 rounded-md hover:bg-gray-100 hover:text-sky-900'
           >
             {item.name}
@@ -93,6 +94,7 @@ export function Navbar() {
         ) : (
           <Link
             href={item.href}
+            onClick={() => setOpenSubmenu(null)}
             className={`block w-full px-3 py-2 text-sm font-medium text-sky-700 rounded-md hover:bg-gray-100 hover:text-sky-900 ${
               depth > 0 ? 'pl-6' : ''
             }`}
@@ -127,12 +129,12 @@ export function Navbar() {
 
   return (
     <nav className='bg-white shadow sticky top-0 z-50'>
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='flex justify-between h-16'>
+      <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='flex justify-between h-14'>
           <div className='flex'>
             <div className='flex-shrink-0 flex items-center'>
               <Link href='/' className='text-xl font-bold text-gray-800'>
-                <Image src='/logo.svg' height={50} width={150} alt='logo' />
+                <Image src='/logo2.png' height={80} width={150} alt='logo' />
               </Link>
             </div>
           </div>
