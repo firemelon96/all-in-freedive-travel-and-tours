@@ -8,7 +8,7 @@ import localFont from 'next/font/local';
 // });
 
 const jatayu = localFont({
-  src: '../../fonts/jatayu.otf',
+  src: './../../fonts/jatayu.otf',
   display: 'swap',
   weight: '400',
 });
