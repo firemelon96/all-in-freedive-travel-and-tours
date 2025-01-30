@@ -9,7 +9,8 @@ import localFont from 'next/font/local';
 
 const jatayu = localFont({
   src: '../../fonts/jatayu.ttf',
-  weight: '600',
+  display: 'swap',
+  weight: '400',
 });
 
 type Props = {

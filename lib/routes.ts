@@ -26,7 +26,7 @@ export const menuItems = [
     ],
   },
   {
-    name: 'Courses and Certification',
+    name: 'Courses and Certifications',
     href: '#courses',
     submenu: [
       {
