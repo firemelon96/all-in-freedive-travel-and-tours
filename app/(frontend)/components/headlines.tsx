@@ -8,7 +8,7 @@ import localFont from 'next/font/local';
 // });
 
 const jatayu = localFont({
-  src: '../../fonts/jatayu.ttf',
+  src: '../../fonts/jatayu.otf',
   display: 'swap',
   weight: '400',
 });
@@ -23,7 +23,7 @@ export const Headline = ({ label, heading, className }: Props) => {
   return (
     <div className='text-center text-white flex flex-col gap-4 mx-4'>
       {label && (
-        <span className={cn(' text-3xl', className, jatayu.className)}>
+        <span className={cn(' text-3xl', jatayu.className, className)}>
           {label}
         </span>
       )}
