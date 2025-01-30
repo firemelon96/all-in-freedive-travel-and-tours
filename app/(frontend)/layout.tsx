@@ -4,7 +4,7 @@ import '../globals.css';
 import { Navbar } from './components/nav-bar';
 // import { Navbar } from '@/components/nav-bar';
 import { Footer } from './components/footer';
-import { Roboto, Montserrat } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 
 // const geistSans = localFont({
 //   src: '../fonts/GeistVF.woff',

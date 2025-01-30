@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ImageCard } from './image-card';
 import Link from 'next/link';

@@ -134,7 +134,12 @@ export function Navbar() {
           <div className='flex'>
             <div className='flex-shrink-0 flex items-center'>
               <Link href='/' className='text-xl font-bold text-gray-800'>
-                <Image src='/logo2.png' height={80} width={150} alt='logo' />
+                <Image
+                  src='/logo-real.png'
+                  height={80}
+                  width={150}
+                  alt='logo'
+                />
               </Link>
             </div>
           </div>

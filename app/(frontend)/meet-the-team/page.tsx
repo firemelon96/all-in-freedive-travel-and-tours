@@ -66,11 +66,8 @@ const TeamPage = () => {
                       </Button>
                     </CollapsibleTrigger>
                     {person.description.map((desc) => (
-                      <CollapsibleContent>
-                        <p
-                          key={desc}
-                          className='mb-4 text-slate-700 text-justify'
-                        >
+                      <CollapsibleContent key={desc}>
+                        <p className='mb-4 text-slate-700 text-justify'>
                           {desc}
                         </p>
                       </CollapsibleContent>
