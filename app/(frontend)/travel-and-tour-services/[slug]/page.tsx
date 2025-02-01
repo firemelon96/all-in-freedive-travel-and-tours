@@ -10,10 +10,28 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { redirect } from 'next/navigation';
+import { tours } from '@/app/data/tours';
+import { Metadata } from 'next';
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateStaticParams() {
+  return tours.map((tour) => ({ slug: tour.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = (await params).slug;
+  const tour = getTourBySlug(slug);
+  return {
+    title: tour?.title,
+    description: tour?.description,
+    openGraph: {
+      images: [{ url: tour?.images[0] || '' }],
+    },
+  };
+}
 
 const SinglePage = async ({ params }: Props) => {
   const slug = (await params).slug;

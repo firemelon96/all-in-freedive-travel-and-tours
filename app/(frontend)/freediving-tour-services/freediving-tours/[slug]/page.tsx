@@ -1,9 +1,28 @@
 import { PackageTab } from '@/app/(frontend)/components/package-tab';
+import { servicesData } from '@/app/data/services';
 import { BannerImage } from '@/components/banner-image';
 import { getServiceBySlug } from '@/lib/helper';
 import { redirect } from 'next/navigation';
 
-const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
+type Props = { params: Promise<{ slug: string }> };
+
+export async function generateStaticParams() {
+  return servicesData.map((service) => ({ slug: service.slug }));
+}
+
+export async function generateMetadata({ params }: Props) {
+  const slug = (await params).slug;
+  const service = getServiceBySlug(slug);
+  return {
+    title: service?.title,
+    description: service?.description,
+    openGraph: {
+      images: [{ url: service?.images[0] }],
+    },
+  };
+}
+
+const SlugPage = async ({ params }: Props) => {
   const slug = (await params).slug;
   const service = getServiceBySlug(slug);
 

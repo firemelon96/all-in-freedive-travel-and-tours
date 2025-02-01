@@ -10,6 +10,7 @@ import { ReviewCard } from './review-card';
 import AutoPlay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
 import { testimonials } from '@/app/data/testimonial';
+import FadeInWrapper from './fade-in-wrapper';
 
 export const Testimonial = () => {
   const plugin = useRef(AutoPlay({ delay: 5000, stopOnInteraction: false }));
@@ -18,9 +19,13 @@ export const Testimonial = () => {
       <div className='py-10 mx-4'>
         <div className='flex flex-col-reverse  gap-4 md:flex-row rounded-2xl overflow-hidden'>
           <div className='flex flex-col gap-2 md:w-1/2 w-full'>
-            <div className=' bg-red-50 h-64 md:h-full'>
+            <FadeInWrapper
+              delay={200}
+              direction='left'
+              className=' bg-red-50 h-64 md:h-full'
+            >
               <ImageCard url='/testimonial.jpg' />
-            </div>
+            </FadeInWrapper>
           </div>
           <div className='flex flex-col md:w-1/2 w-full gap-2'>
             <Headline

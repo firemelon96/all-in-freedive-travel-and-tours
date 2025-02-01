@@ -1,6 +1,7 @@
 import { getServiceByType } from '@/lib/helper';
 import { CourseCard } from './course-card';
 import { Headline } from './headlines';
+import FadeInWrapper from './fade-in-wrapper';
 
 // const courses = [
 //   {
@@ -40,13 +41,15 @@ export const Courses = () => {
       <div className='container mx-auto text-white'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mx-4'>
           {courses.map((course, i) => (
-            <CourseCard
-              key={i}
-              title={course.title}
-              description={course.description[0]}
-              url={course.images[0]}
-              slug={course.slug}
-            />
+            <FadeInWrapper direction='left' delay={i * 500}>
+              <CourseCard
+                key={i}
+                title={course.title}
+                description={course.description[0]}
+                url={course.images[0]}
+                slug={course.slug}
+              />
+            </FadeInWrapper>
           ))}
         </div>
       </div>

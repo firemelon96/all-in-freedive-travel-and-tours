@@ -1,5 +1,6 @@
 import { Book } from '@/app/(frontend)/components/book';
 import PortraitVideoCard from '@/app/(frontend)/components/video';
+import { servicesData } from '@/app/data/services';
 import { getServiceBySlug } from '@/lib/helper';
 import { Dot } from 'lucide-react';
 import { redirect } from 'next/navigation';
@@ -7,6 +8,22 @@ import { redirect } from 'next/navigation';
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateStaticParams() {
+  return servicesData.map((service) => ({ slug: service.slug }));
+}
+
+export async function generateMetadata({ params }: Props) {
+  const slug = (await params).slug;
+  const service = getServiceBySlug(slug);
+  return {
+    title: service?.title,
+    description: service?.description,
+    openGraph: {
+      images: [{ url: service?.images[0] }],
+    },
+  };
+}
 
 const SinglePage = async ({ params }: Props) => {
   const slug = (await params).slug;

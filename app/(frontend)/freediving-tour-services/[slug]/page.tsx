@@ -3,8 +3,27 @@ import { Dot } from 'lucide-react';
 import PortraitVideoCard from '../../components/video';
 import { Book } from '../../components/book';
 import { redirect } from 'next/navigation';
+import { servicesData } from '@/app/data/services';
 
-const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
+type Props = { params: Promise<{ slug: string }> };
+
+export async function generateStaticParams() {
+  return servicesData.map((service) => ({ slug: service.slug }));
+}
+
+export async function generateMetadata({ params }: Props) {
+  const slug = (await params).slug;
+  const service = getServiceBySlug(slug);
+  return {
+    title: service?.title,
+    description: service?.description,
+    openGraph: {
+      images: [{ url: service?.images[0] }],
+    },
+  };
+}
+
+const SlugPage = async ({ params }: Props) => {
   const slug = (await params).slug;
   const service = getServiceBySlug(slug);
 

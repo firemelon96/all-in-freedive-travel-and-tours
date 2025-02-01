@@ -1,6 +1,7 @@
 import { faqs } from '@/app/data/faqs';
 import { FaqItem } from './faq-item';
 import { Headline } from './headlines';
+import FadeInWrapper from './fade-in-wrapper';
 
 export const Faq = () => {
   return (
@@ -13,7 +14,9 @@ export const Faq = () => {
 
         <div>
           {faqs.map((faq, i) => (
-            <FaqItem key={i} question={faq.question} answer={faq.answer} />
+            <FadeInWrapper key={i} delay={i * 200}>
+              <FaqItem question={faq.question} answer={faq.answer} />
+            </FadeInWrapper>
           ))}
         </div>
       </div>

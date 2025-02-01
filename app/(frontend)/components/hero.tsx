@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Headline } from './headlines';
+import FadeInWrapper from './fade-in-wrapper';
 
 const Hero = () => {
   return (
@@ -17,13 +18,15 @@ const Hero = () => {
           heading='Travel Beyond Limits, Dive Beyond Depths.'
         />
 
-        <Button
-          variant='primary'
-          size='lg'
-          className='mt-5 font-semibold rounded-full'
-        >
-          Explore
-        </Button>
+        <FadeInWrapper delay={500}>
+          <Button
+            variant='primary'
+            size='lg'
+            className='mt-5 font-semibold rounded-full'
+          >
+            Explore
+          </Button>
+        </FadeInWrapper>
       </div>
     </section>
   );

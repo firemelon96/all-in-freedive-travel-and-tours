@@ -6,6 +6,7 @@ import {
 import { Headline } from './headlines';
 import { TourCard } from './tour-card';
 import { tours } from '@/app/data/tours';
+import FadeInWrapper from './fade-in-wrapper';
 
 export const TravelTours = () => {
   return (
@@ -26,12 +27,14 @@ export const TravelTours = () => {
                 className='pl-20 md:pl-5 md:basis-1/2 lg:basis-1/3 xl:basis-1/4'
                 key={i}
               >
-                <TourCard
-                  title={tour.title}
-                  description={tour.description}
-                  slug={tour.slug}
-                  image={tour.images[0]}
-                />
+                <FadeInWrapper delay={i * 200}>
+                  <TourCard
+                    title={tour.title}
+                    description={tour.description}
+                    slug={tour.slug}
+                    image={tour.images[0]}
+                  />
+                </FadeInWrapper>
               </CarouselItem>
             ))}
           </CarouselContent>

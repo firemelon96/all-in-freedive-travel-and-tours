@@ -2,16 +2,23 @@ import { Button } from '@/components/ui/button';
 import { ImageCard } from './image-card';
 import { TextCard } from './text-card';
 import Link from 'next/link';
+import FadeInWrapper from './fade-in-wrapper';
 
 export const About = () => {
   return (
     <div className='relative scroll-mt-10 mx-2' id='about'>
       <div className='container mx-auto py-10'>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:grid-rows-3 mx-4 rounded-2xl overflow-hidden'>
-          <div className='row-span-2 col-span-2 h-64 md:h-full'>
+          <FadeInWrapper
+            delay={300}
+            className='row-span-2 col-span-2 h-64 md:h-full'
+          >
             <ImageCard url='/about-img00.png' />
-          </div>
-          <div className='row-span-2 col-span-2 space-y-2 justify-items-center sm:justify-items-start text-center sm:text-start'>
+          </FadeInWrapper>
+          <FadeInWrapper
+            delay={400}
+            className='row-span-2 col-span-2 space-y-2 justify-items-center sm:justify-items-start text-center sm:text-start'
+          >
             <span className='uppercase text-xl'>About us</span>
             <h1 className='sm:text-5xl text-4xl font-bold'>
               Where Journeys Meet the Depths of Discovery.
@@ -31,16 +38,16 @@ export const About = () => {
                 <Link href='/about-us'>Read more...</Link>
               </Button>
             </div>
-          </div>
-          <div className='col-span-1'>
+          </FadeInWrapper>
+          <FadeInWrapper delay={500} className='col-span-1'>
             <TextCard count={1900} label='Happy Clients' />
-          </div>
-          <div className='col-span-1'>
+          </FadeInWrapper>
+          <FadeInWrapper delay={600} className='col-span-1'>
             <TextCard count={5} label='Years in Service' />
-          </div>
-          <div className='col-span-2 h-44'>
+          </FadeInWrapper>
+          <FadeInWrapper delay={700} className='col-span-2 h-44'>
             <ImageCard url='/about-img01.png' />
-          </div>
+          </FadeInWrapper>
         </div>
       </div>
     </div>
