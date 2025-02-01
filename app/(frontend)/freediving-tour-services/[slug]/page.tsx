@@ -4,21 +4,24 @@ import PortraitVideoCard from '../../components/video';
 import { Book } from '../../components/book';
 import { redirect } from 'next/navigation';
 import { servicesData } from '@/app/data/services';
+import { Metadata } from 'next';
 
-type Props = { params: Promise<{ slug: string }> };
+type Props = {
+  params: Promise<{ slug: string }>;
+};
 
 export async function generateStaticParams() {
   return servicesData.map((service) => ({ slug: service.slug }));
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = (await params).slug;
   const service = getServiceBySlug(slug);
   return {
     title: service?.title,
-    description: service?.description,
+    description: service?.description[0],
     openGraph: {
-      images: [{ url: service?.images[0] }],
+      images: [{ url: service?.images[0] || '' }],
     },
   };
 }
