@@ -1,40 +1,48 @@
 import { Book } from '@/app/(frontend)/components/book';
 import PortraitVideoCard from '@/app/(frontend)/components/video';
-// import { servicesData } from '@/app/data/services';
-import { getServiceBySlug } from '@/lib/helper';
+import { servicesData } from '@/app/data/services';
+import { getServiceBySlug, getServiceBySlugAndType } from '@/lib/helper';
 import { Dot } from 'lucide-react';
-import { redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-// export async function generateStaticParams() {
-//   return servicesData.map((service) => ({ slug: service.slug }));
-// }
+export async function generateStaticParams() {
+  return servicesData.map((service) => ({ slug: service.slug }));
+}
 
-// export async function generateMetadata({ params }: Props) {
-//   const slug = (await params).slug;
-//   const service = getServiceBySlug(slug);
-//   if (!service) return { title: 'Not Found' };
-//   return {
-//     title: service?.title,
-//     description: service?.description,
-//     openGraph: {
-//       title: service.title,
-//       description: service.description,
-//       url: `https://allintravelandfreedivingtourservices.com/freediving-tour-services/freediving-expeditions/${service.slug}`,
-//       siteName: 'All In Freediving and Tour Services',
-//       images: [{ url: service.images[0] }],
-//     },
-//   };
-// }
+export async function generateMetadata({ params }: Props) {
+  const slug = (await params).slug;
+  const service = getServiceBySlug(slug);
+  if (!service) return { title: 'Not Found' };
+  return {
+    title: service?.title,
+    description: service?.description[0],
+    openGraph: {
+      title: service.title,
+      description: service.description[0],
+      url: `https://allintravelandfreedivingtourservices.com/freediving-tour-services/freediving-expeditions/${service.slug}`,
+      siteName: 'All In Freediving and Tour Services',
+      images: [{ url: service.images[0] }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: service.title,
+      description: service.description[0],
+      images: [service.images[0]], // Twitter Card Image
+    },
+  };
+}
 
 const SinglePage = async ({ params }: Props) => {
   const slug = (await params).slug;
-  const service = getServiceBySlug(slug);
+  const service = getServiceBySlugAndType(slug, 'expedition');
 
-  if (!service) redirect('/');
+  if (!service) {
+    notFound();
+  }
 
   return (
     <section className='container mx-auto'>

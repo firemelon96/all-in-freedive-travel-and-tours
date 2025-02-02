@@ -1,7 +1,7 @@
-import { getServiceBySlug } from '@/lib/helper';
+import { getServiceBySlug, getServiceBySlugAndType } from '@/lib/helper';
 import { ImageCarousel } from '../../components/image-carousel';
 import { Book } from '../../components/book';
-import { redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { Card } from '@/components/ui/card';
 import { servicesData } from '@/app/data/services';
 import { Metadata } from 'next';
@@ -37,9 +37,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const SlugPage = async ({ params }: Props) => {
   const slug = (await params).slug;
-  const service = getServiceBySlug(slug);
+  const service = getServiceBySlugAndType(slug, 'course');
 
-  if (!service) redirect('/');
+  if (!service) {
+    notFound();
+  }
 
   return (
     <section className='container mx-auto'>

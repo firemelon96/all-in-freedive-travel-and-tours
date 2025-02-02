@@ -145,7 +145,7 @@ export const servicesData = [
       'Discover the Serenity below the Surface: Freediving Adventures in Coron',
     location: 'Coron, Palawan, Philippines',
     duration: '5 Days and 4 Nights',
-    type: '',
+    type: 'retreat',
     description: [
       'If youre looking for the perfect destination that offers a transformative experience—combining world-class diving conditions and a tranquil environment—Coron is ideal for freediving schools. Whether youre catering to beginners, intermediate, or experienced freedivers seeking a serene escape, aiming to improve their diving skills, or exploring the breathtaking beauty of Palawans underwater world, Coron promises a memorable freediving retreat.',
       'Our team can arrange everything for you, including seamless transfers, freediving tours, and hotel accommodations.',
@@ -160,7 +160,7 @@ export const servicesData = [
       'Cave diving in Coron and Busuanga Palawan.',
     ],
     paxInclusion: [],
-    images: [],
+    images: ['/res/dugong.jpeg'],
     video:
       'https://res.cloudinary.com/dutkzg9la/video/upload/v1737385342/Coron_d8woxz.mp4',
   },
@@ -171,7 +171,7 @@ export const servicesData = [
     title: 'Fun Dive with Us',
     location: 'Coron, Palawan, Philippines',
     duration: '1 Day',
-    type: '',
+    type: 'freedive-tour',
     description: [
       'Freediving in Coron, Philippines, is a truly marvelous and exhilarating experience surrounded with its renowned crystal-clear waters, vibrant and rich coral reefs, historical WWII wreck sites, and diverse marine life.',
       'We offer daily joiner and private freediving tours good for newbie to experienced freedivers. ',
@@ -184,7 +184,7 @@ export const servicesData = [
       'Cave diving in Coron and Busuanga Palawan.',
     ],
     paxInclusion: [],
-    images: [],
+    images: ['/res/intro00.jpg'],
     packages: [
       {
         id: 'package-a',
@@ -284,7 +284,7 @@ export const servicesData = [
     location: 'Coron, Palawan, Philippines',
     duration: '3 Days and 2 Nights',
     price: '30,000 php | 560 USD',
-    type: '',
+    type: 'expedition',
     description: [
       'A jumpacked 3 Days  ultimate adventure that combines the thrill of freediving and spearfishing with the rustic charm of overnight camping on two of the most stunning islands in Palawan, Black Island and Pass Island. This type of tour is perfect for those who want to experience the natural beauty of Busuanga, enjoy world-class freediving, and immerse themselves in the outdoor lifestyle.',
     ],
@@ -299,7 +299,7 @@ export const servicesData = [
       'Freediving in historical World War II Shipwrecks.',
     ],
     paxInclusion: [],
-    images: [],
+    images: ['/res/package-b/pb03.jpeg'],
     videoUrl:
       'https://res.cloudinary.com/dutkzg9la/video/upload/v1737680897/busuanga-new_mb27t2.mp4',
   },
@@ -309,7 +309,7 @@ export const servicesData = [
     location: 'Coron, Palawan, Philippines',
     duration: '1 Day',
     price: '30,000 pesos | $550',
-    type: '',
+    type: 'expedition',
     description: [
       'A specialized freediving tour package designed for freediving enthusiasts.',
       'Apo Reef is located in Occidental Mindoro, Philippines, is the second-largest contiguous coral reef system in the world and a UNESCO World Heritage site. It’s renowned for its vibrant marine biodiversity, crystal-clear waters, and stunning coral formations, making it a prime destination for underwater adventures.',
@@ -325,7 +325,7 @@ export const servicesData = [
     ],
     specials: [''],
     paxInclusion: [],
-    images: [],
+    images: ['/res/package-b/pb04.jpeg'],
     videoUrl:
       'https://res.cloudinary.com/dutkzg9la/video/upload/v1737531924/Apo_Reef_rnh8fx.mp4',
   },

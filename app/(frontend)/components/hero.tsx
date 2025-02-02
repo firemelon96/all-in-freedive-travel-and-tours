@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className='relative'>
       <div
-        className=' md:h-screen h-[600px] w-full z-0 bg-cover bg-center bg-fixed bg-no-repeat'
+        className=' md:h-screen h-[600px] w-full z-0 bg-cover  bg-center bg-fixed bg-no-repeat'
         style={{
           backgroundImage: `url(/hero.avif)`,
         }}

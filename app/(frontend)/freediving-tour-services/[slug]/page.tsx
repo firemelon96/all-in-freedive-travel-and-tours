@@ -1,42 +1,49 @@
-import { getServiceBySlug } from '@/lib/helper';
+import { getServiceBySlug, getServiceBySlugAndType } from '@/lib/helper';
 import { Dot } from 'lucide-react';
 import PortraitVideoCard from '../../components/video';
 import { Book } from '../../components/book';
-import { redirect } from 'next/navigation';
-// import { servicesData } from '@/app/data/services';
-// import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { servicesData } from '@/app/data/services';
+import { Metadata } from 'next';
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-// export async function generateStaticParams() {
-//   return servicesData.map((service) => ({ slug: service.slug }));
-// }
+export async function generateStaticParams() {
+  return servicesData.map((service) => ({ slug: service.slug }));
+}
 
-// export async function generateMetadata({ params }: Props): Promise<Metadata> {
-//   const slug = (await params).slug;
-//   const service = getServiceBySlug(slug);
-//   if (!service) return { title: 'Not Found' };
-//   return {
-//     title: service?.title,
-//     description: service?.description[0],
-//     openGraph: {
-//       title: service.title,
-//       description: service.description[0],
-//       url: `https://allintravelandfreedivingtourservices.com/freediving-tour-services/${service.slug}`,
-//       siteName: 'All In Freediving and Tour Services',
-//       images: [{ url: service.images[0] }],
-//     },
-//   };
-// }
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = (await params).slug;
+  const service = getServiceBySlug(slug);
+  if (!service) return { title: 'Not Found' };
+  return {
+    title: service.title,
+    description: service.description[0],
+    openGraph: {
+      title: service.title,
+      description: service.description[0],
+      url: `https://allintravelandfreedivingtourservices.com/freediving-tour-services/${service.slug}`,
+      siteName: 'All In Freediving and Tour Services',
+      images: [{ url: service.images[0] }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: service.title,
+      description: service.description[0],
+      images: [service.images[0]], // Twitter Card Image
+    },
+  };
+}
 
 const SlugPage = async ({ params }: Props) => {
   const slug = (await params).slug;
-  const service = getServiceBySlug(slug);
+  const service = getServiceBySlugAndType(slug, 'retreat');
 
-  if (!service) redirect('/');
-
+  if (!service) {
+    notFound();
+  }
   return (
     <section className='container mx-auto'>
       <div className='flex flex-col-reverse md:flex-row mt-5'>

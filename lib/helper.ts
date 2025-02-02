@@ -12,6 +12,13 @@ export const getServiceByType = (type: string) => {
   return service;
 };
 
+export const getServiceBySlugAndType = (slug: string, type: string) => {
+  const service = servicesData.find(
+    (data) => data.slug === slug && data.type === type
+  );
+  return service;
+};
+
 export const getTourBySlug = (slug: string) => {
   const tour = tours.find((service) => service.slug === slug);
 

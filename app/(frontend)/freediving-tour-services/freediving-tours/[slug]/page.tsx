@@ -1,35 +1,41 @@
 import { PackageTab } from '@/app/(frontend)/components/package-tab';
-// import { servicesData } from '@/app/data/services';
+import { servicesData } from '@/app/data/services';
 import { BannerImage } from '@/components/banner-image';
-import { getServiceBySlug } from '@/lib/helper';
+import { getServiceBySlug, getServiceBySlugAndType } from '@/lib/helper';
 import { notFound } from 'next/navigation';
 
 type Props = { params: Promise<{ slug: string }> };
 
-// export async function generateStaticParams() {
-//   return servicesData.map((service) => ({ slug: service.slug }));
-// }
+export async function generateStaticParams() {
+  return servicesData.map((service) => ({ slug: service.slug }));
+}
 
-// export async function generateMetadata({ params }: Props) {
-//   const slug = (await params).slug;
-//   const service = getServiceBySlug(slug);
-//   if (!service) return { title: 'Not Found' };
-//   return {
-//     title: service.title,
-//     description: service.description,
-//     openGraph: {
-//       title: service.title,
-//       description: service.description,
-//       url: `https://allintravelandfreedivingtourservices.com/freediving-tour-services/freediving-tours/${service.slug}`,
-//       siteName: 'All In Freediving and Tour Services',
-//       images: [{ url: service.images[0] }],
-//     },
-//   };
-// }
+export async function generateMetadata({ params }: Props) {
+  const slug = (await params).slug;
+  const service = getServiceBySlug(slug);
+  if (!service) return { title: 'Not Found' };
+  return {
+    title: service.title,
+    description: service.description[0],
+    openGraph: {
+      title: service.title,
+      description: service.description[0],
+      url: `https://allintravelandfreedivingtourservices.com/freediving-tour-services/freediving-tours/${service.slug}`,
+      siteName: 'All In Freediving and Tour Services',
+      images: [{ url: service.images[0] }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: service.title,
+      description: service.description[0],
+      images: [service.images[0]], // Twitter Card Image
+    },
+  };
+}
 
 const SlugPage = async ({ params }: Props) => {
   const slug = (await params).slug;
-  const service = getServiceBySlug(slug);
+  const service = getServiceBySlugAndType(slug, 'freedive-tour');
 
   if (!service) {
     notFound();
@@ -57,7 +63,9 @@ const SlugPage = async ({ params }: Props) => {
               </div>
 
               <div className='mx-4'>
-                <PackageTab packages={service?.packages || []} />
+                {service.packages && (
+                  <PackageTab packages={service?.packages || []} />
+                )}
               </div>
             </div>
           </div>
