@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: tour.description,
       url: `https://allintravelandfreedivingtourservices.com/travel-and-tour-services/${tour.slug}`,
       siteName: 'All In Freediving and Tour Services',
-      images: [{ url: tour?.images[0] || '' }],
+      images: [{ url: tour.images[0] }],
     },
     twitter: {
       card: 'summary_large_image',

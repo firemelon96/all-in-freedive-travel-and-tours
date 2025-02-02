@@ -95,9 +95,9 @@ export const tours = [
     ],
     images: [
       '/res/tours/balabac/package1/b00.avif',
-      '/res/tours/balabac/package1/b01.avif',
+      '/res/tours/balabac/package1/b05.avif',
       '/res/tours/balabac/package1/b02.avif',
-      '/res/tours/balabac/package1/b03.avif',
+      '/res/tours/balabac/package1/b06.avif',
       '/res/tours/balabac/package1/b04.avif',
     ],
   },
@@ -283,12 +283,12 @@ export const tours = [
       'The agency is not responsible for personal belongings lost or damaged.',
     ],
     images: [
-      '/res/tours/coron/4d3n/c05.avif',
+      // '/res/tours/coron/4d3n/c05.avif',
       '/res/tours/coron/4d3n/c06.avif',
       '/res/tours/coron/4d3n/c07.avif',
       '/res/tours/coron/4d3n/c08.avif',
-      '/res/tours/coron/4d3n/c09.avif',
-      '/res/tours/coron/4d3n/c10.avif',
+      '/res/tours/coron/4d3n/c11.avif',
+      // '/res/tours/coron/4d3n/c10.avif',
     ],
   },
   {
@@ -496,7 +496,7 @@ export const tours = [
       'The agency is not responsible for personal belongings lost or damaged.',
     ],
     images: [
-      '/res/tours/elnido/3d2n/en00.avif',
+      // '/res/tours/elnido/3d2n/en00.avif',
       '/res/tours/elnido/3d2n/en01.avif',
       '/res/tours/elnido/3d2n/en02.avif',
       '/res/tours/elnido/3d2n/en03.avif',
@@ -611,7 +611,7 @@ export const tours = [
     images: [
       '/res/tours/elnido/4d3n/en05.avif',
       '/res/tours/elnido/4d3n/en06.avif',
-      '/res/tours/elnido/4d3n/en07.avif',
+      // '/res/tours/elnido/4d3n/en07.avif',
       '/res/tours/elnido/4d3n/en08.avif',
       '/res/tours/elnido/4d3n/en09.avif',
     ],

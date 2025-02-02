@@ -18,7 +18,6 @@ export const ImageBanner = ({ images }: Props) => {
               <Image src={image} fill alt='image' className='object-cover' />
             </div>
           ))}
-
           <ImageDialog images={images} />
         </div>
       </div>
