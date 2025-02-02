@@ -10,28 +10,39 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { redirect } from 'next/navigation';
-// import { tours } from '@/app/data/tours';
-// import { Metadata } from 'next';
+import { tours } from '@/app/data/tours';
+import { Metadata } from 'next';
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-// export async function generateStaticParams() {
-//   return tours.map((tour) => ({ slug: tour.slug }));
-// }
+export async function generateStaticParams() {
+  return tours.map((tour) => ({ slug: tour.slug }));
+}
 
-// export async function generateMetadata({ params }: Props): Promise<Metadata> {
-//   const slug = (await params).slug;
-//   const tour = getTourBySlug(slug);
-//   return {
-//     title: tour?.title,
-//     description: tour?.description,
-//     openGraph: {
-//       images: [{ url: tour?.images[0] || '' }],
-//     },
-//   };
-// }
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = (await params).slug;
+  const tour = getTourBySlug(slug);
+  if (!tour) return { title: 'Not Found' };
+  return {
+    title: tour?.title,
+    description: tour?.description,
+    openGraph: {
+      title: tour.title,
+      description: tour.description,
+      url: `https://allintravelandfreedivingtourservices.com/travel-and-tour-services/${tour.slug}`,
+      siteName: 'All In Freediving and Tour Services',
+      images: [{ url: tour?.images[0] || '' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: tour.title,
+      description: tour.description,
+      images: [tour.images[0]], // Twitter Card Image
+    },
+  };
+}
 
 const SinglePage = async ({ params }: Props) => {
   const slug = (await params).slug;
