@@ -3,28 +3,33 @@ import { Dot } from 'lucide-react';
 import PortraitVideoCard from '../../components/video';
 import { Book } from '../../components/book';
 import { redirect } from 'next/navigation';
-import { servicesData } from '@/app/data/services';
-import { Metadata } from 'next';
+// import { servicesData } from '@/app/data/services';
+// import { Metadata } from 'next';
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  return servicesData.map((service) => ({ slug: service.slug }));
-}
+// export async function generateStaticParams() {
+//   return servicesData.map((service) => ({ slug: service.slug }));
+// }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = (await params).slug;
-  const service = getServiceBySlug(slug);
-  return {
-    title: service?.title,
-    description: service?.description[0],
-    openGraph: {
-      images: [{ url: service?.images[0] || '' }],
-    },
-  };
-}
+// export async function generateMetadata({ params }: Props): Promise<Metadata> {
+//   const slug = (await params).slug;
+//   const service = getServiceBySlug(slug);
+//   if (!service) return { title: 'Not Found' };
+//   return {
+//     title: service?.title,
+//     description: service?.description[0],
+//     openGraph: {
+//       title: service.title,
+//       description: service.description[0],
+//       url: `https://allintravelandfreedivingtourservices.com/freediving-tour-services/${service.slug}`,
+//       siteName: 'All In Freediving and Tour Services',
+//       images: [{ url: service.images[0] }],
+//     },
+//   };
+// }
 
 const SlugPage = async ({ params }: Props) => {
   const slug = (await params).slug;
