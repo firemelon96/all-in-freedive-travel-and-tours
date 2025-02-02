@@ -25,7 +25,7 @@ export function ImageCarousel({ images }: Props) {
                 <CardContent className='flex aspect-square items-center justify-center p-2'>
                   <Image
                     src={img}
-                    height={120}
+                    height={1200}
                     width={1200}
                     alt={`img-${index}`}
                     className='object-cover'

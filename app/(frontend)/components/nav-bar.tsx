@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { menuItems } from '@/lib/routes';
 import Image from 'next/image';
+import { useClickAway } from '@uidotdev/usehooks';
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,6 +15,10 @@ export function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
   const toggleSubmenu = (name: string) =>
     setOpenSubmenu(openSubmenu === name ? null : name);
+
+  const ref = useClickAway(() => {
+    setOpenSubmenu(null);
+  });
 
   const MobileNavItem = ({
     item,

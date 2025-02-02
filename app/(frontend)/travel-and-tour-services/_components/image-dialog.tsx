@@ -58,7 +58,7 @@ export const ImageDialog = ({ images }: Props) => {
           Gallery
         </Button>
       </DialogTrigger>
-      <DialogContent className='bg-transparent border-none shadow-none'>
+      <DialogContent className='bg-transparent sm:min-w-[980px] border-none shadow-none'>
         <DialogHeader>
           <DialogTitle>Images</DialogTitle>
         </DialogHeader>
@@ -69,7 +69,7 @@ export const ImageDialog = ({ images }: Props) => {
               align: 'start',
             }}
           >
-            <CarouselContent className='h-[500px]'>
+            <CarouselContent className=''>
               {images?.map((image, index) => (
                 <CarouselItem key={index}>
                   <div className='p-1'>
