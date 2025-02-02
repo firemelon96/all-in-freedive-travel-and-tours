@@ -5,6 +5,7 @@ import { Book } from '../../components/book';
 import { notFound } from 'next/navigation';
 import { servicesData } from '@/app/data/services';
 import { Metadata } from 'next';
+import FadeInWrapper from '../../components/fade-in-wrapper';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -49,24 +50,32 @@ const SlugPage = async ({ params }: Props) => {
       <div className='flex flex-col-reverse md:flex-row mt-5'>
         <div className=' w-full p-4'>
           <div className='space-y-4'>
-            <h1 className='text-4xl text-sky-700 text-center md:text-start font-bold uppercase'>
-              {service?.title}
-            </h1>
-            <Book
-              location={service?.location}
-              duration={service.duration}
-              price={service.price}
-            />
-            <div className='p-2'>
+            <FadeInWrapper direction='left'>
+              <h1 className='text-4xl text-sky-700 text-center md:text-start font-bold uppercase'>
+                {service?.title}
+              </h1>
+            </FadeInWrapper>
+            <FadeInWrapper direction='left' delay={200}>
+              <Book
+                location={service?.location}
+                duration={service.duration}
+                price={service.price}
+              />
+            </FadeInWrapper>
+            <FadeInWrapper delay={400} direction='left' className='p-2'>
               <h4 className='text-2xl text-sky-800 font-semibold '>Overview</h4>
               {service?.description.map((desc, i) => (
                 <p className='text-xl text-justify my-5' key={i}>
                   {desc}
                 </p>
               ))}
-            </div>
+            </FadeInWrapper>
             {service?.highlights && service.highlights.length > 0 && (
-              <div className='p-2 bg-sky-50 space-y-4 rounded-sm'>
+              <FadeInWrapper
+                direction='left'
+                delay={600}
+                className='p-2 bg-sky-50 space-y-4 rounded-sm'
+              >
                 <h5 className='text-2xl text-sky-800 font-semibold'>
                   Highlights
                 </h5>
@@ -81,15 +90,15 @@ const SlugPage = async ({ params }: Props) => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </FadeInWrapper>
             )}
           </div>
         </div>
-        <div className='p-2 w-full'>
+        <FadeInWrapper direction='right' className='p-2 w-full'>
           <div className='mx-14'>
             <PortraitVideoCard videoUrl={service.video || ''} />
           </div>
-        </div>
+        </FadeInWrapper>
       </div>
     </section>
   );

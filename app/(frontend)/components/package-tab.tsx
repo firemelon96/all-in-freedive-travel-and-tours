@@ -5,6 +5,7 @@ import PortraitVideoCard from './video';
 import { CheckCircle, Map, X } from 'lucide-react';
 import { ListBox } from './list-box';
 import { ImageGallery } from './image-gallery';
+import FadeInWrapper from './fade-in-wrapper';
 
 type Props = {
   packages: {
@@ -37,19 +38,23 @@ export function PackageTab({ packages }: Props) {
         <TabsContent key={pax.id} value={pax.id}>
           <Card className='bg-stone-50 shadow-none border-none'>
             <CardHeader>
-              <CardTitle className='text-2xl text-sky-700'>
-                {pax.name}
-              </CardTitle>
+              <FadeInWrapper direction='left'>
+                <CardTitle className='text-2xl text-sky-700'>
+                  {pax.name}
+                </CardTitle>
+              </FadeInWrapper>
             </CardHeader>
             <CardContent className='space-y-2'>
               <div className='flex flex-col-reverse md:flex-row gap-2'>
                 <div className='md:w-1/2 w-full'>
                   <div className='space-y-4'>
-                    <Book
-                      location={pax.location}
-                      duration={pax.duration}
-                      price={pax.price}
-                    />
+                    <FadeInWrapper direction='left' delay={300}>
+                      <Book
+                        location={pax.location}
+                        duration={pax.duration}
+                        price={pax.price}
+                      />
+                    </FadeInWrapper>
                     <ListBox
                       icon={Map}
                       items={pax.destination}
@@ -68,9 +73,9 @@ export function PackageTab({ packages }: Props) {
                     <ImageGallery images={pax.images} />
                   </div>
                 </div>
-                <div className='md:w-1/2 md:mx-16'>
+                <FadeInWrapper direction='right' className='md:w-1/2 md:mx-16'>
                   <PortraitVideoCard videoUrl={pax.videoUrl || ''} />
-                </div>
+                </FadeInWrapper>
               </div>
             </CardContent>
           </Card>

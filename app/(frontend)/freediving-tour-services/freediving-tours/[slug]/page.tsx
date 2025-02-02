@@ -1,3 +1,4 @@
+import FadeInWrapper from '@/app/(frontend)/components/fade-in-wrapper';
 import { PackageTab } from '@/app/(frontend)/components/package-tab';
 import { servicesData } from '@/app/data/services';
 import { BannerImage } from '@/components/banner-image';
@@ -51,7 +52,7 @@ const SlugPage = async ({ params }: Props) => {
         <div className='flex '>
           <div className=' w-full space-y-4'>
             <div className='space-y-4'>
-              <div className='p-2'>
+              <FadeInWrapper className='p-2'>
                 {service.description.map((desc, i) => (
                   <p
                     className='text-2xl text-center max-w-5xl mx-auto my-3'
@@ -60,13 +61,13 @@ const SlugPage = async ({ params }: Props) => {
                     {desc}
                   </p>
                 ))}
-              </div>
+              </FadeInWrapper>
 
-              <div className='mx-4'>
+              <FadeInWrapper delay={300} className='mx-4'>
                 {service.packages && (
                   <PackageTab packages={service?.packages || []} />
                 )}
-              </div>
+              </FadeInWrapper>
             </div>
           </div>
         </div>

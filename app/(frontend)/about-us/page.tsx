@@ -1,5 +1,6 @@
 import { BannerImage } from '@/components/banner-image';
 import { Card } from '@/components/ui/card';
+import FadeInWrapper from '../components/fade-in-wrapper';
 
 const featuredPackages = [
   {
@@ -57,7 +58,10 @@ const AboutPage = () => {
         imageUrl='https://res.cloudinary.com/dutkzg9la/image/upload/v1738145286/GRNT-0711-2_odhkma.jpg'
       />
       <section className='container mx-auto '>
-        <div className='space-y-4 text-2xl text-center mx-4'>
+        <FadeInWrapper
+          delay={200}
+          className='space-y-4 text-2xl text-center mx-4'
+        >
           <p className='mt-5'>
             At All in Freediving and Tour Services, we specialize in crafting
             unforgettable, premium travel experiences across the Philippines.
@@ -75,30 +79,33 @@ const AboutPage = () => {
             Princesa, Coron, and El Nido. Each location is handpicked for its
             natural beauty, unique charm, and rich cultural heritage.
           </p>
-        </div>
+        </FadeInWrapper>
         <div className='space-y-5 mt-10'>
-          <h3 className='text-4xl text-sky-800 font-semibold text-center'>
-            Our Featured Tour Packages
-          </h3>
+          <FadeInWrapper delay={300}>
+            <h3 className='text-4xl text-sky-800 font-semibold text-center'>
+              Our Featured Tour Packages
+            </h3>
+          </FadeInWrapper>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mx-4'>
-            {featuredPackages.map((pax) => (
-              <Card
-                key={pax.name}
-                className='p-2 border-none shadow-sm bg-sky-700'
-              >
-                <div className='space-y-2 text-stone-100 text-center'>
-                  <p className='text-3xl font-bold'>{pax.name}</p>
-                  <p className=''>{pax.description}</p>
-                </div>
-              </Card>
+            {featuredPackages.map((pax, i) => (
+              <FadeInWrapper key={pax.name} delay={i * 400}>
+                <Card className='p-2 h-full border-none shadow-sm bg-sky-700'>
+                  <div className='space-y-2 text-stone-100 text-center'>
+                    <p className='text-3xl font-bold'>{pax.name}</p>
+                    <p className=''>{pax.description}</p>
+                  </div>
+                </Card>
+              </FadeInWrapper>
             ))}
           </div>
         </div>
         <div className='space-y-5 my-10 bg-slate-100 p-4'>
-          <h3 className='text-4xl text-sky-800 font-semibold text-center'>
-            Our Freediving Experience
-          </h3>
-          <div className='space-y-4 max-w-4xl mx-auto '>
+          <FadeInWrapper delay={300}>
+            <h3 className='text-4xl text-sky-800 font-semibold text-center'>
+              Our Freediving Experience
+            </h3>
+          </FadeInWrapper>
+          <FadeInWrapper delay={400} className='space-y-4 max-w-4xl mx-auto '>
             <p className='text-2xl text-center '>
               As specialists in freediving, we offer tailored tours to some of
               the best dive spots in the Philippines. Whether you&apos;re a
@@ -113,7 +120,7 @@ const AboutPage = () => {
               of diving in some of the most biodiverse and pristine waters of
               Philippine&apos;s best.
             </p>
-          </div>
+          </FadeInWrapper>
         </div>
       </section>
     </>

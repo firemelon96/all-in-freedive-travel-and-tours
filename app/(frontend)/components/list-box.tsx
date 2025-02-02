@@ -1,4 +1,5 @@
 import { LucideIcon } from 'lucide-react';
+import FadeInWrapper from './fade-in-wrapper';
 
 type Props = {
   label: string;
@@ -8,7 +9,7 @@ type Props = {
 
 export const ListBox = ({ label, items, icon: Icon }: Props) => {
   return (
-    <div className='p-2 space-y-3'>
+    <FadeInWrapper direction='left' className='p-2 space-y-3'>
       <h2 className='text-xl text-sky-800 font-semibold'>{label}</h2>
       <ul>
         {items.map((item) => (
@@ -20,6 +21,6 @@ export const ListBox = ({ label, items, icon: Icon }: Props) => {
           </li>
         ))}
       </ul>
-    </div>
+    </FadeInWrapper>
   );
 };

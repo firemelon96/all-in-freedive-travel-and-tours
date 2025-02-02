@@ -4,6 +4,7 @@ import { Filter } from './_components/filter';
 import { TourType } from './_components/tour-type';
 import { getTravelTours } from '@/lib/helper';
 import { BannerImage } from '@/components/banner-image';
+import FadeInWrapper from '../components/fade-in-wrapper';
 
 type Props = {
   searchParams: Promise<{ location: string; type: string }>;
@@ -26,18 +27,23 @@ const TourPage = async ({ searchParams }: Props) => {
       <section className='container mx-auto'>
         <div className='flex flex-col gap-4 my-10'>
           <div className='flex p-2 space-x-4 bg-slate-50'>
-            <Filter />
-            <TourType items={tourTypes} />
+            <FadeInWrapper direction='left'>
+              <Filter />
+            </FadeInWrapper>
+            <FadeInWrapper direction='left' delay={200}>
+              <TourType items={tourTypes} />
+            </FadeInWrapper>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-4 gap-8 mx-auto'>
-            {tourData.map((tour) => (
-              <TourCard
-                title={tour.title}
-                key={tour.slug}
-                slug={tour.slug}
-                image={tour.images[0]}
-                description={tour.description}
-              />
+            {tourData.map((tour, i) => (
+              <FadeInWrapper key={tour.slug} delay={i * 200}>
+                <TourCard
+                  title={tour.title}
+                  slug={tour.slug}
+                  image={tour.images[0]}
+                  description={tour.description}
+                />
+              </FadeInWrapper>
             ))}
           </div>
         </div>

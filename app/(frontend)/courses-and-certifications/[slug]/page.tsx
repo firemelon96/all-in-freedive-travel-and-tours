@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { Card } from '@/components/ui/card';
 import { servicesData } from '@/app/data/services';
 import { Metadata } from 'next';
+import FadeInWrapper from '../../components/fade-in-wrapper';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -48,25 +49,33 @@ const SlugPage = async ({ params }: Props) => {
       <div className='flex flex-col-reverse md:flex-row mt-5'>
         <div className=' w-full p-4 space-y-4'>
           <div className='space-y-4'>
-            <h1 className='text-4xl text-sky-700 font-bold uppercase'>
-              {service?.title}
-            </h1>
-            <Book
-              location={service?.location}
-              duration={service.duration}
-              price={service.price}
-              certification={service.certificate}
-            />
-            <div className='p-2'>
+            <FadeInWrapper direction='left' delay={300}>
+              <h1 className='text-4xl text-sky-700 font-bold uppercase'>
+                {service?.title}
+              </h1>
+            </FadeInWrapper>
+            <FadeInWrapper direction='left' delay={500}>
+              <Book
+                location={service?.location}
+                duration={service.duration}
+                price={service.price}
+                certification={service.certificate}
+              />
+            </FadeInWrapper>
+            <FadeInWrapper direction='left' delay={700} className='p-2'>
               <h4 className='text-2xl text-sky-800 font-semibold '>Overview</h4>
               {service?.description.map((desc, i) => (
                 <p className='text-xl text-justify my-5' key={i}>
                   {desc}
                 </p>
               ))}
-            </div>
+            </FadeInWrapper>
             {service.poolReqs && service.openWaterReqs && (
-              <div className='p-2 space-y-4'>
+              <FadeInWrapper
+                direction='left'
+                delay={800}
+                className='p-2 space-y-4'
+              >
                 <span className='text-2xl font-semibold text-sky-800'>
                   Performance Requirements
                 </span>
@@ -93,9 +102,9 @@ const SlugPage = async ({ params }: Props) => {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </FadeInWrapper>
             )}
-            <div className='space-y-2'>
+            <FadeInWrapper direction='left' delay={900} className='space-y-2'>
               {service.philosopies?.map((philo, i) => (
                 <Card
                   key={philo.label}
@@ -110,9 +119,13 @@ const SlugPage = async ({ params }: Props) => {
                   </div>
                 </Card>
               ))}
-            </div>
+            </FadeInWrapper>
           </div>
-          <div className='w-full bg-sky-50 p-2 rounded-sm'>
+          <FadeInWrapper
+            direction='left'
+            delay={800}
+            className='w-full bg-sky-50 p-2 rounded-sm'
+          >
             <h3 className='text-sky-800 font-semibold text-2xl'>
               Package Inclusion
             </h3>
@@ -121,11 +134,15 @@ const SlugPage = async ({ params }: Props) => {
                 - {inclusion}
               </p>
             ))}
-          </div>
+          </FadeInWrapper>
 
           {/* exclusions */}
           {service.paxExclusion && (
-            <div className='w-full bg-sky-50 p-2 rounded-sm'>
+            <FadeInWrapper
+              direction='left'
+              delay={900}
+              className='w-full bg-sky-50 p-2 rounded-sm'
+            >
               <h3 className='text-sky-800 font-semibold text-2xl'>
                 Package Exclusions
               </h3>
@@ -134,14 +151,14 @@ const SlugPage = async ({ params }: Props) => {
                   - {exclu}
                 </p>
               ))}
-            </div>
+            </FadeInWrapper>
           )}
         </div>
-        <div className='p-2 w-full'>
+        <FadeInWrapper direction='right' delay={400} className='p-2 w-full'>
           <div className='mx-14'>
             <ImageCarousel images={service?.images} />
           </div>
-        </div>
+        </FadeInWrapper>
       </div>
     </section>
   );
