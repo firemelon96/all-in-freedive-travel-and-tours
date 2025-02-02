@@ -395,7 +395,7 @@ export const tours = [
       'The agency is not responsible for personal belongings lost or damaged.',
     ],
     images: [
-      '/res/tours/coron/5d4n/c11.avif',
+      // '/res/tours/coron/5d4n/c11.avif',
       '/res/tours/coron/5d4n/c12.avif',
       '/res/tours/coron/5d4n/c13.avif',
       '/res/tours/coron/5d4n/c14.avif',
