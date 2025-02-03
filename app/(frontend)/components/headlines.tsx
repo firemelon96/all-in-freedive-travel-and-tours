@@ -24,12 +24,14 @@ export const Headline = ({ label, heading, className }: Props) => {
   return (
     <div className='text-center text-white flex flex-col gap-4 mx-4'>
       <FadeInWrapper>
-        {label && <span className={cn(' text-2xl', className)}>{label}</span>}
+        {label && (
+          <span className={cn('text-lg sm:text-2xl', className)}>{label}</span>
+        )}
       </FadeInWrapper>
       <FadeInWrapper delay={300}>
         <h1
           className={cn(
-            `sm:text-6xl text-5xl font-bold max-w-xl mx-auto`,
+            `xl:text-6xl text-4xl sm:text-5xl font-bold max-w-xl mx-auto`,
             className,
             jatayu.className
           )}

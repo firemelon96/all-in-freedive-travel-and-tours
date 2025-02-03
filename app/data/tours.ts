@@ -4,7 +4,7 @@ export const tours = [
     slug: '4d3n-balabac-tour-package',
     title: '4D3N Balabac Tour Package',
     description:
-      'Experience the untouched beauty of Balabac, Palawan with this 4-day, 3-night expedition to remote islands. This package offers a unique opportunity to explore pristine beaches, stunning sandbars, and crystal-clear waters. Ideal for adventurers who are ready to embrace the raw and rugged charm of island life, this is not a luxury tour but a memorable journey into one of the Philippines most unspoiled destinations.',
+      'Experience the untouched beauty of Balabac, Palawan with this 4 days and 3 nights expedition to remote islands. This package offers a unique opportunity to explore pristine beaches, stunning sandbars, and crystal-clear waters. Ideal for adventurers who are ready to embrace the raw and rugged charm of island life, this is not a luxury tour but a memorable journey into one of the Philippines most unspoiled destinations.',
     type: 'package',
     address: 'balabac',
     price: 'PHP 17,000 | USD 300',
@@ -107,7 +107,7 @@ export const tours = [
     slug: '3d2n-coron-tour-package',
     title: '3D2N Coron Tour Package',
     description:
-      "Immerse yourself in the stunning beauty of Coron, Palawan with this 3-day, 2-night adventure. This package is designed to provide an unforgettable experience of island hopping, scenic views, and relaxing stays. Perfect for couples, friends, or families who are ready to explore one of the Philippines' most breathtaking destinations while enjoying comfort and convenience.",
+      "Immerse yourself in the stunning beauty of Coron, Palawan with this 3 days and 2 nights adventure. This package is designed to provide an unforgettable experience of island hopping, scenic views, and relaxing stays. Perfect for couples, friends, or families who are ready to explore one of the Philippines' most breathtaking destinations while enjoying comfort and convenience.",
     type: 'package',
     address: 'coron',
     price: 'PHP 7,500 per person (Joiner, Minimum of 2 pax)',
@@ -194,7 +194,7 @@ export const tours = [
     slug: '4d3n-coron-tour-package',
     title: '4D3N Coron Tour Package',
     description:
-      'Explore the breathtaking islands of Coron, Palawan with this 4-day, 3-night tour package. Perfect for adventurers and nature lovers, this package offers an incredible blend of relaxation and excitement with comfortable accommodations and unforgettable island-hopping experiences. Ideal for couples, families, and small groups ready to discover Coron’s natural beauty.',
+      'Explore the breathtaking islands of Coron, Palawan with this 4 days and 3 nights tour package. Perfect for adventurers and nature lovers, this package offers an incredible blend of relaxation and excitement with comfortable accommodations and unforgettable island-hopping experiences. Ideal for couples, families, and small groups ready to discover Coron’s natural beauty.',
     type: 'package',
     address: 'coron',
     price: 'PHP 10,000 per person (Joiner, Minimum of 2 pax)',
@@ -295,7 +295,7 @@ export const tours = [
     slug: '5d4n-coron-tour-package',
     title: '5D4N Coron Tour Package',
     description:
-      'Immerse yourself in the natural wonders of Coron, Palawan with this 5-day, 4-night tour package. Experience the stunning islands, vibrant marine life, and unique wildlife with a blend of island-hopping adventures and a safari tour. Perfect for couples, families, and small groups, this package promises a balance of relaxation, exploration, and unforgettable memories.',
+      'Immerse yourself in the natural wonders of Coron, Palawan with this 5 days and 4 nights tour package. Experience the stunning islands, vibrant marine life, and unique wildlife with a blend of island-hopping adventures and a safari tour. Perfect for couples, families, and small groups, this package promises a balance of relaxation, exploration, and unforgettable memories.',
     type: 'package',
     address: 'coron',
     price: 'PHP 16,000 per person (Joiner, Minimum of 2 pax)',
@@ -409,7 +409,7 @@ export const tours = [
     slug: '3d2n-el-nido-tour-package',
     title: '3D2N El Nido Tour Package',
     description:
-      'Discover the stunning beauty of El Nido with this 3-day, 2-night tour package. Perfect for joiner groups, enjoy a full day of island hopping, comfortable accommodations, and roundtrip transfers for a hassle-free getaway.',
+      'Discover the stunning beauty of El Nido with this 3 days and 2 nights tour package. Perfect for joiner groups, enjoy a full day of island hopping, comfortable accommodations, and roundtrip transfers for a hassle-free getaway.',
     type: 'package',
     address: 'el-nido',
     price: 'PHP 8,000 per person (Joiner)',
@@ -507,7 +507,7 @@ export const tours = [
     slug: '4d3n-el-nido-tour-package',
     title: '4D3N El Nido Tour Package',
     description:
-      'Immerse yourself in the breathtaking landscapes of El Nido with this 4-day, 3-night tour package. Perfect for joiner groups, enjoy two full days of island hopping, comfortable accommodations, and convenient transfers for an unforgettable tropical getaway.',
+      'Immerse yourself in the breathtaking landscapes of El Nido with this 4 days and 3 nights tour package. Perfect for joiner groups, enjoy two full days of island hopping, comfortable accommodations, and convenient transfers for an unforgettable tropical getaway.',
     type: 'package',
     address: 'el-nido',
     price: 'PHP 13,500 per person (Joiner)',
@@ -622,7 +622,7 @@ export const tours = [
     slug: '4d3n-siargao-tour-package',
     title: '4D3N Siargao Tour Package',
     description:
-      'Discover the tropical paradise of Siargao with this 4-day, 3-night tour package. Explore breathtaking landscapes, enjoy a day of land adventures, and hop between stunning islands. This package is ideal for couples, families, or small groups seeking a memorable island getaway.',
+      'Discover the tropical paradise of Siargao with this 4 days and 3 nights tour package. Explore breathtaking landscapes, enjoy a day of land adventures, and hop between stunning islands. This package is ideal for couples, families, or small groups seeking a memorable island getaway.',
     type: 'package',
     address: 'siargao',
     price: 'PHP 10,000 per person (Joiner, Minimum of 2 pax)',
@@ -732,7 +732,7 @@ export const tours = [
     slug: '3d2n-siargao-tour-package',
     title: '3D2N Siargao Tour Package',
     description:
-      'Experience the best of Siargao with this 3-day, 2-night tour package. Perfect for quick getaways, this package includes an island-hopping adventure and comfortable accommodations to ensure a memorable stay.',
+      'Experience the best of Siargao with this 3 days and 2 nights tour package. Perfect for quick getaways, this package includes an island-hopping adventure and comfortable accommodations to ensure a memorable stay.',
     type: 'package',
     address: 'siargao',
     price: 'PHP 6,500 per person (Joiner, Minimum of 2 pax)',
@@ -827,7 +827,7 @@ export const tours = [
     slug: '4d3n-puerto-princesa-city-tour-package',
     title: '4D3N Puerto Princesa City Tour Package',
     description:
-      'Experience the best of Puerto Princesa with this 4-day, 3-night tour package. Explore stunning islands, discover the Underground River, and enjoy a comfortable stay with convenient transfers for a truly memorable getaway.',
+      'Experience the best of Puerto Princesa with this 4 days and 3 nights tour package. Explore stunning islands, discover the Underground River, and enjoy a comfortable stay with convenient transfers for a truly memorable getaway.',
     type: 'package',
     address: 'puerto-princesa',
     price: 'PHP 11,000 per person (Joiner)',

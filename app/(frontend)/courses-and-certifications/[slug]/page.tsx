@@ -50,7 +50,7 @@ const SlugPage = async ({ params }: Props) => {
         <div className=' w-full p-4 space-y-4'>
           <div className='space-y-4'>
             <FadeInWrapper direction='left' delay={300}>
-              <h1 className='text-4xl text-sky-700 font-bold uppercase'>
+              <h1 className='md:text-4xl text-2xl text-sky-700 font-bold uppercase'>
                 {service?.title}
               </h1>
             </FadeInWrapper>

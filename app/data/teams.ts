@@ -8,7 +8,7 @@ export const teams = [
     title: 'Founder & CEO | Lead Freediving Instructor',
     photo: '/res/team/Michael.jpg',
     description: [
-      'Michael Morales is the founder and heart of All In Travel and Freediving Tour Services. A competitive instructor, and underwater photographer, Michael brings a unique blend of expertise to every tour. With years of experience in travel industry and freediving, both as an athlete and an instructor, Michael’s deep connection to the ocean allows him to craft exceptional experiences for divers of all levels.',
+      'Michael Morales is the founder and heart of All In Freediving and Tour Services. A competitive instructor, and underwater photographer, Michael brings a unique blend of expertise to every tour. With years of experience in travel industry and freediving, both as an athlete and an instructor, Michael’s deep connection to the ocean allows him to craft exceptional experiences for divers of all levels.',
       'As an underwater photographer, Michael has captured stunning images of the Philippines’ vibrant marine life, bringing attention to the beauty and fragility of the underwater world. His passion for sharing this beauty is reflected in every dive, where guests are not only immersed in the magic of freediving but are also encouraged to capture unforgettable moments of the ocean’s wonders.',
       'Michael’s commitment to sustainable tourism and his dedication to ensuring every guest has a safe, thrilling, and educational experience underwater is central to our philosophy. With his extensive knowledge of the Philippines’ top dive sites, he guarantees an unforgettable adventure, whether you’re a seasoned freediver or a first-time explorer.',
     ],

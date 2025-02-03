@@ -55,7 +55,7 @@ const SlugPage = async ({ params }: Props) => {
               <FadeInWrapper className='p-2'>
                 {service.description.map((desc, i) => (
                   <p
-                    className='text-2xl text-center max-w-5xl mx-auto my-3'
+                    className='md:text-2xl text-xl text-center max-w-5xl mx-auto my-3'
                     key={i}
                   >
                     {desc}

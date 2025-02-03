@@ -10,10 +10,10 @@ import FadeInWrapper from '../components/fade-in-wrapper';
 const TeamPage = () => {
   return (
     <>
-      <BannerImage imageUrl='/team.jpg' title='Meet the Team' />
+      <BannerImage imageUrl='/team.avif' title='Meet the Team' />
       <section className='container mx-auto'>
-        <FadeInWrapper delay={200}>
-          <p className='text-2xl text-center mt-10'>
+        <FadeInWrapper delay={200} className='p-4'>
+          <p className='md:text-2xl text-xl text-justify md:mt-10'>
             At All In Freediving and Tour Services, our team is made up of
             passionate travel experts, experienced freediving instructor, and
             knowledgeable local guides. We share a deep love for the Philippines
@@ -21,7 +21,7 @@ const TeamPage = () => {
             that showcase the beauty and culture of this tropical paradise.
           </p>
         </FadeInWrapper>
-        <div className='grid grid-cols-1 gap-4 md:grid-cols-3 my-10'>
+        <div className='grid grid-cols-1 gap-4 md:grid-cols-3 md:my-10 p-4'>
           {teams.map((person, i) => (
             <FadeInWrapper delay={i * 400} key={person.name}>
               <Card className='h-fit'>
@@ -54,14 +54,14 @@ const TeamPage = () => {
             </FadeInWrapper>
           ))}
         </div>
-        <div className='text-center my-10 space-y-4'>
+        <div className='text-center md:my-10 space-y-4 p-4'>
           <FadeInWrapper delay={500}>
-            <h3 className='text-4xl text-sky-800 font-bold'>
+            <h3 className='md:text-4xl text-2xl text-sky-800 font-bold'>
               Local Guides & Support Team
             </h3>
           </FadeInWrapper>
           <FadeInWrapper delay={600}>
-            <p className='text-2xl text-center'>
+            <p className='md:text-2xl text-xl text-justify'>
               In addition to our core team, we have a dedicated group of local
               guides, certified safety diver and support staff who are
               passionate about sharing the beauty and culture of their regions.
@@ -72,21 +72,21 @@ const TeamPage = () => {
             </p>
           </FadeInWrapper>
         </div>
-        <div className='text-center my-10 space-y-4'>
+        <div className='text-center md:my-10 space-y-4 p-4'>
           <FadeInWrapper delay={700}>
-            <h4 className='text-4xl text-sky-800 font-bold'>
+            <h4 className='md:text-4xl text-2xl text-sky-800 font-bold'>
               Why Travel with Us?
             </h4>
           </FadeInWrapper>
-          <FadeInWrapper delay={800}>
-            <p className='text-2xl text-center'>
+          <FadeInWrapper delay={800} className='space-y-4 '>
+            <p className='md:text-2xl text-xl text-justify'>
               Our team’s expertise, passion, and commitment to excellence ensure
               that your travel experience is truly exceptional. At All In Travel
               and Freediving Tours, you’re not just a traveler—you’re a part of
               our family, and we are here to create a personalized,
               unforgettable journey tailored just for you.
             </p>
-            <p className='text-2xl text-center'>
+            <p className='md:text-2xl text-xl text-justify'>
               Come meet us, and let’s embark on an adventure that blends the
               best of nature, culture, and luxury.
             </p>

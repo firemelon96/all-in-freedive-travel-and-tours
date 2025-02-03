@@ -15,10 +15,10 @@ type Props = {
 export const FaqItem = ({ question, answer }: Props) => {
   return (
     <Collapsible className='text-center'>
-      <CollapsibleTrigger className='text-2xl w-full font-semibold p-2 border'>
+      <CollapsibleTrigger className='md:text-2xl text-xl w-full font-semibold p-2 border'>
         {question}
       </CollapsibleTrigger>
-      <CollapsibleContent className='py-4 bg-slate-200 text-xl'>
+      <CollapsibleContent className='p-4 bg-slate-200 md:text-xl text-base'>
         {answer.text}
         <ul className=''>
           {answer.examples.map((answer, i) => (

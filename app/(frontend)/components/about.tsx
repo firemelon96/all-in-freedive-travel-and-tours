@@ -20,7 +20,7 @@ export const About = () => {
             className='row-span-2 col-span-2 space-y-2 justify-items-center sm:justify-items-start text-center sm:text-start'
           >
             <span className='uppercase text-xl'>About us</span>
-            <h1 className='sm:text-5xl text-4xl font-bold'>
+            <h1 className='sm:text-5xl text-3xl font-bold'>
               Where Journeys Meet the Depths of Discovery.
             </h1>
             <p className='text-xl font-light text-justify'>

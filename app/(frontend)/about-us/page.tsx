@@ -54,13 +54,13 @@ const AboutPage = () => {
   return (
     <>
       <BannerImage
-        title='About us'
+        title='About Us'
         imageUrl='https://res.cloudinary.com/dutkzg9la/image/upload/v1738145286/GRNT-0711-2_odhkma.jpg'
       />
       <section className='container mx-auto '>
         <FadeInWrapper
           delay={200}
-          className='space-y-4 text-2xl text-center mx-4'
+          className='space-y-4 text-xl md:text-2xl text-center mx-4'
         >
           <p className='mt-5'>
             At All in Freediving and Tour Services, we specialize in crafting
@@ -82,7 +82,7 @@ const AboutPage = () => {
         </FadeInWrapper>
         <div className='space-y-5 mt-10'>
           <FadeInWrapper delay={300}>
-            <h3 className='text-4xl text-sky-800 font-semibold text-center'>
+            <h3 className='md:text-4xl text-2xl text-sky-800 font-semibold text-center'>
               Our Featured Tour Packages
             </h3>
           </FadeInWrapper>
@@ -101,12 +101,15 @@ const AboutPage = () => {
         </div>
         <div className='space-y-5 my-10 bg-slate-100 p-4'>
           <FadeInWrapper delay={300}>
-            <h3 className='text-4xl text-sky-800 font-semibold text-center'>
+            <h3 className='md:text-4xl text-2xl text-sky-800 font-semibold text-center'>
               Our Freediving Experience
             </h3>
           </FadeInWrapper>
-          <FadeInWrapper delay={400} className='space-y-4 max-w-4xl mx-auto '>
-            <p className='text-2xl text-center '>
+          <FadeInWrapper
+            delay={400}
+            className='space-y-4 md:text-2xl text-xl text-center  max-w-4xl mx-auto '
+          >
+            <p className=''>
               As specialists in freediving, we offer tailored tours to some of
               the best dive spots in the Philippines. Whether you&apos;re a
               beginner or an experienced diver, our freediving tours will
@@ -114,7 +117,7 @@ const AboutPage = () => {
               from the calm waters of Coron and Busuanga to Apo Reef and its
               stunning coral reefs.
             </p>
-            <p className='text-2xl text-center'>
+            <p className=''>
               With our expert safety diver/tour guides and commitment to safety
               and environmental conservation, you&apos;ll experience the thrill
               of diving in some of the most biodiverse and pristine waters of
