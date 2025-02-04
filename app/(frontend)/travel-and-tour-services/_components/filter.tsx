@@ -45,7 +45,7 @@ export function Filter() {
   }, [selectedLocation, currentType, pathname, router]);
 
   return (
-    <div className='w-72'>
+    <div className='md:w-72 w-full'>
       <div>
         <Select value={selectedLocation} onValueChange={setSelectedLocation}>
           <SelectTrigger id='category'>

@@ -17,7 +17,7 @@ export const ImageCard = ({ url }: Props) => {
           placeholder='blur'
           fill
           alt='Diver'
-          className='object-cover'
+          className='object-cover object-top'
         />
       )}
     </div>

@@ -45,7 +45,7 @@ export const About = () => {
           <FadeInWrapper delay={600} className='col-span-1'>
             <TextCard count={5} label='Years in Service' />
           </FadeInWrapper>
-          <FadeInWrapper delay={700} className='col-span-2 h-44'>
+          <FadeInWrapper delay={700} className='col-span-2 h-44 md:h-full'>
             <ImageCard url='/about-img01.png' />
           </FadeInWrapper>
         </div>

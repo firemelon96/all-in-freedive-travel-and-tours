@@ -37,7 +37,7 @@ export const TypeItem = ({ name }: Props) => {
     <Button
       onClick={onClick}
       variant={isSelected ? 'primary' : 'outline'}
-      className='uppercase'
+      className='uppercase md:w-auto w-full'
     >
       {name}
     </Button>

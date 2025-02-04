@@ -60,7 +60,7 @@ const AboutPage = () => {
       <section className='container mx-auto '>
         <FadeInWrapper
           delay={200}
-          className='space-y-4 text-xl md:text-2xl text-center mx-4'
+          className='space-y-4 text-xl md:text-2xl text-justify mx-4'
         >
           <p className='mt-5'>
             At All in Freediving and Tour Services, we specialize in crafting
@@ -107,7 +107,7 @@ const AboutPage = () => {
           </FadeInWrapper>
           <FadeInWrapper
             delay={400}
-            className='space-y-4 md:text-2xl text-xl text-center  max-w-4xl mx-auto '
+            className='space-y-4 md:text-2xl text-xl text-justify  max-w-4xl mx-auto '
           >
             <p className=''>
               As specialists in freediving, we offer tailored tours to some of

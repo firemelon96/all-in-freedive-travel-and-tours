@@ -26,15 +26,15 @@ const TourPage = async ({ searchParams }: Props) => {
       />
       <section className='container mx-auto'>
         <div className='flex flex-col gap-4 my-10'>
-          <div className='flex p-2 space-x-4 bg-slate-50'>
-            <FadeInWrapper direction='left'>
+          <div className='flex flex-wrap md:flex-row  p-2 gap-2 bg-slate-50'>
+            <FadeInWrapper direction='left' className='w-full'>
               <Filter />
             </FadeInWrapper>
-            <FadeInWrapper direction='left' delay={200}>
+            <FadeInWrapper direction='left' delay={200} className='w-full'>
               <TourType items={tourTypes} />
             </FadeInWrapper>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-4 gap-8 mx-auto'>
+          <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-auto'>
             {tourData.map((tour, i) => (
               <FadeInWrapper key={tour.slug} delay={i * 200}>
                 <TourCard

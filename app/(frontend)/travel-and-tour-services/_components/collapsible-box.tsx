@@ -5,6 +5,7 @@ import {
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
 import { Check, Dumbbell, Route, X } from 'lucide-react';
+import FadeInWrapper from '../../components/fade-in-wrapper';
 
 type Itinerary = {
   day: string;
@@ -32,11 +33,13 @@ export const CollapsibleBox = ({
   return (
     <div>
       {itineraries &&
-        itineraries.map((itinerary) => (
+        itineraries.map((itinerary, i) => (
           <Collapsible key={itinerary.day} className='text-start'>
-            <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-              <Badge variant='primary'>{itinerary.day}</Badge>
-            </CollapsibleTrigger>
+            <FadeInWrapper delay={i * 500}>
+              <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
+                <Badge variant='primary'>{itinerary.day}</Badge>
+              </CollapsibleTrigger>
+            </FadeInWrapper>
             <CollapsibleContent className='p-4 border'>
               <div className='flex flex-col gap-2'>
                 {itinerary.activities.length > 0 && (

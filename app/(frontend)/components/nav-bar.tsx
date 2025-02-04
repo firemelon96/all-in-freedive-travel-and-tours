@@ -148,7 +148,7 @@ export function Navbar() {
               </Link>
             </div>
           </div>
-          <div className='hidden sm:ml-6 sm:flex sm:space-x-8'>
+          <div className='hidden xl:flex sm:ml-6 sm:flex sm:space-x-8'>
             <ul className='flex space-x-4 items-center'>
               {menuItems.map((item) => (
                 <NavItem key={item.name} item={item} />

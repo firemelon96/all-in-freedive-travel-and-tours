@@ -22,10 +22,12 @@ type Props = {
 
 export const Headline = ({ label, heading, className }: Props) => {
   return (
-    <div className='text-center text-white flex flex-col gap-4 mx-4'>
+    <div className='text-center text-white flex flex-col gap-2 md:gap-4 mx-4'>
       <FadeInWrapper>
         {label && (
-          <span className={cn('text-lg sm:text-2xl', className)}>{label}</span>
+          <span className={cn('text-base sm:text-2xl', className)}>
+            {label}
+          </span>
         )}
       </FadeInWrapper>
       <FadeInWrapper delay={300}>

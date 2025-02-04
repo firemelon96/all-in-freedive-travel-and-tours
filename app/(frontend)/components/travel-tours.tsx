@@ -12,12 +12,6 @@ import Image from 'next/image';
 export const TravelTours = () => {
   return (
     <section className='h-[700px] relative scroll-mt-10' id='expeditions'>
-      {/* <div
-        className='h-screen w-full z-0 bg-cover bg-center bg-fixed bg-no-repeat'
-        style={{
-          backgroundImage: `url(/ocean-depth.jpg)`,
-        }}
-      ></div> */}
       <div className='absolute inset-0 w-full h-full'>
         <Image
           src='/ocean-depth.jpg' // Replace with your image path
