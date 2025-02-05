@@ -29,7 +29,8 @@ export const servicesData = [
     slug: 'line-training',
     title: 'Freediving Line Training',
     location: 'Coron, Palawan, Philippines',
-    duration: '1 Days',
+    duration: '1 Day',
+    price: '5,000 pesos | 90 USD per pax',
     type: 'course',
     description: [
       'We offer an immersive and personalized freediving training experience for individuals of all levels—whether you’re a complete beginner or an experienced diver looking to refine your skills. Our goal is to help you discover the peace and thrill that comes with exploring the underwater world on a single breath, while ensuring safety, technique, and environmental stewardship.',
@@ -280,9 +281,9 @@ export const servicesData = [
   //freediving expeditions
   {
     slug: 'busuanga-freedive-expedition',
-    title: 'Busuanga Freedive Expedition',
+    title: 'Busuanga and Coron Freedive Expedition',
     location: 'Coron, Palawan, Philippines',
-    duration: '3 days and 2 nights',
+    duration: '3 Days and 2 Nights',
     price: '30,000 php | 560 USD',
     type: 'expedition',
     description: [
@@ -307,7 +308,7 @@ export const servicesData = [
     slug: 'apo-reef-freedive-expedition',
     title: 'Apo Reef Freedive Expedition',
     location: 'Coron, Palawan, Philippines',
-    duration: '1 Day',
+    duration: '3 Days and 2 Nights',
     price: '30,000 pesos | $550',
     type: 'expedition',
     description: [

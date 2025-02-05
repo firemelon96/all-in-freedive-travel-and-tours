@@ -40,7 +40,7 @@ export const Footer = () => {
           <div className='md:w-1/4 flex flex-col md:items-start items-center'>
             <h4 className='text-2xl text-sky-600'>Open Hours</h4>
             <ul className='text-white'>
-              <li>7:00 Am to 10:00 Pm</li>
+              <li>7:00 AM to 10:00 Pm</li>
               <li>Coron, Palawan - Region IV-B (MIMAROPA)</li>
             </ul>
           </div>

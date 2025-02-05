@@ -17,10 +17,11 @@ const jatayu = localFont({
 type Props = {
   label?: string;
   heading: string;
+  subHeading?: string;
   className?: string;
 };
 
-export const Headline = ({ label, heading, className }: Props) => {
+export const Headline = ({ label, subHeading, heading, className }: Props) => {
   return (
     <div className='text-center text-white flex flex-col gap-2 md:gap-4 mx-4'>
       <FadeInWrapper>
@@ -31,15 +32,27 @@ export const Headline = ({ label, heading, className }: Props) => {
         )}
       </FadeInWrapper>
       <FadeInWrapper delay={300}>
-        <h1
+        <p
           className={cn(
-            `xl:text-6xl text-4xl sm:text-5xl font-bold max-w-xl mx-auto`,
+            `xl:text-6xl text-4xl font-bold max-w-xl mx-auto`,
             className,
             jatayu.className
           )}
         >
           {heading}
-        </h1>
+        </p>
+        {subHeading && (
+          <p
+            className={cn(
+              `xl:text-6xl text-4xl font-bold max-w-lg mx-auto`,
+              className,
+              jatayu.className
+            )}
+          >
+            {' '}
+            {subHeading}
+          </p>
+        )}
       </FadeInWrapper>
     </div>
   );

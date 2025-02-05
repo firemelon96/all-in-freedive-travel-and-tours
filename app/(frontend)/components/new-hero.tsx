@@ -51,7 +51,8 @@ export default function NewHero() {
         <Headline
           className='tracking-wider'
           label='All In Freediving and Tour Services'
-          heading='Travel Beyond Limits, Dive Beyond Depths.'
+          heading='Travel Beyond Limits, '
+          subHeading='Dive Beyond Depths.'
         />
         <FadeInWrapper delay={500}>
           <Button variant='primary'>Explore</Button>

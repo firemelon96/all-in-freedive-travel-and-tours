@@ -69,7 +69,7 @@ export const faqs = [
   {
     question: 'Do you arrange flights?',
     answer: {
-      text: 'AFlights are not included, but we’re happy to assist on how to book or we can book it for you subject for additional charge. ',
+      text: 'A Flights are not included, but we’re happy to assist on how to book or we can book it for you subject for additional charge. ',
       examples: [],
     },
   },

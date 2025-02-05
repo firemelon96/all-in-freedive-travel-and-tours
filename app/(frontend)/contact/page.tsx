@@ -29,7 +29,7 @@ const ContactPage = () => {
               <Phone className='size-10' />
               <p>Message us using email and number</p>
               <span>09524777904</span>
-              <span>allintravel@email.com</span>
+              <span>allinfreedivingandtourservices@gmail.com</span>
             </Card>
           </FadeInWrapper>
           <FadeInWrapper

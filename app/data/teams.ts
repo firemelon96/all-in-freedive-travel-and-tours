@@ -24,7 +24,7 @@ export const teams = [
   {
     name: 'Joven Edoria',
     title: 'Senior Tour Guide',
-    photo: '/res/team/Joven.jpg',
+    photo: '/res/team/Joven.JPG',
     description: [
       'A seasoned guide with extensive knowledge of the Philippines’ natural wonders, history, and local culture, Joven Edoria brings a wealth of experience and passion to every tour in Coron and Busuanga. Whether leading island-hopping excursions, scenic land tours, or cultural exploration, Joven ensures each guest has an authentic, immersive, and unforgettable experience. His deep connection to his island home and dedication to providing a personal touch make him an invaluable part of our team. With Joven, you’ll not only explore the beauty of the Philippines but also learn about its fascinating history and diverse ecosystems.',
     ],

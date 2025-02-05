@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Award, Calendar, DollarSign, MapPinIcon } from 'lucide-react';
+import { Award, Banknote, Calendar, MapPinIcon } from 'lucide-react';
 
 type Props = {
   location: string;
@@ -16,7 +16,7 @@ export const Book = ({ location, price, duration, certification }: Props) => {
         </p>
         {price && (
           <p className='flex items-center text-sky-700'>
-            <DollarSign className='size-4 mr-2' /> <span>{price}</span>
+            <Banknote className='size-4 mr-2' /> <span>{price}</span>
           </p>
         )}
         <p className='flex items-center text-sky-700'>
