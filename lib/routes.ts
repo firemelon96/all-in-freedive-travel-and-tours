@@ -54,30 +54,14 @@ export const menuItems = [
       {
         name: 'Freediving Tours',
         href: '/freediving-tour-services/freediving-tours/coron-palawan-philippines',
-        // submenu: [
-        //   {
-        //     name: 'Coron Palawan, Philippines',
-        //     href: '/freediving-tour-services/freediving-tours/coron-palawan-philippines',
-        //   },
-        // ],
       },
       {
         name: 'Freediving Retreat',
         href: '/freediving-tour-services/freediving-retreat',
       },
       {
-        name: 'Busuanga Freedive Expeditions',
+        name: 'Busuanga and Coron Freedive Expeditions',
         href: '/freediving-tour-services/freediving-expeditions/busuanga-freedive-expedition',
-        // submenu: [
-        //   {
-        //     name: 'Busuanga Freedive Expedition',
-        //     href: '/freediving-tour-services/freediving-expeditions/busuanga-freedive-expedition',
-        //   },
-        //   {
-        //     name: 'Apo Reef Freedive Expedition',
-        //     href: '/freediving-tour-services/freediving-expeditions/apo-reef-freedive-expedition',
-        //   },
-        // ],
       },
       {
         name: 'Apo Reef Freedive Expedition',
