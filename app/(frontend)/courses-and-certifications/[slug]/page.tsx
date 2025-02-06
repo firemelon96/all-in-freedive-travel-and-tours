@@ -83,7 +83,7 @@ const SlugPage = async ({ params }: Props) => {
                 <div className='space-y-4'>
                   <div className='text-xl space-y-3'>
                     <span className='font-semibold text-stone-700'>
-                      Pool Reequirements
+                      Pool Requirements
                     </span>
                     <ul className='text-stone-600'>
                       {service.poolReqs.map((pool) => (
@@ -93,7 +93,7 @@ const SlugPage = async ({ params }: Props) => {
                   </div>
                   <div className='text-xl space-y-3'>
                     <span className='font-semibold text-stone-700'>
-                      Open Water Reequirements
+                      Open Water Requirements
                     </span>
                     <ul className='text-stone-600'>
                       {service.openWaterReqs.map((water) => (
@@ -127,7 +127,7 @@ const SlugPage = async ({ params }: Props) => {
             className='w-full bg-sky-50 p-2 rounded-sm'
           >
             <h3 className='text-sky-800 font-semibold text-2xl'>
-              Package Inclusion
+              Package Inclusions
             </h3>
             {service?.paxInclusion.map((inclusion, i) => (
               <p className='text-xl text-slate-600' key={`inclusion-${i}`}>

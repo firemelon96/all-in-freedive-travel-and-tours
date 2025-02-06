@@ -49,3 +49,12 @@ export const getTravelTours = ({
 
   return travelTourData;
 };
+
+export const processedText = (text: string) => {
+  const textParenthesis = text.replace(
+    /(\(.*?\))/g,
+    '<span className="block">$1</span>'
+  );
+
+  return textParenthesis;
+};

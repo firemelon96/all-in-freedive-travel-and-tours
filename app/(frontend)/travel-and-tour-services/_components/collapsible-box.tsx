@@ -74,7 +74,7 @@ export const CollapsibleBox = ({
       {inclusions && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Inclusions</p>
+            <p className='text-xl font-semibold'>Inclusions :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -90,7 +90,7 @@ export const CollapsibleBox = ({
       {exclusions && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Exclusions</p>
+            <p className='text-xl font-semibold'>Exclusions :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -106,7 +106,7 @@ export const CollapsibleBox = ({
       {expectations && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Expectations</p>
+            <p className='text-xl font-semibold'>Expectations :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -122,7 +122,7 @@ export const CollapsibleBox = ({
       {thingsToBring && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Things to Bring</p>
+            <p className='text-xl font-semibold'>Things to Bring :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -138,7 +138,7 @@ export const CollapsibleBox = ({
       {termsAndConditions && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Terms and Conditions</p>
+            <p className='text-xl font-semibold'>Terms and Conditions :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>

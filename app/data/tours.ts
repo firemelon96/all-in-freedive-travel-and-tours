@@ -110,7 +110,7 @@ export const tours = [
       "Immerse yourself in the stunning beauty of Coron, Palawan with this 3 days and 2 nights adventure. This package is designed to provide an unforgettable experience of island hopping, scenic views, and relaxing stays. Perfect for couples, friends, or families who are ready to explore one of the Philippines' most breathtaking destinations while enjoying comfort and convenience.",
     type: 'package',
     address: 'coron',
-    price: 'PHP 7,500 per person (Joiner, Minimum of 2 pax)',
+    price: 'PHP 7,500 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
         day: 'Day 1',
@@ -197,7 +197,7 @@ export const tours = [
       'Explore the breathtaking islands of Coron, Palawan with this 4 days and 3 nights tour package. Perfect for adventurers and nature lovers, this package offers an incredible blend of relaxation and excitement with comfortable accommodations and unforgettable island-hopping experiences. Ideal for couples, families, and small groups ready to discover Coron’s natural beauty.',
     type: 'package',
     address: 'coron',
-    price: 'PHP 10,000 per person (Joiner, Minimum of 2 pax)',
+    price: 'PHP 10,000 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
         day: 'Day 1',
@@ -298,7 +298,7 @@ export const tours = [
       'Immerse yourself in the natural wonders of Coron, Palawan with this 5 days and 4 nights tour package. Experience the stunning islands, vibrant marine life, and unique wildlife with a blend of island-hopping adventures and a safari tour. Perfect for couples, families, and small groups, this package promises a balance of relaxation, exploration, and unforgettable memories.',
     type: 'package',
     address: 'coron',
-    price: 'PHP 16,000 per person (Joiner, Minimum of 2 pax)',
+    price: 'PHP 16,000 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
         day: 'Day 1',
@@ -625,7 +625,7 @@ export const tours = [
       'Discover the tropical paradise of Siargao with this 4 days and 3 nights tour package. Explore breathtaking landscapes, enjoy a day of land adventures, and hop between stunning islands. This package is ideal for couples, families, or small groups seeking a memorable island getaway.',
     type: 'package',
     address: 'siargao',
-    price: 'PHP 10,000 per person (Joiner, Minimum of 2 pax)',
+    price: 'PHP 10,000 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
         day: 'Day 1',
@@ -735,7 +735,7 @@ export const tours = [
       'Experience the best of Siargao with this 3 days and 2 nights tour package. Perfect for quick getaways, this package includes an island-hopping adventure and comfortable accommodations to ensure a memorable stay.',
     type: 'package',
     address: 'siargao',
-    price: 'PHP 6,500 per person (Joiner, Minimum of 2 pax)',
+    price: 'PHP 6,500 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
         day: 'Day 1',

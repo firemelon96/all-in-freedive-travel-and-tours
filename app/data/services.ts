@@ -16,7 +16,8 @@ export const servicesData = [
       'Tourist Boat',
       'Entrance Fees',
       'Go Pro Rental',
-      'Freediving Gears (Mask, Snorkel and Fins)',
+      'Freediving Gears',
+      '(Mask, Snorkel and Fins)',
     ],
     images: [
       '/res/intro00.jpg',
@@ -94,9 +95,7 @@ export const servicesData = [
       'CWTB and Free Immersion: Dive to a depth of 12-20 meters in open water.',
       'CWTB Buddying : Proper Rescue from 6-10 meters.',
     ],
-    paxExclusion: [
-      'Freediving Gears (Long Fins, Mask and Snorkel) that are available for rentals.',
-    ],
+    paxExclusion: ['Freediving Gears', '(Long Fins, Mask and Snorkel)'],
   },
   {
     slug: 'molchonovs-wave-2',
@@ -134,9 +133,7 @@ export const servicesData = [
       'CWTB Buddying : Proper Rescue from 10-15 meters.',
       'Rescue comfortably from 15 meters.',
     ],
-    paxExclusion: [
-      'Freediving Gears (Long Fins, Mask and Snorkel) that are available for rentals.',
-    ],
+    paxExclusion: ['Freediving Gears', '(Long Fins, Mask and Snorkel)'],
   },
 
   //freediving retreat

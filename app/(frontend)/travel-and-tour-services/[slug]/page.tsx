@@ -7,6 +7,7 @@ import { redirect } from 'next/navigation';
 import { tours } from '@/app/data/tours';
 import { Metadata } from 'next';
 import FadeInWrapper from '../../components/fade-in-wrapper';
+import { Banknote, Luggage } from 'lucide-react';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -66,7 +67,7 @@ const SinglePage = async ({ params }: Props) => {
             <p>{tour?.description}</p>
           </FadeInWrapper>
           <FadeInWrapper delay={500} className='p-2 border'>
-            <span className='text-2xl font-semibold'>Itinerary</span>
+            <span className='text-2xl font-semibold'>Detailed Itinerary :</span>
             <CollapsibleBox itineraries={tour?.itineraries} />
           </FadeInWrapper>
           <FadeInWrapper delay={600} className='p-2 bg-stone-50'>
@@ -77,10 +78,18 @@ const SinglePage = async ({ params }: Props) => {
             <CollapsibleBox termsAndConditions={tour.terms_and_conditions} />
           </FadeInWrapper>
         </div>
-        <FadeInWrapper delay={400} direction='right' className='md:w-96 w-full'>
-          <div className='bg-sky-100 space-y-2 p-4  rounded-md shadow-none border-none text-center md:text-start'>
-            <h2 className='text-xl font-semibold'>{tour.title}</h2>
-            <p>{tour?.price}</p>
+        <FadeInWrapper
+          delay={400}
+          direction='right'
+          className='md:w-[420px] w-full'
+        >
+          <div className='bg-sky-100 space-y-2 p-4 flex items-center justify-center flex-col rounded-md shadow-none border-none text-center md:text-start'>
+            <h2 className='text-xl font-semibold flex gap-2'>
+              <Luggage /> {tour.title}
+            </h2>
+            <p className='flex gap-2'>
+              <Banknote /> {tour?.price}
+            </p>
             <Button className='w-full font-bold uppercase' variant='primary'>
               Book Now
             </Button>

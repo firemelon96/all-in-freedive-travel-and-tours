@@ -1,8 +1,9 @@
 import { BannerImage } from '@/components/banner-image';
 import { Card } from '@/components/ui/card';
 import { ContactForm } from './_features/contact-form';
-import { Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import FadeInWrapper from '../components/fade-in-wrapper';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const ContactPage = () => {
   return (
@@ -28,8 +29,12 @@ const ContactPage = () => {
             <Card className='p-4 items-center justify-center flex flex-col gap-4'>
               <Phone className='size-10' />
               <p>Message us using email and number</p>
-              <span>09524777904</span>
-              <span>allinfreedivingandtourservices@gmail.com</span>
+              <p className='flex gap-2'>
+                <FaWhatsapp className='size-6' /> +63952-477-7904
+              </p>
+              <p className='flex gap-2'>
+                <Mail /> <span>allinfreedivingandtourservices@gmail.com</span>
+              </p>
             </Card>
           </FadeInWrapper>
           <FadeInWrapper
