@@ -40,7 +40,7 @@ export const ContactForm = () => {
   return (
     <Card className='p-4'>
       <div className=''>
-        <p className='text-3xl text-sky-800 font-semibold mb-5'>
+        <p className='text-xl text-sky-800 font-semibold mb-5'>
           Leave a message
         </p>
         <Form {...form}>

@@ -60,6 +60,7 @@ const SlugPage = async ({ params }: Props) => {
                 duration={service.duration}
                 price={service.price}
                 certification={service.certificate}
+                icon={service.icon}
               />
             </FadeInWrapper>
             <FadeInWrapper direction='left' delay={700} className='p-2'>
@@ -121,20 +122,22 @@ const SlugPage = async ({ params }: Props) => {
               ))}
             </FadeInWrapper>
           </div>
-          <FadeInWrapper
-            direction='left'
-            delay={800}
-            className='w-full bg-sky-50 p-2 rounded-sm'
-          >
-            <h3 className='text-sky-800 font-semibold text-2xl'>
-              Package Inclusions
-            </h3>
-            {service?.paxInclusion.map((inclusion, i) => (
-              <p className='text-xl text-slate-600' key={`inclusion-${i}`}>
-                - {inclusion}
-              </p>
-            ))}
-          </FadeInWrapper>
+          {service.paxInclusion.length > 0 && (
+            <FadeInWrapper
+              direction='left'
+              delay={800}
+              className='w-full bg-sky-50 p-2 rounded-sm'
+            >
+              <h3 className='text-sky-800 font-semibold text-2xl'>
+                Package Inclusions
+              </h3>
+              {service?.paxInclusion.map((inclusion, i) => (
+                <p className='text-xl text-slate-600' key={`inclusion-${i}`}>
+                  - {inclusion}
+                </p>
+              ))}
+            </FadeInWrapper>
+          )}
 
           {/* exclusions */}
           {service.paxExclusion && (

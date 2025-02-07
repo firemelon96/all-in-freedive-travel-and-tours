@@ -33,7 +33,6 @@ export const TravelTours = () => {
                 <FadeInWrapper delay={i * 200}>
                   <TourCard
                     title={tour.title}
-                    description={tour.description}
                     slug={tour.slug}
                     image={tour.images[0]}
                   />

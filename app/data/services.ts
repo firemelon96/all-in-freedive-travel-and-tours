@@ -41,7 +41,7 @@ export const servicesData = [
     philosopies: [
       {
         label: 'Safety First',
-        text: 'Your safety is our top priority. All our freediving courses and line trainings are taught by certified instructor and assistant instructors with extensive experience, ensuring that you will not only learn the skills needed for a safe dive but also understand the fundamental principles of freediving safety and self-rescue.',
+        text: 'Your safety is our top priority. All of our freediving courses and line trainings are taught by certified instructor and assistant instructors with extensive experience, ensuring that you will not only learn the skills needed for a safe dive but also understand the fundamental principles of freediving safety and self-rescue.',
       },
       {
         label: 'Relaxation & Technique',
@@ -77,7 +77,7 @@ export const servicesData = [
       'Freediving Buoys and Lanyard.',
       'Pool Session and Fees.',
       'Environmental Fees and Entrance Fees ',
-      'Photo and Videos during the course.',
+      'Photos and Videos during the course.',
     ],
     images: [
       '/res/mw-1/mw00.avif',
@@ -95,7 +95,8 @@ export const servicesData = [
       'CWTB and Free Immersion: Dive to a depth of 12-20 meters in open water.',
       'CWTB Buddying : Proper Rescue from 6-10 meters.',
     ],
-    paxExclusion: ['Freediving Gears', '(Long Fins, Mask and Snorkel)'],
+    paxExclusion: ['Freediving Gears (Long Fins, Mask and Snorkel)'],
+    icon: '/wave1.png',
   },
   {
     slug: 'molchonovs-wave-2',
@@ -112,7 +113,7 @@ export const servicesData = [
       'Freediving Buoys and Lanyard.',
       'Pool Session and Fees.',
       'Environmental Fees and Entrance Fees ',
-      'Photo and Videos during the course.',
+      'Photos and Videos during the course.',
     ],
     images: [
       '/res/mw-2/mw200.avif',
@@ -133,7 +134,8 @@ export const servicesData = [
       'CWTB Buddying : Proper Rescue from 10-15 meters.',
       'Rescue comfortably from 15 meters.',
     ],
-    paxExclusion: ['Freediving Gears', '(Long Fins, Mask and Snorkel)'],
+    paxExclusion: ['Freediving Gears (Long Fins, Mask and Snorkel)'],
+    icon: '/wave2.png',
   },
 
   //freediving retreat
@@ -188,7 +190,7 @@ export const servicesData = [
         id: 'package-a',
         name: 'Package A - Coron Island Freediving Tours',
         location: 'Coron, Palawan, Philippines',
-        price: '',
+        price: '2500 pesos | 45 USD Joiner Tour',
         duration: '1 Day',
         destination: [
           'Barracuda Lake',
@@ -202,7 +204,7 @@ export const servicesData = [
           'Lunch',
           'Entrance Fee',
           'Environmental Fee',
-          'W/ Certified safety driver',
+          'Certified safety driver',
         ],
         paxExclusions: ['Freediving Gears'],
         images: [
@@ -218,7 +220,7 @@ export const servicesData = [
         id: 'package-b',
         name: 'Package B - Shipwreck Freediving Tours',
         location: 'Coron, Palawan, Philippines',
-        price: '',
+        price: '3,000 pesos | 55 USD Joiner Tour',
         duration: '1 Day',
         destination: [
           'East Tangat Ship (Depth: 5-18 meters, Penetration: 7-10 meters)',
@@ -230,7 +232,7 @@ export const servicesData = [
           'Lunch',
           'Entrance Fee',
           'Environmental Fee',
-          'W/ Certified safety driver',
+          'Certified safety driver',
         ],
         paxExclusions: ['Freediving Gears'],
         images: [
@@ -247,7 +249,7 @@ export const servicesData = [
         id: 'package-c',
         name: 'Package C - Busuanga Freediving Tours - Dive with Dugong',
         location: 'Coron, Palawan, Philippines',
-        price: '',
+        price: '5,500 pesos | 100 USD Joiner Tour',
         duration: '1 Day',
         destination: [
           'Aban- Aban Island (Depth: 5-9meters)',
@@ -259,7 +261,7 @@ export const servicesData = [
           'Lunch',
           'Entrance Fee',
           'Environmental Fee',
-          'W/ Certified safety driver',
+          'Certified safety driver',
         ],
         paxExclusions: ['Freediving Gears'],
         images: [

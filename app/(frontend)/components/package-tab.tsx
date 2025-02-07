@@ -39,7 +39,7 @@ export function PackageTab({ packages }: Props) {
           <Card className='bg-stone-50 shadow-none border-none'>
             <CardHeader>
               <FadeInWrapper direction='left'>
-                <CardTitle className='text-2xl text-sky-700'>
+                <CardTitle className='text-sm md:text-xl text-sky-700'>
                   {pax.name}
                 </CardTitle>
               </FadeInWrapper>

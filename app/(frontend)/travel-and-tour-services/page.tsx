@@ -41,7 +41,6 @@ const TourPage = async ({ searchParams }: Props) => {
                   title={tour.title}
                   slug={tour.slug}
                   image={tour.images[0]}
-                  description={tour.description}
                 />
               </FadeInWrapper>
             ))}
