@@ -47,7 +47,7 @@ export default function NewHero() {
       <div className='absolute inset-0 bg-black/40'></div>
 
       {/* Text Container */}
-      <div className='relative z-10 space-y-4 text-center text-white p-2 mx-4 bg-white/10 rounded-2xl'>
+      <div className='relative z-10 space-y-4 text-center text-white mx-4 rounded-2xl'>
         <Headline
           className='tracking-wider'
           label='All In Freediving and Tour Services'
