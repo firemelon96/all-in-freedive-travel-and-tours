@@ -80,7 +80,7 @@ const SlugPage = async ({ params }: Props) => {
                 className='p-2 space-y-4'
               >
                 <h5 className='text-2xl text-center md:text-start p-2 bg-sky-50  font-semibold text-sky-800'>
-                  Performance Requirements
+                  Performance Requirements :
                 </h5>
 
                 <div className='space-y-4'>
@@ -131,7 +131,7 @@ const SlugPage = async ({ params }: Props) => {
               className='w-full p-2 rounded-sm space-y-4'
             >
               <h3 className='text-sky-800 text-center md:text-start bg-sky-50 p-2 font-semibold text-2xl'>
-                Package Inclusions
+                Package Inclusions :
               </h3>
               <div>
                 {service?.paxInclusion.map((inclusion, i) => (
@@ -151,7 +151,7 @@ const SlugPage = async ({ params }: Props) => {
               className='w-full  p-2 space-y-4 rounded-sm'
             >
               <h3 className='text-sky-800 text-center bg-sky-50 p-2 md:text-start font-semibold text-2xl'>
-                Package Exclusions
+                Package Exclusions :
               </h3>
               <div>
                 {service?.paxExclusion.map((exclu, i) => (

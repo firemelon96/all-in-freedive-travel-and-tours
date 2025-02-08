@@ -77,7 +77,7 @@ const SlugPage = async ({ params }: Props) => {
                 className='p-2 bg-sky-50 space-y-4 rounded-sm'
               >
                 <h5 className='text-2xl text-sky-800 font-semibold'>
-                  Highlights
+                  Trip Highlights :
                 </h5>
                 <ul className='space-y-2'>
                   {service.highlights.map((highlight) => (
