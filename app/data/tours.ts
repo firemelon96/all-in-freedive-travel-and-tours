@@ -7,7 +7,7 @@ export const tours = [
       'Experience the untouched beauty of Balabac, Palawan with this 4 days and 3 nights expedition to remote islands. This package offers a unique opportunity to explore pristine beaches, stunning sandbars, and crystal-clear waters. Ideal for adventurers who are ready to embrace the raw and rugged charm of island life, this is not a luxury tour but a memorable journey into one of the Philippines most unspoiled destinations.',
     type: 'package',
     address: 'balabac',
-    price: 'PHP 17,000 | USD 300',
+    price: 'PHP 17,000 | USD 300 per person',
     itineraries: [
       {
         day: 'Day 1',
@@ -619,6 +619,99 @@ export const tours = [
 
   //siargao
   {
+    slug: '3d2n-siargao-tour-package',
+    title: '3D2N Siargao Tour Package',
+    description:
+      'Experience the best of Siargao with this 3 days and 2 nights tour package. Perfect for quick getaways, this package includes an island-hopping adventure and comfortable accommodations to ensure a memorable stay.',
+    type: 'package',
+    address: 'siargao',
+    price: 'PHP 6,500 per person (Joiner, Min of 2 pax)',
+    itineraries: [
+      {
+        day: 'Day 1',
+        activities: ['Arrival'],
+        destinations: [],
+      },
+      {
+        day: 'Day 2',
+        activities: [
+          '7:00-8:00 AM Hotel Pick Up',
+          'Tri-Island Hopping',
+          '8:30 AM Start of Island Hopping at Naked Island',
+          '12:00 PM Lunch at Daku Island',
+          '3:00 PM Guyam Island (Sunset)',
+          '4:00 PM Back to General Luna (Boulevard)',
+        ],
+        destinations: ['Naked Island', 'Daku Island', 'Guyam Island'],
+      },
+      {
+        day: 'Day 3',
+        activities: ['Departure'],
+        destinations: [],
+      },
+    ],
+    reminders: [
+      'Non-refundable but transferable to another person.',
+      'If Force Majeure/Bad Weather: Hotel accommodation can be moved to any date from the travel date up to 1 month only, while tours can be refunded.',
+    ],
+    inclusions: [
+      '3 Days 2 Nights Hotel Accommodation',
+      '1 Day Island Tour (Joiner)',
+      'Roundtrip Airport Shared Van Transfers (Seat-in Coach)',
+      'Pick and drop off at hotel',
+      'Tourist boat',
+      'Life vests',
+      'All permits and entrance fees',
+      'Licensed Tour Guide',
+      'Lunch',
+    ],
+    exclusions: [
+      'Flights',
+      'Daily Breakfasts',
+      'Anything not mentioned above',
+      'Personal expenses during the trip',
+      'Optional tips for guides and drivers',
+      'Travel insurance (highly recommended)',
+    ],
+    other_services: [
+      {
+        service: 'Motorbike Rental',
+        price: {
+          amount: 500,
+          currency: 'PHP',
+          unit: 'per day',
+        },
+      },
+    ],
+    expectations: [
+      'This is a joiner tour. Participants will share the tour experience with other travelers.',
+      'Itineraries may be adjusted depending on weather conditions or other unforeseen events.',
+      'Customized and private tour rates are available upon request.',
+    ],
+    things_to_bring: [
+      'Towel and toiletries',
+      'Sunblock and sunscreen',
+      'Personal medicine, if any',
+      'Cash (No ATM in some areas)',
+      'Swimwear and extra clothes',
+      'Comfortable walking shoes',
+    ],
+    terms_and_conditions: [
+      'Non-refundable but transferable to another person.',
+      'Downpayment screenshot is required for verification.',
+      'Full balance must be settled 2 weeks before the tour to avoid cancellation.',
+      'No-show or backout within 1 week or 3 days before the tour will forfeit downpayment and full balance.',
+      'Cancellations due to Acts of God or bad weather will be refunded for tours/services not completed.',
+      'The agency is not responsible for personal belongings lost or damaged.',
+    ],
+    images: [
+      '/res/tours/siargao/3d2n/s00.jpg',
+      '/res/tours/siargao/3d2n/s01.jpeg',
+      '/res/tours/siargao/3d2n/s02.jpg',
+      '/res/tours/siargao/3d2n/s03.jpg',
+    ],
+  },
+  {
     slug: '4d3n-siargao-tour-package',
     title: '4D3N Siargao Tour Package',
     description:
@@ -726,99 +819,6 @@ export const tours = [
       '/res/tours/siargao/4d3n/s02.jpeg',
       '/res/tours/siargao/4d3n/s03.jpeg',
       '/res/tours/siargao/4d3n/s03.jpg',
-    ],
-  },
-  {
-    slug: '3d2n-siargao-tour-package',
-    title: '3D2N Siargao Tour Package',
-    description:
-      'Experience the best of Siargao with this 3 days and 2 nights tour package. Perfect for quick getaways, this package includes an island-hopping adventure and comfortable accommodations to ensure a memorable stay.',
-    type: 'package',
-    address: 'siargao',
-    price: 'PHP 6,500 per person (Joiner, Min of 2 pax)',
-    itineraries: [
-      {
-        day: 'Day 1',
-        activities: ['Arrival'],
-        destinations: [],
-      },
-      {
-        day: 'Day 2',
-        activities: [
-          '7:00-8:00 AM Hotel Pick Up',
-          'Tri-Island Hopping',
-          '8:30 AM Start of Island Hopping at Naked Island',
-          '12:00 PM Lunch at Daku Island',
-          '3:00 PM Guyam Island (Sunset)',
-          '4:00 PM Back to General Luna (Boulevard)',
-        ],
-        destinations: ['Naked Island', 'Daku Island', 'Guyam Island'],
-      },
-      {
-        day: 'Day 3',
-        activities: ['Departure'],
-        destinations: [],
-      },
-    ],
-    reminders: [
-      'Non-refundable but transferable to another person.',
-      'If Force Majeure/Bad Weather: Hotel accommodation can be moved to any date from the travel date up to 1 month only, while tours can be refunded.',
-    ],
-    inclusions: [
-      '3 Days 2 Nights Hotel Accommodation',
-      '1 Day Island Tour (Joiner)',
-      'Roundtrip Airport Shared Van Transfers (Seat-in Coach)',
-      'Pick and drop off at hotel',
-      'Tourist boat',
-      'Life vests',
-      'All permits and entrance fees',
-      'Licensed Tour Guide',
-      'Lunch',
-    ],
-    exclusions: [
-      'Flights',
-      'Daily Breakfasts',
-      'Anything not mentioned above',
-      'Personal expenses during the trip',
-      'Optional tips for guides and drivers',
-      'Travel insurance (highly recommended)',
-    ],
-    other_services: [
-      {
-        service: 'Motorbike Rental',
-        price: {
-          amount: 500,
-          currency: 'PHP',
-          unit: 'per day',
-        },
-      },
-    ],
-    expectations: [
-      'This is a joiner tour. Participants will share the tour experience with other travelers.',
-      'Itineraries may be adjusted depending on weather conditions or other unforeseen events.',
-      'Customized and private tour rates are available upon request.',
-    ],
-    things_to_bring: [
-      'Towel and toiletries',
-      'Sunblock and sunscreen',
-      'Personal medicine, if any',
-      'Cash (No ATM in some areas)',
-      'Swimwear and extra clothes',
-      'Comfortable walking shoes',
-    ],
-    terms_and_conditions: [
-      'Non-refundable but transferable to another person.',
-      'Downpayment screenshot is required for verification.',
-      'Full balance must be settled 2 weeks before the tour to avoid cancellation.',
-      'No-show or backout within 1 week or 3 days before the tour will forfeit downpayment and full balance.',
-      'Cancellations due to Acts of God or bad weather will be refunded for tours/services not completed.',
-      'The agency is not responsible for personal belongings lost or damaged.',
-    ],
-    images: [
-      '/res/tours/siargao/3d2n/s00.jpg',
-      '/res/tours/siargao/3d2n/s01.jpeg',
-      '/res/tours/siargao/3d2n/s02.jpg',
-      '/res/tours/siargao/3d2n/s03.jpg',
     ],
   },
 

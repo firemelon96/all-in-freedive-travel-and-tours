@@ -50,7 +50,7 @@ const SlugPage = async ({ params }: Props) => {
         <div className=' w-full p-4 space-y-4'>
           <div className='space-y-4'>
             <FadeInWrapper direction='left' delay={300}>
-              <h1 className='md:text-4xl text-2xl text-sky-700 font-bold uppercase'>
+              <h1 className='md:text-4xl text-center md:text-start text-2xl text-sky-700 font-bold uppercase'>
                 {service?.title}
               </h1>
             </FadeInWrapper>
@@ -64,7 +64,9 @@ const SlugPage = async ({ params }: Props) => {
               />
             </FadeInWrapper>
             <FadeInWrapper direction='left' delay={700} className='p-2'>
-              <h4 className='text-2xl text-sky-800 font-semibold '>Overview</h4>
+              <h4 className='text-2xl p-2 bg-sky-50 text-center md:text-start text-sky-800 font-semibold '>
+                Overview
+              </h4>
               {service?.description.map((desc, i) => (
                 <p className='text-xl text-justify my-5' key={i}>
                   {desc}
@@ -77,15 +79,15 @@ const SlugPage = async ({ params }: Props) => {
                 delay={800}
                 className='p-2 space-y-4'
               >
-                <span className='text-2xl font-semibold text-sky-800'>
+                <h5 className='text-2xl text-center md:text-start p-2 bg-sky-50  font-semibold text-sky-800'>
                   Performance Requirements
-                </span>
+                </h5>
 
                 <div className='space-y-4'>
                   <div className='text-xl space-y-3'>
-                    <span className='font-semibold text-stone-700'>
+                    <p className='font-semibold text-center md:text-start text-stone-700'>
                       Pool Requirements
-                    </span>
+                    </p>
                     <ul className='text-stone-600'>
                       {service.poolReqs.map((pool) => (
                         <li key={pool}>- {pool}</li>
@@ -93,9 +95,9 @@ const SlugPage = async ({ params }: Props) => {
                     </ul>
                   </div>
                   <div className='text-xl space-y-3'>
-                    <span className='font-semibold text-stone-700'>
+                    <p className='font-semibold text-center md:text-start text-stone-700'>
                       Open Water Requirements
-                    </span>
+                    </p>
                     <ul className='text-stone-600'>
                       {service.openWaterReqs.map((water) => (
                         <li key={water}>- {water}</li>
@@ -126,16 +128,18 @@ const SlugPage = async ({ params }: Props) => {
             <FadeInWrapper
               direction='left'
               delay={800}
-              className='w-full bg-sky-50 p-2 rounded-sm'
+              className='w-full p-2 rounded-sm space-y-4'
             >
-              <h3 className='text-sky-800 font-semibold text-2xl'>
+              <h3 className='text-sky-800 text-center md:text-start bg-sky-50 p-2 font-semibold text-2xl'>
                 Package Inclusions
               </h3>
-              {service?.paxInclusion.map((inclusion, i) => (
-                <p className='text-xl text-slate-600' key={`inclusion-${i}`}>
-                  - {inclusion}
-                </p>
-              ))}
+              <div>
+                {service?.paxInclusion.map((inclusion, i) => (
+                  <p className='text-xl text-slate-600' key={`inclusion-${i}`}>
+                    - {inclusion}
+                  </p>
+                ))}
+              </div>
             </FadeInWrapper>
           )}
 
@@ -144,16 +148,18 @@ const SlugPage = async ({ params }: Props) => {
             <FadeInWrapper
               direction='left'
               delay={900}
-              className='w-full bg-sky-50 p-2 rounded-sm'
+              className='w-full  p-2 space-y-4 rounded-sm'
             >
-              <h3 className='text-sky-800 font-semibold text-2xl'>
+              <h3 className='text-sky-800 text-center bg-sky-50 p-2 md:text-start font-semibold text-2xl'>
                 Package Exclusions
               </h3>
-              {service?.paxExclusion.map((exclu, i) => (
-                <p className='text-xl text-slate-600' key={`exclu-${i}`}>
-                  - {exclu}
-                </p>
-              ))}
+              <div>
+                {service?.paxExclusion.map((exclu, i) => (
+                  <p className='text-xl text-slate-600' key={`exclu-${i}`}>
+                    - {exclu}
+                  </p>
+                ))}
+              </div>
             </FadeInWrapper>
           )}
         </div>

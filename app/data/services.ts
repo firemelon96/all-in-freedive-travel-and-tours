@@ -204,7 +204,7 @@ export const servicesData = [
           'Lunch',
           'Entrance Fee',
           'Environmental Fee',
-          'Certified safety driver',
+          'Certified safety diver',
         ],
         paxExclusions: ['Freediving Gears'],
         images: [
@@ -232,7 +232,7 @@ export const servicesData = [
           'Lunch',
           'Entrance Fee',
           'Environmental Fee',
-          'Certified safety driver',
+          'Certified safety diver',
         ],
         paxExclusions: ['Freediving Gears'],
         images: [
@@ -261,7 +261,7 @@ export const servicesData = [
           'Lunch',
           'Entrance Fee',
           'Environmental Fee',
-          'Certified safety driver',
+          'Certified safety diver',
         ],
         paxExclusions: ['Freediving Gears'],
         images: [

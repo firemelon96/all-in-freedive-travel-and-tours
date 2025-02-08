@@ -55,7 +55,7 @@ const SinglePage = async ({ params }: Props) => {
           <FadeInWrapper
             direction='left'
             delay={400}
-            className='text-2xl font-semibold flex items-center gap-2 flex-col sm:flex-row'
+            className='text-2xl font-semibold items-center gap-2 flex-col hidden md:flex md:items-start'
           >
             <p>{tour?.title}</p> <Badge>{tour?.price}</Badge>
           </FadeInWrapper>

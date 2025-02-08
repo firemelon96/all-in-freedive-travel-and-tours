@@ -14,11 +14,11 @@ const TeamPage = () => {
       <section className='container mx-auto'>
         <FadeInWrapper delay={200} className='p-4'>
           <p className='md:text-2xl text-xl text-justify md:mt-10'>
-            At All In Freediving and Tour Services, our team is made up of
-            passionate travel experts, experienced freediving instructor, and
-            knowledgeable local guides. We share a deep love for the Philippines
-            and are dedicated to offering premium, immersive travel experiences
-            that showcase the beauty and culture of this tropical paradise.
+            Our team is made up of passionate travel experts, experienced
+            freediving instructor, and knowledgeable local guides. We share a
+            deep love for the Philippines and are dedicated to offering premium,
+            immersive travel experiences that showcase the beauty and culture of
+            this tropical paradise.
           </p>
         </FadeInWrapper>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-3 md:my-10 p-4'>

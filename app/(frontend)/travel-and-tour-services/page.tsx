@@ -21,7 +21,7 @@ const TourPage = async ({ searchParams }: Props) => {
   return (
     <>
       <BannerImage
-        title='Travel and Tours'
+        title='Travel and Tour Services'
         imageUrl='https://res.cloudinary.com/dutkzg9la/image/upload/v1738146307/GRNT-0110_czspcd.avif'
       />
       <section className='container mx-auto'>
