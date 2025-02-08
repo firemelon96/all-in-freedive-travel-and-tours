@@ -280,7 +280,7 @@ export const servicesData = [
   //freediving expeditions
   {
     slug: 'busuanga-freedive-expedition',
-    title: 'Busuanga and Coron Freedive Expedition',
+    title: 'Busuanga and Coron Freediving Expedition',
     location: 'Coron, Palawan, Philippines',
     duration: '3 Days and 2 Nights',
     price: '30,000 php | 560 USD',

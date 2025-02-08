@@ -60,7 +60,7 @@ export const menuItems = [
         href: '/freediving-tour-services/freediving-retreat',
       },
       {
-        name: 'Busuanga and Coron Freedive Expeditions',
+        name: 'Busuanga and Coron Freediving Expeditions',
         href: '/freediving-tour-services/freediving-expeditions/busuanga-freedive-expedition',
       },
       {
