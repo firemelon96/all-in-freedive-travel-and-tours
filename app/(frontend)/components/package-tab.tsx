@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Book } from './book';
+import { Book } from '../../../components/book';
 import PortraitVideoCard from './video';
 import { CheckCircle, Map, X } from 'lucide-react';
 import { ListBox } from './list-box';

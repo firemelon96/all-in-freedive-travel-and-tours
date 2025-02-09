@@ -1,6 +1,6 @@
 import { getServiceBySlug, getServiceBySlugAndType } from '@/lib/helper';
 import { ImageCarousel } from '../../components/image-carousel';
-import { Book } from '../../components/book';
+import { Book } from '../../../../components/book';
 import { notFound } from 'next/navigation';
 import { Card } from '@/components/ui/card';
 import { servicesData } from '@/app/data/services';
@@ -124,7 +124,7 @@ const SlugPage = async ({ params }: Props) => {
               ))}
             </FadeInWrapper>
           </div>
-          {service.paxInclusion.length > 0 && (
+          {service.paxExclusion && service.paxInclusion.length > 0 && (
             <FadeInWrapper
               direction='left'
               delay={800}
@@ -134,7 +134,7 @@ const SlugPage = async ({ params }: Props) => {
                 Package Inclusions :
               </h3>
               <div>
-                {service?.paxInclusion.map((inclusion, i) => (
+                {service?.paxInclusion?.map((inclusion, i) => (
                   <p className='text-xl text-slate-600' key={`inclusion-${i}`}>
                     - {inclusion}
                   </p>

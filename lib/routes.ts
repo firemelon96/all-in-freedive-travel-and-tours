@@ -53,7 +53,7 @@ export const menuItems = [
     submenu: [
       {
         name: 'Freediving Tours',
-        href: '/freediving-tour-services/freediving-tours/coron-palawan-philippines',
+        href: '/freediving-tour-services/freediving-tours',
       },
       {
         name: 'Freediving Retreat',

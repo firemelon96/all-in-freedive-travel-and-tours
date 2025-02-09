@@ -1,7 +1,7 @@
 import { getServiceBySlug, getServiceBySlugAndType } from '@/lib/helper';
 import { Dot } from 'lucide-react';
 import PortraitVideoCard from '../../components/video';
-import { Book } from '../../components/book';
+import { Book } from '../../../../components/book';
 import { notFound } from 'next/navigation';
 import { servicesData } from '@/app/data/services';
 import { Metadata } from 'next';

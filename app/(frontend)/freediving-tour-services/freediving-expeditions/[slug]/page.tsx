@@ -1,4 +1,4 @@
-import { Book } from '@/app/(frontend)/components/book';
+import { Book } from '@/components/book';
 import FadeInWrapper from '@/app/(frontend)/components/fade-in-wrapper';
 import PortraitVideoCard from '@/app/(frontend)/components/video';
 import { servicesData } from '@/app/data/services';
@@ -51,7 +51,7 @@ const SinglePage = async ({ params }: Props) => {
         <div className=' w-full p-4'>
           <div className='space-y-4'>
             <FadeInWrapper direction='left'>
-              <h1 className='md:text-4xl text-2xl text-sky-700 font-bold uppercase'>
+              <h1 className='md:text-4xl text-center md:text-start text-2xl text-sky-700 font-bold uppercase'>
                 {service?.title}
               </h1>
             </FadeInWrapper>
