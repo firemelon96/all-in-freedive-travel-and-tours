@@ -2,12 +2,10 @@ import { getTourBySlug } from '@/lib/helper';
 import { CollapsibleBox } from '../../../../components/collapsible-box';
 import { Badge } from '@/components/ui/badge';
 import { ImageBanner } from '../_components/image-banner';
-import { Button } from '@/components/ui/button';
-import { notFound, redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { tours } from '@/app/data/tours';
 import { Metadata } from 'next';
 import FadeInWrapper from '../../components/fade-in-wrapper';
-import { Banknote, Luggage } from 'lucide-react';
 import { Book } from '@/components/book';
 
 type Props = {

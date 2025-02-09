@@ -238,10 +238,10 @@ export const servicesData = [
     ],
     paxExclusions: ['Freediving Gears'],
     images: [
-      '/res/package-b/pb00.jpeg',
       '/res/package-b/pb01.jpeg',
       '/res/package-b/pb02.jpeg',
       '/res/package-b/pb03.jpeg',
+      '/res/package-b/pb00.jpeg',
       '/res/package-b/pb04.jpeg',
     ],
     videoUrl:
@@ -277,10 +277,10 @@ export const servicesData = [
     ],
     paxExclusions: ['Freediving Gears'],
     images: [
+      '/res/package-c/pc03.avif',
+      '/res/package-c/pc02.avif',
       '/res/package-c/pc00.avif',
       '/res/package-c/pc01.avif',
-      '/res/package-c/pc02.avif',
-      '/res/package-c/pc03.avif',
       '/res/package-c/pc04.avif',
     ],
     videoUrl:

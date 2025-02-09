@@ -25,7 +25,7 @@ const FreedivePage = () => {
                 Freediving in Coron, Philippines, is a truly marvelous and
                 exhilarating experience surrounded with its renowned
                 crystal-clear waters, vibrant and rich coral reefs, historical
-                WWII wreck sites, and diverse marine life.',
+                WWII wreck sites, and diverse marine life.,
               </p>
               <p className='md:text-2xl text-xl text-center max-w-5xl mx-auto my-3'>
                 We offer daily joiner and private freediving tours good for

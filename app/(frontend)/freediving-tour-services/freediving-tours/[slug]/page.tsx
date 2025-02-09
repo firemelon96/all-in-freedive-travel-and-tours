@@ -1,14 +1,9 @@
 import FadeInWrapper from '@/app/(frontend)/components/fade-in-wrapper';
-import { PackageTab } from '@/app/(frontend)/components/package-tab';
-import { TourCard } from '@/app/(frontend)/components/tour-card';
 import { CollapsibleBox } from '@/components/collapsible-box';
 import { ImageBanner } from '@/app/(frontend)/travel-and-tour-services/_components/image-banner';
 import { servicesData } from '@/app/data/services';
-import { BannerImage } from '@/components/banner-image';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import { getServiceBySlug, getServiceBySlugAndType } from '@/lib/helper';
-import { Banknote, Luggage } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import { Book } from '@/components/book';
 

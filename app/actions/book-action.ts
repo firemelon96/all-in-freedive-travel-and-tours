@@ -14,6 +14,7 @@ interface Props {
 const resend = new Resend(process.env.RESEND_API);
 
 export const bookAction = async (data: Props) => {
+  console.log(data);
   try {
     const { data, error } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
@@ -26,8 +27,8 @@ export const bookAction = async (data: Props) => {
       return { error: 'failed' };
     }
 
-    return {
-      success: true,
-    };
-  } catch (error) {}
+    return { success: true, data };
+  } catch (error) {
+    return { error, success: false };
+  }
 };

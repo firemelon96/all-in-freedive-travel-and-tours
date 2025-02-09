@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Award, Banknote, Calendar, Luggage, MapPinIcon } from 'lucide-react';
 import Image from 'next/image';
 import { Badge } from './ui/badge';
-import { useTransition } from 'react';
+// import { useTransition } from 'react';
 
 type Props = {
   location?: string;
@@ -22,7 +22,7 @@ export const Book = ({
   certification,
   title,
 }: Props) => {
-  const [isPending, startTransition] = useTransition();
+  // const [isPending, startTransition] = useTransition();
   const onSubmit = () => {
     const data = {
       location,
