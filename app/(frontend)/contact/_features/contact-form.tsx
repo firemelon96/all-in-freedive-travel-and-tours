@@ -1,7 +1,5 @@
 'use client';
 
-import { z } from 'zod';
-
 import { Card } from '@/components/ui/card';
 import {
   Form,
@@ -14,17 +12,14 @@ import {
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from '@/components/ui/button';
-
-const contactSchema = z.object({
-  name: z.string().min(2, {
-    message: 'Name must be at least 2 characters',
-  }),
-  email: z.string().email(),
-  message: z.string().max(30, { message: 'Message must only be 30 character' }),
-});
+import { useTransition } from 'react';
+import { bookAction } from '@/app/actions/book-action';
+import { contactSchema, schemaTypes } from '@/types';
+import { toast } from 'sonner';
 
 export const ContactForm = () => {
-  const form = useForm<z.infer<typeof contactSchema>>({
+  const [isPending, startTransition] = useTransition();
+  const form = useForm<schemaTypes>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
       name: '',
@@ -33,8 +28,14 @@ export const ContactForm = () => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof contactSchema>) => {
-    console.log(values);
+  const onSubmit = (values: schemaTypes) => {
+    startTransition(() => {
+      bookAction(values)
+        .then((data) => {
+          toast.success(data.message);
+        })
+        .catch((err) => toast.error(err.message));
+    });
   };
 
   return (
@@ -53,6 +54,7 @@ export const ContactForm = () => {
                   <FormLabel>Name</FormLabel>
                   <FormControl>
                     <input
+                      disabled={isPending}
                       {...field}
                       placeholder='Name'
                       className='border border-slate-100 p-2 rounded-sm'
@@ -71,6 +73,7 @@ export const ContactForm = () => {
                   <FormLabel>Email</FormLabel>
                   <FormControl>
                     <input
+                      disabled={isPending}
                       {...field}
                       placeholder='example@mail.com'
                       className='border border-slate-100 p-2 rounded-sm'
@@ -89,6 +92,7 @@ export const ContactForm = () => {
                   <FormLabel>Message</FormLabel>
                   <FormControl>
                     <textarea
+                      disabled={isPending}
                       {...field}
                       placeholder='Your message'
                       className='border border-slate-100 p-2 rounded-sm'
@@ -98,10 +102,11 @@ export const ContactForm = () => {
               )}
             />
             <Button
+              disabled={isPending}
               variant='primary'
               className='w-full uppercase tracking-widest font-bold'
             >
-              Send
+              {isPending ? 'Sending...' : 'Send'}
             </Button>
           </form>
         </Form>

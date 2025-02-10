@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 export const TravelTours = () => {
   return (
-    <section className='h-[700px] relative scroll-mt-10' id='expeditions'>
+    <section className='h-[700px] relative scroll-mt-10' id='tours'>
       <div className='absolute inset-0 w-full h-full'>
         <Image
           src='/travel.avif' // Replace with your image path

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Headline } from './headlines';
 import { Button } from '@/components/ui/button';
 import FadeInWrapper from './fade-in-wrapper';
+import Link from 'next/link';
 
 export default function NewHero() {
   const [offset, setOffset] = useState(0);
@@ -50,12 +51,14 @@ export default function NewHero() {
       <div className='relative z-10 space-y-4 text-center text-white mx-4 rounded-2xl'>
         <Headline
           className='tracking-wider'
-          label='All In Freediving and Tour Services'
+          // label='All In Freediving and Tour Services'
           heading='Travel Beyond Limits, '
           subHeading='Dive Beyond Depths.'
         />
         <FadeInWrapper delay={500}>
-          <Button variant='primary'>Explore</Button>
+          <Button variant='primary' asChild>
+            <Link href='/#tours'>Explore</Link>
+          </Button>
         </FadeInWrapper>
       </div>
     </section>

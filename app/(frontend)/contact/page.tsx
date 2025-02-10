@@ -4,6 +4,7 @@ import { ContactForm } from './_features/contact-form';
 import { Mail } from 'lucide-react';
 import FadeInWrapper from '../components/fade-in-wrapper';
 import { FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
 
 const ContactPage = () => {
   return (
@@ -26,12 +27,19 @@ const ContactPage = () => {
               </h1>
             </FadeInWrapper>
             <Card className='p-4 items-center justify-center flex flex-col gap-4'>
-              <p className='flex gap-2'>
-                <FaWhatsapp className='size-6' /> +63952-477-7904
-              </p>
-              <p className='flex gap-2'>
+              <Link
+                href='https://api.whatsapp.com/send/?phone=639524777904'
+                className='flex gap-2 rounded-md'
+              >
+                <FaWhatsapp className='size-6' /> <span> +63952-477-7904</span>
+              </Link>
+
+              <Link
+                href={'mailto:allinfreedivingandtourservices@gmail.com'}
+                className='flex gap-2 rounded-md'
+              >
                 <Mail /> <span>allinfreedivingandtourservices@gmail.com</span>
-              </p>
+              </Link>
             </Card>
           </FadeInWrapper>
           <FadeInWrapper

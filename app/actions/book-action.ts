@@ -1,34 +1,35 @@
 'use server';
 
-import { EmailTemplate } from '@/components/email-template';
+import EmailTemplate from '@/emails/email-template';
+import { contactSchema, schemaTypes } from '@/types';
 import { Resend } from 'resend';
-
-interface Props {
-  location?: string;
-  price?: string;
-  duration?: string;
-  certification?: string;
-  title?: string;
-}
 
 const resend = new Resend(process.env.RESEND_API);
 
-export const bookAction = async (data: Props) => {
-  console.log(data);
+export const bookAction = async (values: schemaTypes) => {
+  const validatedFields = contactSchema.safeParse(values);
+
+  if (!validatedFields.success) {
+    return { success: false, message: 'Invalid Fields' };
+  }
+
+  const { email, message, name } = validatedFields.data;
+
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: ['delivered@resend.dev'],
-      subject: 'Hello world',
-      react: EmailTemplate({ firstName: 'John' }),
+      from: 'All In Freediving and Tour Services <sales@allinfreedivingandtourservices.com>',
+      to: [email],
+      subject: 'Inquiry message',
+      react: EmailTemplate({ message, name, email }),
+      cc: [],
     });
 
     if (error) {
       return { error: 'failed' };
     }
 
-    return { success: true, data };
+    return { success: true, message: 'Email sent successfully!', data };
   } catch (error) {
-    return { error, success: false };
+    return { success: false, error };
   }
 };

@@ -1,5 +1,5 @@
-import { menuItems } from '@/lib/routes';
 import Image from 'next/image';
+import { FooterNav } from './footer-nav';
 
 export const Footer = () => {
   return (
@@ -20,22 +20,11 @@ export const Footer = () => {
               unparalleled beauty and culture of this tropical paradise.
             </p>
           </div>
-          <div className='md:w-1/4 flex space-y-4 flex-col md:items-start items-center'>
+          <div className='md:w-1/4 flex flex-col md:items-start items-center'>
             <h4 className='text-2xl text-sky-600'>Important Links</h4>
-            <ul className='text-white space-y-3'>
-              {menuItems.map((route) => (
-                <li key={route.href}>{route.name}</li>
-              ))}
-            </ul>
+            <FooterNav />
           </div>
-          <div className='md:w-1/4 flex space-y-4 flex-col md:items-start items-center'>
-            <h4 className='text-2xl text-sky-600'>Useful Links</h4>
-            <ul className='text-white space-y-3'>
-              <li>Terms and Agreement</li>
-              <li>Policy and Privacy</li>
-              <li>Legalities</li>
-            </ul>
-          </div>
+
           <div className='md:w-1/4 space-y-4 flex flex-col md:items-start items-center'>
             <h4 className='text-2xl text-sky-600'>Open Hours</h4>
             <ul className='text-white'>

@@ -5,6 +5,7 @@ import { Navbar } from './components/nav-bar';
 // import { Navbar } from '@/components/nav-bar';
 import { Footer } from './components/footer';
 import { Roboto } from 'next/font/google';
+import { Toaster } from 'sonner';
 
 // const geistSans = localFont({
 //   src: '../fonts/GeistVF.woff',
@@ -45,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang='en' className='scroll-smooth'>
       <body className={`${roboto.className} antialiased`}>
+        <Toaster />
         <Navbar />
         {children}
         <Footer />
