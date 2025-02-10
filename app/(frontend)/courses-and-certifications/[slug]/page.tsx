@@ -165,14 +165,16 @@ const SlugPage = async ({ params }: Props) => {
         </div>
         <FadeInWrapper direction='right' delay={400} className='p-2 w-full'>
           <div className='mx-14 flex items-center justify-center flex-col gap-2'>
-            <div>
-              <Image
-                src={service.icon || ''}
-                alt='icon'
-                height={50}
-                width={50}
-              />
-            </div>
+            {service.icon && (
+              <div>
+                <Image
+                  src={service.icon || ''}
+                  alt='icon'
+                  height={50}
+                  width={50}
+                />
+              </div>
+            )}
             <ImageCarousel images={service?.images} />
           </div>
         </FadeInWrapper>
