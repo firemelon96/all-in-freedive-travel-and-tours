@@ -36,8 +36,8 @@ export const VercelInviteUserEmail = ({
       <Preview>{previewText}</Preview>
       <Tailwind>
         <Body className='bg-white my-auto mx-auto font-sans px-2'>
-          <Container className='border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] max-w-[465px]'>
-            <Section className='mt-[32px]'>
+          <Container className='border border-solid border-[#eaeaea] rounded my-10 mx-auto p-[20px] max-w-[465px]'>
+            <Section className='mt-6'>
               <Img
                 src='https://res.cloudinary.com/dutkzg9la/image/upload/v1739190405/logo-real_yyuwqf.png'
                 width='190'
@@ -46,7 +46,7 @@ export const VercelInviteUserEmail = ({
                 className='my-0 mx-auto'
               />
             </Section>
-            <Heading className='text-black text-[24px] font-normal text-center p-0 my-[30px] mx-0'>
+            <Heading className='text-black text-[24px] font-normal text-center p-0 my-5 mx-0'>
               Thank you for sending your inquiry <strong>{name}</strong>
             </Heading>
             <Text className='text-black bg-slate-50 p-4 text-[14px] leading-[24px]'>

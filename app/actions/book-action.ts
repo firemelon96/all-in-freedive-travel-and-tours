@@ -21,8 +21,9 @@ export const bookAction = async (values: schemaTypes) => {
       to: [email],
       subject: 'Inquiry message',
       react: EmailTemplate({ message, name, email }),
-      cc: [],
+      cc: ['allinfreedivingandtourservices@gmail.com'],
     });
+
     console.log(data);
 
     if (error) {

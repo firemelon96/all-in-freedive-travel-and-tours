@@ -33,8 +33,12 @@ export const ContactForm = () => {
       bookAction(values)
         .then((data) => {
           toast.success(data.message);
+          form.reset();
         })
-        .catch((err) => toast.error(err.message));
+        .catch((err) => {
+          toast.error(err.message);
+          form.reset();
+        });
     });
   };
 
