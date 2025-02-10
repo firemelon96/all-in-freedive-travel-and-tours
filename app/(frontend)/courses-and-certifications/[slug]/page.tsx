@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/card';
 import { servicesData } from '@/app/data/services';
 import { Metadata } from 'next';
 import FadeInWrapper from '../../components/fade-in-wrapper';
+import Image from 'next/image';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -60,7 +61,6 @@ const SlugPage = async ({ params }: Props) => {
                 duration={service.duration}
                 price={service.price}
                 certification={service.certificate}
-                icon={service.icon}
               />
             </FadeInWrapper>
             <FadeInWrapper direction='left' delay={700} className='p-2'>
@@ -164,7 +164,15 @@ const SlugPage = async ({ params }: Props) => {
           )}
         </div>
         <FadeInWrapper direction='right' delay={400} className='p-2 w-full'>
-          <div className='mx-14'>
+          <div className='mx-14 flex items-center justify-center flex-col gap-2'>
+            <div>
+              <Image
+                src={service.icon || ''}
+                alt='icon'
+                height={50}
+                width={50}
+              />
+            </div>
             <ImageCarousel images={service?.images} />
           </div>
         </FadeInWrapper>

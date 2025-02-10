@@ -2,7 +2,6 @@
 
 import { Button } from '@/components/ui/button';
 import { Award, Banknote, Calendar, Luggage, MapPinIcon } from 'lucide-react';
-import Image from 'next/image';
 import { Badge } from './ui/badge';
 // import { useTransition } from 'react';
 
@@ -11,11 +10,10 @@ type Props = {
   price?: string;
   duration?: string;
   certification?: string;
-  icon?: string;
+
   title?: string;
 };
 export const Book = ({
-  icon,
   location,
   price,
   duration,
@@ -75,11 +73,7 @@ export const Book = ({
             <Award className='size-4 mr-2' /> <span>{certification}</span>
           </p>
         )}
-        {icon && (
-          <div className='absolute top-0 right-2 size-14'>
-            <Image src={icon} alt='icon' fill />
-          </div>
-        )}
+
         <Button
           onClick={onSubmit}
           className='font-semibold w-full'
