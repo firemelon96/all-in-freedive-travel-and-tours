@@ -37,7 +37,7 @@ export const FooterNav = () => {
             <Link
               key={index}
               href={item.href}
-              className='block text-base font-medium text-white hover:text-gray-700 py-2'
+              className='block text-base font-medium text-white hover:text-white/80 py-2'
             >
               {item.name}
             </Link>

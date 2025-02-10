@@ -50,10 +50,20 @@ const SlugPage = async ({ params }: Props) => {
       <div className='flex flex-col-reverse md:flex-row mt-5'>
         <div className=' w-full p-4 space-y-4'>
           <div className='space-y-4'>
-            <FadeInWrapper direction='left' delay={300}>
+            <FadeInWrapper className='relative' direction='left' delay={300}>
               <h1 className='md:text-4xl text-center md:text-start text-2xl text-sky-700 font-bold uppercase'>
                 {service?.title}
               </h1>
+              {service.icon && (
+                <div className='absolute right-0 -top-2'>
+                  <Image
+                    src={service.icon || ''}
+                    alt='icon'
+                    height={45}
+                    width={45}
+                  />
+                </div>
+              )}
             </FadeInWrapper>
             <FadeInWrapper direction='left' delay={500}>
               <Book
@@ -85,7 +95,7 @@ const SlugPage = async ({ params }: Props) => {
 
                 <div className='space-y-4'>
                   <div className='text-xl space-y-3'>
-                    <p className='font-semibold text-center md:text-start text-stone-700'>
+                    <p className='font-semibold text-start text-stone-700'>
                       Pool Requirements
                     </p>
                     <ul className='text-stone-600'>
@@ -95,7 +105,7 @@ const SlugPage = async ({ params }: Props) => {
                     </ul>
                   </div>
                   <div className='text-xl space-y-3'>
-                    <p className='font-semibold text-center md:text-start text-stone-700'>
+                    <p className='font-semibold text-start text-stone-700'>
                       Open Water Requirements
                     </p>
                     <ul className='text-stone-600'>
@@ -165,16 +175,6 @@ const SlugPage = async ({ params }: Props) => {
         </div>
         <FadeInWrapper direction='right' delay={400} className='p-2 w-full'>
           <div className='mx-14 flex items-center justify-center flex-col gap-2'>
-            {service.icon && (
-              <div>
-                <Image
-                  src={service.icon || ''}
-                  alt='icon'
-                  height={50}
-                  width={50}
-                />
-              </div>
-            )}
             <ImageCarousel images={service?.images} />
           </div>
         </FadeInWrapper>
