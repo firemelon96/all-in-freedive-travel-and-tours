@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className='flex flex-col mx-4 md:flex-row text-center items-center md:text-start md:items-start gap-4'>
           <div className='md:w-1/2 w-full space-y-4'>
             <div className='flex items-center justify-center md:items-start md:justify-start'>
-              <Image src='/logo.png' width={150} height={60} alt='logo' />
+              <Image src='/logo-real.png' width={150} height={60} alt='logo' />
             </div>
             <p className='text-white md:text-justify text-center'>
               We specialize in crafting unforgettable, premium travel
@@ -20,7 +20,7 @@ export const Footer = () => {
               unparalleled beauty and culture of this tropical paradise.
             </p>
           </div>
-          <div className='md:w-1/4 flex flex-col md:items-start items-center'>
+          <div className='md:w-1/4 flex flex-col w-full  '>
             <h4 className='text-2xl text-sky-600'>Important Links</h4>
             <FooterNav />
           </div>

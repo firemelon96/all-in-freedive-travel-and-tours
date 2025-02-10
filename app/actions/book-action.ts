@@ -23,12 +23,13 @@ export const bookAction = async (values: schemaTypes) => {
       react: EmailTemplate({ message, name, email }),
       cc: [],
     });
+    console.log(data);
 
     if (error) {
       return { error: 'failed' };
     }
 
-    return { success: true, message: 'Email sent successfully!', data };
+    return { success: true, message: 'Email sent successfully!' };
   } catch (error) {
     return { success: false, error };
   }

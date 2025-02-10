@@ -9,12 +9,16 @@ import Link from 'next/link';
 
 export const FooterNav = () => {
   return (
-    <nav className='w-full max-w-md mx-auto'>
+    <nav className='w-full mx-auto'>
       <Accordion type='multiple' className='space-y-1'>
         {menuItems.map((item, index) =>
           item.submenu ? (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className='text-base font-medium text-white'>
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+              className='border-sky-800'
+            >
+              <AccordionTrigger className='text-base font-medium text-white '>
                 {item.name}
               </AccordionTrigger>
               <AccordionContent className='space-y-2 pl-4'>
