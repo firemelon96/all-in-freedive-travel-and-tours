@@ -18,6 +18,7 @@ const locations = [
   { value: 'balabac', label: 'Balabac' },
   { value: 'puerto-princesa', label: 'Puerto Princesa' },
   { value: 'siargao', label: 'Siargao' },
+  { value: 'batanes', label: 'Batanes' },
 ];
 
 export function Filter() {

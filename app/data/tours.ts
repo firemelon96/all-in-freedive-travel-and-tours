@@ -1036,7 +1036,6 @@ export const tours = [
     ],
     images: [
       '/res/tours/batanes/4d3n/bt00.avif',
-      '/res/tours/batanes/4d3n/bt01.avif',
       '/res/tours/batanes/4d3n/bt02.avif',
       '/res/tours/batanes/4d3n/bt03.avif',
       '/res/tours/batanes/4d3n/bt04.avif',
