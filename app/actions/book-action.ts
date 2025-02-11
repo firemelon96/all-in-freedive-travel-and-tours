@@ -22,15 +22,14 @@ export const bookAction = async (values: schemaTypes) => {
       subject: 'Inquiry message',
       react: EmailTemplate({ message, name, email }),
       cc: ['allinfreedivingandtourservices@gmail.com'],
+      replyTo: email,
     });
-
-    console.log(data);
 
     if (error) {
       return { error: 'failed' };
     }
 
-    return { success: true, message: 'Email sent successfully!' };
+    return { success: true, message: 'Email sent successfully!', data };
   } catch (error) {
     return { success: false, error };
   }
