@@ -63,13 +63,20 @@ const SlugPage = async ({ params }: Props) => {
             delay={600}
             className='p-2 text-justify'
           >
+            <CollapsibleBox
+              videoUrl={service.videoUrl}
+              className='md:hidden pb-4'
+            />
             <p>{service?.description}</p>
           </FadeInWrapper>
 
           <FadeInWrapper delay={600} className='p-2 bg-stone-50'>
+            <CollapsibleBox
+              videoUrl={service.videoUrl}
+              className='hidden md:block'
+            />
             <CollapsibleBox destinations={service.destination} />
             <CollapsibleBox highlights={service.highlights} />
-            <CollapsibleBox videoUrl={service.videoUrl} />
             {/* <CollapsibleBox exclusions={service.exclusions} />
             <CollapsibleBox expectations={service.expectations} />
             <CollapsibleBox thingsToBring={service.things_to_bring} />

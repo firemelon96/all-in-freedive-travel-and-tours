@@ -7,6 +7,7 @@ import {
 import { Check, Dumbbell, Route, X } from 'lucide-react';
 import FadeInWrapper from '../app/(frontend)/components/fade-in-wrapper';
 import PortraitVideoCard from '@/app/(frontend)/components/video';
+import { cn } from '@/lib/utils';
 
 type Itinerary = {
   day: string;
@@ -24,6 +25,7 @@ type Props = {
   destinations?: string[];
   highlights?: string[];
   videoUrl?: string;
+  className?: string;
 };
 
 export const CollapsibleBox = ({
@@ -36,9 +38,10 @@ export const CollapsibleBox = ({
   destinations,
   highlights,
   videoUrl,
+  className,
 }: Props) => {
   return (
-    <div>
+    <div className={cn('', className)}>
       {itineraries &&
         itineraries.map((itinerary, i) => (
           <Collapsible key={itinerary.day} className='text-start'>
@@ -81,7 +84,7 @@ export const CollapsibleBox = ({
       {inclusions && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Inclusions :</p>
+            <p className='text-xl font-medium'>Inclusions :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -98,7 +101,7 @@ export const CollapsibleBox = ({
       {destinations && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Destinations :</p>
+            <p className='text-xl font-medium'>Destinations :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -115,7 +118,7 @@ export const CollapsibleBox = ({
       {highlights && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Trip Highlights :</p>
+            <p className='text-xl font-medium'>Trip Highlights :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -131,7 +134,7 @@ export const CollapsibleBox = ({
       {videoUrl && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Media :</p>
+            <p className='text-md font-medium'>Media :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <FadeInWrapper direction='right' className='p-2 w-full'>
@@ -145,7 +148,7 @@ export const CollapsibleBox = ({
       {exclusions && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Exclusions :</p>
+            <p className='text-xl font-medium'>Exclusions :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -162,7 +165,7 @@ export const CollapsibleBox = ({
       {expectations && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Expectations :</p>
+            <p className='text-xl font-medium'>Expectations :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -179,7 +182,7 @@ export const CollapsibleBox = ({
       {thingsToBring && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Things to Bring :</p>
+            <p className='text-xl font-medium'>Things to Bring :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>
@@ -196,7 +199,7 @@ export const CollapsibleBox = ({
       {termsAndConditions && (
         <Collapsible className='text-start'>
           <CollapsibleTrigger className=' flex items-center gap-2 text-xl w-full p-2 shadow-sm transition ease-in-out border'>
-            <p className='text-xl font-semibold'>Terms and Conditions :</p>
+            <p className='text-xl font-medium'>Terms and Conditions :</p>
           </CollapsibleTrigger>
           <CollapsibleContent className='bg-white p-4 border'>
             <div className='flex flex-col gap-2'>

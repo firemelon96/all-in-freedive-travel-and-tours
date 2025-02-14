@@ -25,6 +25,13 @@ export const servicesData = [
       '/res/intro02.jpg',
       '/res/intro03.jpg',
     ],
+    openWaterReqs: [
+      'CWTB and Free Immersion: Dive to a depth of 24-30 meters in open water comfortably.',
+      'CNF - Dive to a depth of 15 meters with no fins comfortably.',
+      'CWTB Buddying : Proper Rescue from 10-15 meters.',
+      'Rescue comfortably from 15 meters.',
+    ],
+    paxExclusion: ['Freediving Gears (Long Fins, Mask and Snorkel)'],
   },
   {
     slug: 'line-training',

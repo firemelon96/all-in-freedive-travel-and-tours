@@ -50,12 +50,16 @@ const SlugPage = async ({ params }: Props) => {
       <div className='flex flex-col-reverse md:flex-row mt-5'>
         <div className=' w-full p-4 space-y-4'>
           <div className='space-y-4'>
-            <FadeInWrapper className='relative' direction='left' delay={300}>
+            <FadeInWrapper
+              className='flex items-center md:justify-start justify-center gap-3'
+              direction='left'
+              delay={300}
+            >
               <h1 className='md:text-4xl text-center md:text-start text-2xl text-sky-700 font-bold uppercase'>
                 {service?.title}
               </h1>
               {service.icon && (
-                <div className='absolute right-0 -top-2'>
+                <div className=''>
                   <Image
                     src={service.icon || ''}
                     alt='icon'
