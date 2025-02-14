@@ -71,6 +71,8 @@ const SlugPage = async ({ params }: Props) => {
             </FadeInWrapper>
             <FadeInWrapper direction='left' delay={500}>
               <Book
+                isHiddenTitle
+                title={service.title}
                 location={service?.location}
                 duration={service.duration}
                 price={service.price}

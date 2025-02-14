@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Award, Banknote, Calendar, Luggage, MapPinIcon } from 'lucide-react';
 import { Badge } from './ui/badge';
+import { useRouter } from 'next/navigation';
 // import { useTransition } from 'react';
 
 type Props = {
@@ -10,7 +11,7 @@ type Props = {
   price?: string;
   duration?: string;
   certification?: string;
-
+  isHiddenTitle?: boolean;
   title?: string;
 };
 export const Book = ({
@@ -19,28 +20,32 @@ export const Book = ({
   duration,
   certification,
   title,
+  isHiddenTitle = false,
 }: Props) => {
+  const router = useRouter();
   // const [isPending, startTransition] = useTransition();
   const onSubmit = () => {
-    const data = {
-      location,
-      price,
-      duration,
-      certification,
-      title,
-    };
+    const textMessage = `
+    Inquiry:
+    Title: ${title}
+    Price: ${price ? price : 'Request quote'}
+    `;
 
+    const encodedText = encodeURIComponent(textMessage);
+
+    const whatsAppAPIUrl = 'https://api.whatsapp.com/send/?phone=639524777904';
+
+    router.push(`${whatsAppAPIUrl}&text=${encodedText}`);
     // startTransition(() => {
     //   bookAction()
     // }))
-    console.log(data);
   };
 
   const removedPackageName = title?.split('-')[1];
   return (
     <>
       <div className='bg-sky-100 items-center flex justify-center md:justify-start md:items-start flex-col space-y-2 p-2 text-xl rounded-sm relative'>
-        {title && (
+        {!isHiddenTitle && title && (
           <h2 className='flex items-center text-xl font-semibold text-sky-700'>
             <Luggage className='size-4 mr-2' />
             <span className='flex-1'>{removedPackageName || title}</span>

@@ -57,6 +57,8 @@ const SinglePage = async ({ params }: Props) => {
             </FadeInWrapper>
             <FadeInWrapper direction='left' delay={300}>
               <Book
+                isHiddenTitle
+                title={service.title}
                 location={service?.location}
                 duration={service.duration}
                 price={service.price}
