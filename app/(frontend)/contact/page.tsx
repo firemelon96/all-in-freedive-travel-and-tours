@@ -29,14 +29,14 @@ const ContactPage = () => {
             <Card className='p-4 items-center justify-center flex flex-col gap-4'>
               <Link
                 href='https://api.whatsapp.com/send/?phone=639524777904'
-                className='flex gap-2 rounded-md'
+                className='flex gap-2 rounded-md underline'
               >
                 <FaWhatsapp className='size-6' /> <span> +63952-477-7904</span>
               </Link>
 
               <Link
                 href={'mailto:allinfreedivingandtourservices@gmail.com'}
-                className='flex gap-2 rounded-md'
+                className='flex gap-2 rounded-md underline'
               >
                 <Mail /> <span>allinfreedivingandtourservices@gmail.com</span>
               </Link>
