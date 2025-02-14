@@ -31,8 +31,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'All In Travel and Freediving Tours',
-    template: '%s | All In Travel and Freediving Tours',
+    default: 'All In Freediving and Tour Services',
+    template: '%s | All In Freediving and Tour Services',
   },
   description:
     'At All In Freediving and Tour Services, we specialize in crafting unforgettable, premium travel experiences across the Philippines.',
