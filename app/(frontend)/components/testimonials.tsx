@@ -24,7 +24,7 @@ export const Testimonial = () => {
               direction='left'
               className=' bg-red-50 h-64 md:h-full'
             >
-              <ImageCard url='/testimonial.jpg' />
+              <ImageCard url='/team.avif' />
             </FadeInWrapper>
           </div>
           <div className='flex flex-col md:w-1/2 w-full gap-2'>
