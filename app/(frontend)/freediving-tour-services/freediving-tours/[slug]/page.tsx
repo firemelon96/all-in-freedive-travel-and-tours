@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { getServiceBySlug, getServiceBySlugAndType } from '@/lib/helper';
 import { notFound } from 'next/navigation';
 import { Book } from '@/components/book';
+import PortraitVideoCard from '@/app/(frontend)/components/video';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -61,12 +62,11 @@ const SlugPage = async ({ params }: Props) => {
           <FadeInWrapper
             direction='left'
             delay={600}
-            className='p-2 text-justify'
+            className='p-2 text-justify space-y-4'
           >
-            <CollapsibleBox
-              videoUrl={service.videoUrl}
-              className='md:hidden pb-4'
-            />
+            <div className='md:hidden'>
+              <PortraitVideoCard videoUrl={service.videoUrl || ''} />
+            </div>
             <p>{service?.description}</p>
           </FadeInWrapper>
 
