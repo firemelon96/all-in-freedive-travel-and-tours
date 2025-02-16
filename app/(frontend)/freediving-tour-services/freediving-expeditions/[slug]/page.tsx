@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props) {
     openGraph: {
       title: service.title,
       description: service.description[0],
-      url: `https://allintravelandfreedivingtourservices.com/freediving-tour-services/freediving-expeditions/${service.slug}`,
+      url: `https://allinfreedivingandtourservices.com/freediving-tour-services/freediving-expeditions/${service.slug}`,
       siteName: 'All In Freediving and Tour Services',
       images: [{ url: service.images[0] }],
     },

@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: tour.title,
       description: tour.description,
-      url: `https://allintravelandfreedivingtourservices.com/travel-and-tour-services/${tour.slug}`,
+      url: `https://allinfreedivingandtourservices.com/travel-and-tour-services/${tour.slug}`,
       siteName: 'All In Freediving and Tour Services',
       images: [{ url: tour.images[0] }],
     },
