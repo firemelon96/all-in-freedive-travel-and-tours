@@ -19,13 +19,18 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = (await params).slug;
   const tour = getTourBySlug(slug);
+
   if (!tour) return { title: 'Not Found' };
   return {
     title: tour?.title,
-    description: tour?.description,
+    description: Array.isArray(tour.description)
+      ? tour.description[0]
+      : tour?.description,
     openGraph: {
       title: tour.title,
-      description: tour.description,
+      description: Array.isArray(tour.description)
+        ? tour.description[0]
+        : tour?.description,
       url: `https://allinfreedivingandtourservices.com/travel-and-tour-services/${tour.slug}`,
       siteName: 'All In Freediving and Tour Services',
       images: [{ url: tour.images[0] }],
@@ -33,7 +38,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: 'summary_large_image',
       title: tour.title,
-      description: tour.description,
+      description: Array.isArray(tour.description)
+        ? tour.description[0]
+        : tour?.description,
       images: [tour.images[0]], // Twitter Card Image
     },
   };
@@ -66,7 +73,15 @@ const SinglePage = async ({ params }: Props) => {
             delay={600}
             className='p-2 text-justify'
           >
-            <p>{tour?.description}</p>
+            {Array.isArray(tour.description) ? (
+              tour.description.map((desc) => (
+                <p key={desc} className='mt-3'>
+                  {desc}
+                </p>
+              ))
+            ) : (
+              <p>{tour.description}</p>
+            )}
           </FadeInWrapper>
           <FadeInWrapper delay={500} className='p-2 border'>
             <span className='text-2xl font-semibold'>Detailed Itinerary :</span>

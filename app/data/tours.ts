@@ -3,8 +3,11 @@ export const tours = [
   {
     slug: '4d3n-balabac-tour-package',
     title: '4D3N Balabac Tour Package',
-    description:
+    description: [
       'Experience the untouched beauty of Balabac, Palawan with this 4 days and 3 nights expedition to remote islands. This package offers a unique opportunity to explore pristine beaches, stunning sandbars, and crystal-clear waters. Ideal for adventurers who are ready to embrace the raw and rugged charm of island life, this is not a luxury tour but a memorable journey into one of the Philippines most unspoiled destinations.',
+      'The best months to visit Balabac, Palawan are from March to May during the dry season. These months offer calm seas, clear skies, and the best visibility for snorkeling and island hopping.',
+      'However, if you want fewer tourists and don’t mind some rain, November to February can also be good, though the seas may be rougher. Avoid June to October due to the rainy season and possible typhoons.',
+    ],
     type: 'package',
     address: 'balabac',
     price: 'PHP 17,000 | USD 300 per person',
