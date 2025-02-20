@@ -81,9 +81,9 @@ const TeamPage = () => {
           <FadeInWrapper delay={800} className='space-y-4 '>
             <p className='md:text-2xl text-xl text-justify'>
               Our team’s expertise, passion, and commitment to excellence ensure
-              that your travel experience is truly exceptional. At All In Travel
-              and Freediving Tours, you’re not just a traveler—you’re a part of
-              our family, and we are here to create a personalized,
+              that your travel experience is truly exceptional. At All In
+              Freediving and Tour Services, you’re not just a traveler—you’re a
+              part of our family, and we are here to create a personalized,
               unforgettable journey tailored just for you.
             </p>
             <p className='md:text-2xl text-xl text-justify'>

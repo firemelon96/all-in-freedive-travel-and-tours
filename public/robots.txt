@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.allinfreedivingandtourservices.com
+
+# Sitemaps
+Sitemap: https://www.allinfreedivingandtourservices.com/sitemap.xml
