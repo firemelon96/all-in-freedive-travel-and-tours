@@ -5,6 +5,32 @@ import { Mail } from 'lucide-react';
 import FadeInWrapper from '../components/fade-in-wrapper';
 import { FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description:
+    'Want to get in touch? Wed love to hear from you here in All in Freediving and Tour Services',
+  openGraph: {
+    title: 'Contact Us',
+    description:
+      'Want to get in touch? Wed love to hear from you here in All in Freediving and Tour Services',
+    url: 'https://allinfreedivingandtourservices.com/about-us',
+    siteName: 'All In Freediving and Tour Services',
+    images: [
+      'https://res.cloudinary.com/dutkzg9la/image/upload/v1738145286/GRNT-0711-2_odhkma.jpg',
+    ], // Twitter Card Image
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Us',
+    description:
+      'Want to get in touch? Wed love to hear from you here in All in Freediving and Tour Services',
+    images: [
+      'https://res.cloudinary.com/dutkzg9la/image/upload/v1738145286/GRNT-0711-2_odhkma.jpg',
+    ], // Twitter Card Image
+  },
+};
 
 const ContactPage = () => {
   return (

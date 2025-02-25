@@ -1,6 +1,7 @@
 import { BannerImage } from '@/components/banner-image';
 import { Card } from '@/components/ui/card';
 import FadeInWrapper from '../components/fade-in-wrapper';
+import { Metadata } from 'next';
 
 const featuredPackages = [
   {
@@ -49,6 +50,31 @@ const featuredPackages = [
       'One of the Philippines’ most iconic destinations, our El Nido Tour Package lets you discover hidden lagoons, secret beaches, and limestone cliffs. This paradise is perfect for those seeking adventure, relaxation, and breathtaking natural beauty.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description:
+    'At All in unforgettable, we specialize in crafting unforgettable, premium travel experiences across the Philippines.',
+  openGraph: {
+    title: 'About Us',
+    description:
+      'At All in Freediving and Tour Services, we specialize in crafting unforgettable, premium travel experiences across the Philippines.',
+    url: 'https://allinfreedivingandtourservices.com/meet-the-team',
+    siteName: 'All In Freediving and Tour Services',
+    images: [
+      'https://res.cloudinary.com/dutkzg9la/image/upload/v1738145286/GRNT-0711-2_odhkma.jpg',
+    ], // Twitter Card Image
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Meet the Team',
+    description:
+      'At All in Freediving and Tour Services, we specialize in crafting unforgettable, premium travel experiences across the Philippines.',
+    images: [
+      'https://res.cloudinary.com/dutkzg9la/image/upload/v1738145286/GRNT-0711-2_odhkma.jpg',
+    ], // Twitter Card Image
+  },
+};
 
 const AboutPage = () => {
   return (
