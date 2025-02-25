@@ -40,10 +40,10 @@ export const About = () => {
             </div>
           </FadeInWrapper>
           <FadeInWrapper delay={500} className='col-span-1'>
-            <TextCard count={1900} label='Happy Clients' />
+            <TextCard count={0} label='Happy Clients' />
           </FadeInWrapper>
           <FadeInWrapper delay={600} className='col-span-1'>
-            <TextCard count={5} label='Years in Service' />
+            <TextCard count={0} label='Year in Service' />
           </FadeInWrapper>
           <FadeInWrapper delay={700} className='col-span-2 h-44 md:h-full'>
             <ImageCard url='/about-img01.png' />
