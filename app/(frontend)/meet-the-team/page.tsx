@@ -18,14 +18,14 @@ export const metadata: Metadata = {
       'Our team is made up of passionate travel experts, experienced freediving instructor, and knowledgeable local guides. We share a deep love for the Philippines and are dedicated to offering premium, immersive travel experiences that showcase the beauty and culture of this tropical paradise.',
     url: 'https://allinfreedivingandtourservices.com/meet-the-team',
     siteName: 'All In Freediving and Tour Services',
-    // images: ['/team.avif'], // Twitter Card Image
+    images: ['/team.avif'], // Twitter Card Image
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Meet the Team',
     description:
       'Our team is made up of passionate travel experts, experienced freediving instructor, and knowledgeable local guides. We share a deep love for the Philippines and are dedicated to offering premium, immersive travel experiences that showcase the beauty and culture of this tropical paradise.',
-    // images: ['/team.avif'], // Twitter Card Image
+    images: ['/team.avif'], // Twitter Card Image
   },
 };
 
