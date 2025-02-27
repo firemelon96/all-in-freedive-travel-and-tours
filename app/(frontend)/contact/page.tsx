@@ -3,7 +3,12 @@ import { Card } from '@/components/ui/card';
 import { ContactForm } from './_features/contact-form';
 import { Mail } from 'lucide-react';
 import FadeInWrapper from '../components/fade-in-wrapper';
-import { FaWhatsapp } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaFacebookF,
+  FaFacebookSquare,
+  FaWhatsapp,
+} from 'react-icons/fa';
 import Link from 'next/link';
 import { Metadata } from 'next';
 
@@ -65,6 +70,15 @@ const ContactPage = () => {
                 className='flex gap-2 rounded-md underline'
               >
                 <Mail /> <span>allinfreedivingandtourservices@gmail.com</span>
+              </Link>
+              <Link
+                href={
+                  'https://web.facebook.com/profile.php?id=61573812864261&_rdc=1&_rdr#'
+                }
+                className='flex gap-2 rounded-md underline'
+              >
+                <FaFacebook className='size-5' />
+                <span>All in Freediving and Tour Services</span>
               </Link>
             </Card>
           </FadeInWrapper>
