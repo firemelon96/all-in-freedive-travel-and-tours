@@ -3,12 +3,7 @@ import { Card } from '@/components/ui/card';
 import { ContactForm } from './_features/contact-form';
 import { Mail } from 'lucide-react';
 import FadeInWrapper from '../components/fade-in-wrapper';
-import {
-  FaFacebook,
-  FaFacebookF,
-  FaFacebookSquare,
-  FaWhatsapp,
-} from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 import { Metadata } from 'next';
 
