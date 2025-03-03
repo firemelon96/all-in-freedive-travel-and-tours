@@ -222,8 +222,8 @@ export const tours = [
       'Guests must follow safety guidelines provided by the tour guide.',
     ],
     images: [
-      '/res/island-escapade-tour/malcapuya-island-1.jpg',
-      '/res/island-escapade-tour/malcapuya-island-0.jpg',
+      '/res/island-escapade-tour/Malcapuya-island-1.jpg',
+      '/res/island-escapade-tour/Malcapuya-island-0.jpg',
       '/res/island-escapade-tour/banana-island.jpg',
       '/res/island-escapade-tour/bulog-dos-island.jpg',
     ],
@@ -300,7 +300,7 @@ export const tours = [
       'Guests must follow safety guidelines provided by the tour guide.',
     ],
     images: [
-      '/res/reef-and-wrecks/pass-island.jpg',
+      '/res/reef-and-wrecks/PASS-ISLAND.jpg',
       '/res/reef-and-wrecks/lusong-coral-garden.jpg',
       '/res/reef-and-wrecks/east-tangat-wreck.png',
       '/res/reef-and-wrecks/lusong-gunboat.jpeg',
