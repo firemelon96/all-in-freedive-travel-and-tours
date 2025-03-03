@@ -8,7 +8,7 @@ type Props = {
 
 export const TourType = ({ items }: Props) => {
   return (
-    <div className='space-x-4'>
+    <div className='flex gap-2'>
       {items.map((item) => (
         <TypeItem key={item} name={item} />
       ))}

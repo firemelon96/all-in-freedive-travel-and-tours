@@ -36,7 +36,7 @@ export function Filter() {
         url: pathname,
         query: {
           location: selectedLocation,
-          type: currentType || 'package',
+          type: currentType,
         },
       },
       { skipEmptyString: true, skipNull: true }

@@ -26,11 +26,11 @@ const TourPage = async ({ searchParams }: Props) => {
       />
       <section className='container mx-auto'>
         <div className='flex flex-col gap-4 my-10'>
-          <div className='flex flex-wrap md:flex-row  p-2 gap-2 bg-slate-50'>
-            <FadeInWrapper direction='left' className='w-full'>
+          <div className='flex w-full flex-col md:flex-row p-2 gap-2 bg-slate-50'>
+            <FadeInWrapper direction='left' className=''>
               <Filter />
             </FadeInWrapper>
-            <FadeInWrapper direction='left' delay={200} className='w-full'>
+            <FadeInWrapper direction='left' delay={200} className=''>
               <TourType items={tourTypes} />
             </FadeInWrapper>
           </div>
@@ -45,6 +45,11 @@ const TourPage = async ({ searchParams }: Props) => {
               </FadeInWrapper>
             ))}
           </div>
+          {tourData.length === 0 && (
+            <p className='p-2 text-xl text-slate-500'>
+              No Result Found for this filter
+            </p>
+          )}
         </div>
       </section>
     </>

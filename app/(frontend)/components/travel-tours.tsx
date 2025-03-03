@@ -21,7 +21,7 @@ export const TravelTours = () => {
         />
       </div>
       <div className='flex z-10 items-center justify-center gap-6 w-full absolute inset-y-0 flex-col'>
-        <Headline heading='Explore Our Travel and Tour Packages' />
+        <Headline heading='Explore Our Travel and Tour Services' />
         <Carousel className='w-full container mx-auto'>
           {/* TODO: add a filter tour hekhek */}
           <CarouselContent className=''>

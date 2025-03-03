@@ -1,5 +1,3 @@
-import { Copyright } from 'lucide-react';
-
 export const Copyrights = () => {
   return (
     <div className='flex p-2 items-center flex-col md:flex-row text-center justify-center text-white/50 bg-blue-900 gap-0.5 text-sm'>
