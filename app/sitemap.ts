@@ -1,5 +1,4 @@
 import { getServiceByType } from '@/lib/helper';
-import { url } from 'inspector';
 import { MetadataRoute } from 'next';
 import { tours } from './data/tours';
 
