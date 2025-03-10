@@ -41,6 +41,7 @@ export default function NewHero() {
           alt='Background'
           fill
           className='object-cover'
+          priority
         />
       </div>
 
