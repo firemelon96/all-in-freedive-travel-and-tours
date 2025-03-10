@@ -17,21 +17,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = (await params).slug;
   const service = getServiceBySlug(slug);
+
   if (!service) return { title: 'Not Found' };
+
   return {
     title: service.title,
     description: service.description[0],
     openGraph: {
-      title: service.title,
-      description: service.description[0],
-      url: `https://allinfreedivingandtourservices.com/courses-and-certifications/${service.slug}`,
-      siteName: 'All In Freediving and Tour Services',
       images: [{ url: service.images[0] }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: service.title,
-      description: service.description[0],
       images: [service.images[0]], // Twitter Card Image
     },
   };
