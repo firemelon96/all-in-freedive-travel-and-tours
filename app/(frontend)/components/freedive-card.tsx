@@ -16,7 +16,8 @@ export const FreediveCard = ({ title, slug, image }: Props) => {
           <Image
             src={image || '/dive-up.jpg'}
             fill
-            alt='dive up'
+            loading='lazy'
+            alt={title}
             className='object-cover h-72'
           />
         </div>

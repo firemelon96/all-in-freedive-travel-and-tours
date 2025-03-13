@@ -10,15 +10,14 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { tours } from '@/app/data/tours';
 
-const locations = [
-  { value: 'all', label: 'All Location' },
-  { value: 'coron', label: 'Coron' },
-  { value: 'el-nido', label: 'El Nido' },
-  { value: 'balabac', label: 'Balabac' },
-  { value: 'puerto-princesa', label: 'Puerto Princesa' },
-  { value: 'siargao', label: 'Siargao' },
-  { value: 'batanes', label: 'Batanes' },
+const mappedUniqueAddress = [
+  { value: 'all', label: 'All Locations' },
+  ...Array.from(new Set(tours.map((tour) => tour.address))).map((address) => ({
+    value: address,
+    label: address,
+  })),
 ];
 
 export function Filter() {
@@ -53,7 +52,7 @@ export function Filter() {
             <SelectValue placeholder='Select a category' />
           </SelectTrigger>
           <SelectContent>
-            {locations.map((location) => (
+            {mappedUniqueAddress.map((location) => (
               <SelectItem key={location.value} value={location.value}>
                 {location.label}
               </SelectItem>

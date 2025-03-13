@@ -100,7 +100,12 @@ const SinglePage = async ({ params }: Props) => {
           direction='right'
           className='md:w-[420px] w-full'
         >
-          <Book title={tour.title} price={tour.price} />
+          <Book
+            title={tour.title}
+            price={tour.price}
+            duration={tour.duration}
+            location={tour.address}
+          />
         </FadeInWrapper>
       </div>
     </section>

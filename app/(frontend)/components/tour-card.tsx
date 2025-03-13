@@ -17,6 +17,7 @@ export const TourCard = ({ title, slug, image }: Props) => {
           height={300}
           width={300}
           alt='dive up'
+          loading='lazy'
           className='object-cover h-72'
         />
         <div className='flex flex-col p-2 text-center gap-2 py-4'>

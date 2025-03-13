@@ -14,7 +14,13 @@ export const BannerImage = ({ title, imageUrl }: Props) => {
       <h1 className='md:text-5xl text-3xl font-bold text-sky-100 z-10'>
         {title}
       </h1>
-      <Image src={imageUrl} fill alt='image-bg' className='object-cover' />
+      <Image
+        src={imageUrl}
+        fill
+        alt='image-bg'
+        priority
+        className='object-cover'
+      />
       <div className='absolute w-full h-full bg-sky-800/50' />
     </div>
   );

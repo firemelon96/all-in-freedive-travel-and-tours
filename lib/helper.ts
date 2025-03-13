@@ -40,15 +40,15 @@ export const getTravelTours = ({
   let travelTourData = [];
 
   if (location === 'all') {
-    if (type) {
-      travelTourData = tours.filter((data) => data.type === type);
-    } else {
-      travelTourData = tours;
-    }
+    travelTourData = tours;
   } else {
-    travelTourData = tours.filter(
-      (tour) => tour.type === type && tour.address === location
-    );
+    if (!type) {
+      travelTourData = tours.filter((tour) => tour.address === location);
+    } else {
+      travelTourData = tours.filter(
+        (tour) => tour.type === type && tour.address === location
+      );
+    }
   }
 
   return travelTourData;

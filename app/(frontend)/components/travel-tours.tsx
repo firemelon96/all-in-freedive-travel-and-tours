@@ -18,7 +18,7 @@ export const TravelTours = () => {
           alt='Background'
           fill
           className='object-cover'
-          priority
+          loading='lazy'
         />
       </div>
       <div className='absolute inset-0 bg-black/30'></div>

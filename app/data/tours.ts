@@ -9,7 +9,8 @@ export const tours = [
       'Enjoy the convenience of an all-inclusive tour with boat transfers, lunch, and a knowledgeable guide to ensure an unforgettable adventure.',
     ],
     type: 'day tour',
-    address: 'coron',
+    duration: '1 Day',
+    address: 'Coron, Palawan',
     price: 'PHP 1,200 | USD 20 per person',
     itineraries: [
       {
@@ -89,7 +90,8 @@ export const tours = [
       'With hassle-free boat transfers, a delicious lunch, and a knowledgeable guide, enjoy a seamless and memorable adventure in one of Palawan’s most beautiful destinations.',
     ],
     type: 'day tour',
-    address: 'coron',
+    address: 'Coron, Palawan',
+    duration: '1 Day',
     price: 'PHP 1,400 | USD 24 per person',
     itineraries: [
       {
@@ -167,7 +169,8 @@ export const tours = [
       'With boat transfers, lunch, and a friendly guide included, this is the perfect way to spend a day in paradise.',
     ],
     type: 'day tour',
-    address: 'coron',
+    address: 'Coron, Palawan',
+    duration: '1 Day',
     price: 'PHP 1,700 | USD 30 per person',
     itineraries: [
       {
@@ -237,7 +240,8 @@ export const tours = [
       'With boat transfers, lunch, and a friendly guide included, this is an unforgettable adventure in Palawan’s waters.',
     ],
     type: 'day tour',
-    address: 'coron',
+    address: 'Coron, Palawan',
+    duration: '1 Day',
     price: 'PHP 1,700 | USD 30 per person',
     itineraries: [
       {
@@ -315,7 +319,8 @@ export const tours = [
       'Enjoy a hassle-free experience with round-trip transfers, entrance fees, and a delicious local lunch included.',
     ],
     type: 'day tour',
-    address: 'coron',
+    address: 'Coron, Palawan',
+    duration: '1 Day',
     price: 'PHP 2,700 | USD 48 per person',
     itineraries: [
       {
@@ -394,7 +399,8 @@ export const tours = [
       'This tour is perfect for those who want a mix of culture, history, and relaxation while discovering the charm of Coron.',
     ],
     type: 'day tour',
-    address: 'coron',
+    address: 'Coron, Palawan',
+    duration: '1 Day',
     price: 'PHP 800 | USD 14 per person',
     itineraries: [
       {
@@ -474,7 +480,8 @@ export const tours = [
       'However, if you want fewer tourists and don’t mind some rain, November to February can also be good, though the seas may be rougher. Avoid June to October due to the rainy season and possible typhoons.',
     ],
     type: 'package',
-    address: 'balabac',
+    address: 'Balabac, Palawan',
+    duration: '4 Days & 3 Nights',
     price: 'PHP 17,000 | USD 300 per person',
     itineraries: [
       {
@@ -577,7 +584,8 @@ export const tours = [
     description:
       "Immerse yourself in the stunning beauty of Coron, Palawan with this 3 days and 2 nights adventure. This package is designed to provide an unforgettable experience of island hopping, scenic views, and relaxing stays. Perfect for couples, friends, or families who are ready to explore one of the Philippines' most breathtaking destinations while enjoying comfort and convenience.",
     type: 'package',
-    address: 'coron',
+    address: 'Coron, Palawan',
+    duration: '3 Day & 2 Nights',
     price: 'PHP 7,500 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
@@ -664,7 +672,8 @@ export const tours = [
     description:
       'Explore the breathtaking islands of Coron, Palawan with this 4 days and 3 nights tour package. Perfect for adventurers and nature lovers, this package offers an incredible blend of relaxation and excitement with comfortable accommodations and unforgettable island-hopping experiences. Ideal for couples, families, and small groups ready to discover Coron’s natural beauty.',
     type: 'package',
-    address: 'coron',
+    address: 'Coron, Palawan',
+    duration: '4 Days & 3 Nights',
     price: 'PHP 10,000 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
@@ -765,7 +774,8 @@ export const tours = [
     description:
       'Immerse yourself in the natural wonders of Coron, Palawan with this 5 days and 4 nights tour package. Experience the stunning islands, vibrant marine life, and unique wildlife with a blend of island-hopping adventures and a safari tour. Perfect for couples, families, and small groups, this package promises a balance of relaxation, exploration, and unforgettable memories.',
     type: 'package',
-    address: 'coron',
+    address: 'Coron, Palawan',
+    duration: '5 Days & 4 Nights',
     price: 'PHP 16,000 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
@@ -879,7 +889,8 @@ export const tours = [
     description:
       'Discover the stunning beauty of El Nido with this 3 days and 2 nights tour package. Perfect for joiner groups, enjoy a full day of island hopping, comfortable accommodations, and roundtrip transfers for a hassle-free getaway.',
     type: 'package',
-    address: 'el-nido',
+    address: 'El Nido, Palawan',
+    duration: '3 Days & 2 Nights',
     price: 'PHP 8,000 per person (Joiner)',
     itineraries: [
       {
@@ -977,7 +988,8 @@ export const tours = [
     description:
       'Immerse yourself in the breathtaking landscapes of El Nido with this 4 days and 3 nights tour package. Perfect for joiner groups, enjoy two full days of island hopping, comfortable accommodations, and convenient transfers for an unforgettable tropical getaway.',
     type: 'package',
-    address: 'el-nido',
+    address: 'El Nido, Palawan',
+    duration: '4 Days & 3 Nights',
     price: 'PHP 13,500 per person (Joiner)',
     min_participants: 2,
     itineraries: [
@@ -1092,7 +1104,8 @@ export const tours = [
     description:
       'Experience the best of Siargao with this 3 days and 2 nights tour package. Perfect for quick getaways, this package includes an island-hopping adventure and comfortable accommodations to ensure a memorable stay.',
     type: 'package',
-    address: 'siargao',
+    address: 'Siargao',
+    duration: '3 Days & 2 Nights',
     price: 'PHP 6,500 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
@@ -1185,7 +1198,8 @@ export const tours = [
     description:
       'Discover the tropical paradise of Siargao with this 4 days and 3 nights tour package. Explore breathtaking landscapes, enjoy a day of land adventures, and hop between stunning islands. This package is ideal for couples, families, or small groups seeking a memorable island getaway.',
     type: 'package',
-    address: 'siargao',
+    address: 'Siargao',
+    duration: '4 Days & 3 Nights',
     price: 'PHP 10,000 per person (Joiner, Min of 2 pax)',
     itineraries: [
       {
@@ -1297,7 +1311,8 @@ export const tours = [
     description:
       'Experience the best of Puerto Princesa with this 4 days and 3 nights tour package. Explore stunning islands, discover the Underground River, and enjoy a comfortable stay with convenient transfers for a truly memorable getaway.',
     type: 'package',
-    address: 'puerto-princesa',
+    address: 'Puerto Princesa, Palawan',
+    duration: '4 Days & 3 Nights',
     price: 'PHP 11,000 per person (Joiner)',
     min_participants: 1,
     itineraries: [
@@ -1395,7 +1410,8 @@ export const tours = [
     description:
       'Discover the breathtaking landscapes of Batanes with this 4 Days and 3 Night tour package. Immerse yourself in the rich culture, scenic rolling hills, lighthouses, and historical sites that make Batanes a must-visit destination. This joiner tour is perfect for travelers who want a hassle-free and guided experience through the most iconic spots in Batanes.',
     type: 'package',
-    address: 'batanes',
+    address: 'Batanes, Philippines',
+    duration: '4 Days & 3 Nights',
     price: 'PHP 14,000 | USD 250 per person',
     itineraries: [
       {
@@ -1516,7 +1532,8 @@ export const tours = [
     description:
       'Experience the ultimate 5 Days and 4 Night journey through Batanes. Explore the picturesque landscapes, historical stone houses, rolling hills, and stunning beaches. This joiner tour requires a minimum of 2 participants and includes guided tours to Batan North, Batan South, and Sabtang Island.',
     type: 'package',
-    address: 'batanes',
+    address: 'Batanes, Philippines',
+    duration: '5 Days & 4 Nights',
     price: 'PHP 19,000 | USD 330 per person',
     itineraries: [
       {
@@ -1659,7 +1676,8 @@ export const tours = [
     description:
       'Experience the beauty of Batanes with this 6 Days and 5 Nights tour package. Explore stunning landscapes, iconic stone houses, and picturesque rolling hills while immersing yourself in Ivatan culture. This joiner tour ensures a guided and hassle-free travel experience.',
     type: 'package',
-    address: 'batanes',
+    address: 'Batanes, Philippines',
+    duration: '6 Days & 5 Nights',
     price: 'PHP 23,000 | USD 395 per person',
     itineraries: [
       {

@@ -17,7 +17,13 @@ export const ImageBanner = ({ images }: Props) => {
               key={image}
               className='bg-rose-200 relative w-full first:col-span-3 even:col-span-2 md:even:col-span-1 first:row-span-2 md:first:col-span-2 md:first:row-span-2 first:h-full h-48 overflow-hidden'
             >
-              <Image src={image} fill alt='image' className='object-cover' />
+              <Image
+                src={image}
+                fill
+                alt='image'
+                priority
+                className='object-cover'
+              />
             </FadeInWrapper>
           ))}
           <ImageDialog images={images} />
