@@ -148,8 +148,7 @@ export const servicesData = [
   //freediving retreat
   {
     slug: 'freediving-retreat',
-    title:
-      'Discover the Serenity below the Surface: Freediving Adventures in Coron',
+    title: 'Freediving Retreat',
     location: 'Coron, Palawan, Philippines',
     duration: '5 Days and 4 Nights',
     type: 'retreat',

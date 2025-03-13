@@ -26,10 +26,11 @@ export const Book = ({
   // const [isPending, startTransition] = useTransition();
   const onSubmit = () => {
     const textMessage = `
-    Inquiry:
-    Title: ${title}
-    Price: ${price ? price : 'Request quote'}
-    `;
+    All in Freediving and Tour Services Inquiry
+    Title: ${title} - ${location}
+    Duration: ${duration}
+    Price: ${price ? price : 'Request Quote'}
+    `.replace(/^\s+/gm, '');
 
     const encodedText = encodeURIComponent(textMessage);
 

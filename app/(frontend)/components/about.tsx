@@ -6,7 +6,7 @@ import FadeInWrapper from './fade-in-wrapper';
 
 export const About = () => {
   return (
-    <div className='relative scroll-mt-10 mx-2' id='about'>
+    <div className='relative bg-sky-100 scroll-mt-10 ' id='about'>
       <div className='container mx-auto py-10'>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:grid-rows-3 mx-4 rounded-2xl overflow-hidden'>
           <FadeInWrapper
@@ -34,7 +34,7 @@ export const About = () => {
               culture of this tropical paradise.
             </p>
             <div className='w-full'>
-              <Button variant='outline' asChild className='w-full md:w-auto'>
+              <Button variant={'primary'} asChild className='w-full md:w-auto'>
                 <Link href='/about-us'>Read more...</Link>
               </Button>
             </div>

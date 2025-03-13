@@ -18,8 +18,10 @@ export const TravelTours = () => {
           alt='Background'
           fill
           className='object-cover'
+          priority
         />
       </div>
+      <div className='absolute inset-0 bg-black/30'></div>
       <div className='flex z-10 items-center justify-center gap-6 w-full absolute inset-y-0 flex-col'>
         <Headline heading='Explore Our Travel and Tour Services' />
         <Carousel className='w-full container mx-auto'>

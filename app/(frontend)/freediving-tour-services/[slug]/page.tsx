@@ -64,6 +64,12 @@ const SlugPage = async ({ params }: Props) => {
                 price={service.price}
               />
             </FadeInWrapper>
+            <FadeInWrapper direction='left'>
+              <h2 className='md:text-2xl text-xl text-sky-700 text-center md:text-start font-bold uppercase'>
+                Discover the Serenity below the Surface: Freediving Adventures
+                in Coron
+              </h2>
+            </FadeInWrapper>
             <FadeInWrapper delay={400} direction='left' className='p-2'>
               <h4 className='text-2xl text-sky-800 font-semibold '>Overview</h4>
               {service?.description.map((desc, i) => (
