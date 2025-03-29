@@ -6,6 +6,7 @@ import FadeInWrapper from '../components/fade-in-wrapper';
 import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { BusinessMap } from '@/components/map';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -76,13 +77,14 @@ const ContactPage = () => {
                 <span>All in Freediving and Tour Services</span>
               </Link>
             </Card>
+            <ContactForm />
           </FadeInWrapper>
           <FadeInWrapper
             delay={500}
             direction='right'
             className='w-full md:w-1/2'
           >
-            <ContactForm />
+            <BusinessMap />
           </FadeInWrapper>
         </div>
       </section>
