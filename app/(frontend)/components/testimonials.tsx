@@ -11,6 +11,8 @@ import AutoPlay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
 import { testimonials } from '@/app/data/testimonial';
 import FadeInWrapper from './fade-in-wrapper';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const Testimonial = () => {
   const plugin = useRef(AutoPlay({ delay: 5000, stopOnInteraction: false }));
@@ -30,10 +32,10 @@ export const Testimonial = () => {
           <div className='flex flex-col md:w-1/2 w-full gap-2'>
             <Headline
               label='Testimonials'
-              heading='What our Clients are Saying ...'
+              heading='Share Your Experience.'
               className='text-slate-700 '
             />
-            <Carousel plugins={[plugin.current]} opts={{ loop: true }}>
+            {/* <Carousel plugins={[plugin.current]} opts={{ loop: true }}>
               <CarouselContent>
                 {testimonials.map((entry) => (
                   <CarouselItem className='' key={entry.name}>
@@ -46,7 +48,14 @@ export const Testimonial = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-            </Carousel>
+            </Carousel> */}
+            <div className='flex w-full items-center justify-center'>
+              <Link href='https://tinyurl.com/yzvmvcv6'>
+                <div className='relative h-40 w-40'>
+                  <Image src='/res/feedback.png' fill alt='qr code' />
+                </div>
+              </Link>
+            </div>
           </div>
           {/* <div className='col-span-2 row-span-2'></div> */}
         </div>
