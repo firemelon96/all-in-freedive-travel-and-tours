@@ -1,21 +1,21 @@
 'use client';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel';
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+// } from '@/components/ui/carousel';
 import { Headline } from './headlines';
 import { ImageCard } from './image-card';
-import { ReviewCard } from './review-card';
-import AutoPlay from 'embla-carousel-autoplay';
-import { useRef } from 'react';
-import { testimonials } from '@/app/data/testimonial';
+// import { ReviewCard } from './review-card';
+// import AutoPlay from 'embla-carousel-autoplay';
+// import { useRef } from 'react';
+// import { testimonials } from '@/app/data/testimonial';
 import FadeInWrapper from './fade-in-wrapper';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const Testimonial = () => {
-  const plugin = useRef(AutoPlay({ delay: 5000, stopOnInteraction: false }));
+  // const plugin = useRef(AutoPlay({ delay: 5000, stopOnInteraction: false }));
   return (
     <section className='container mx-auto scroll-mt-10' id='testimonials'>
       <div className='py-10 mx-4'>
