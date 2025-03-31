@@ -32,7 +32,7 @@ export const Testimonial = () => {
           <div className='flex flex-col md:w-1/2 w-full gap-2'>
             <Headline
               label='Testimonials'
-              heading='Share Your Experience.'
+              heading='Share Your Experience Us.'
               className='text-slate-700 '
             />
             {/* <Carousel plugins={[plugin.current]} opts={{ loop: true }}>

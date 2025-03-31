@@ -48,9 +48,11 @@ export function NavigationBar() {
   return (
     <header className='bg-white sticky top-0 z-50 p-1 shadow-sm'>
       <div className='flex items-center container mx-auto justify-between'>
-        <div className='relative h-10 w-24'>
-          <Image src={'/logo-real.png'} fill alt='All in Freediving Logo' />
-        </div>
+        <Link href='/'>
+          <div className='relative h-10 w-24'>
+            <Image src={'/logo-real.png'} fill alt='All in Freediving Logo' />
+          </div>
+        </Link>
         {/* mobile navigation */}
         <Sheet open={open} onOpenChange={onClose}>
           <Button
