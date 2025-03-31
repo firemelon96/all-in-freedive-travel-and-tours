@@ -116,14 +116,7 @@ export const servicesData = [
       'Environmental Fees and Entrance Fees ',
       'Photos and Videos during the course.',
     ],
-    images: [
-      '/res/mw-1/mw01.jpeg',
-      // '/res/mw-2/mw200.avif',
-      // '/res/mw-2/mw201.avif',
-      // '/res/mw-2/mw202.avif',
-      // '/res/mw-2/mw203.avif',
-      // '/res/mw-2/mw204.avif',
-    ],
+    images: ['/res/mw-2/mw01.jpeg'],
     poolReqs: [
       'Basic swimming ability (comfortable swimming 200 meters unassisted).',
       'Static Apnea: Hold your breath for at least 1 minute and 30 seconds.',
