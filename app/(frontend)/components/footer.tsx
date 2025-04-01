@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className='bg-blue-950'>
       <section className='container mx-auto py-10'>
         <div className='flex flex-col mx-4 md:flex-row text-center items-center md:text-start md:items-start gap-4'>
-          <div className='md:w-1/2 w-full space-y-4'>
+          <div className='md:flex-1 w-full space-y-4'>
             <div className='flex items-center justify-center md:items-start md:justify-start'>
               <Image src='/logo-real.png' width={150} height={60} alt='logo' />
             </div>
@@ -22,17 +22,23 @@ export const Footer = () => {
             </p>
           </div>
           <div className='md:w-1/4 flex flex-col w-full  '>
-            <h4 className='text-2xl text-sky-600'>Important Links</h4>
+            <h4 className='text-2xl text-sky-600 text-center'>
+              Important Links
+            </h4>
             <FooterNav />
           </div>
 
-          <div className='md:w-1/4 space-y-4 flex flex-col md:items-start items-center'>
+          <div className='md:w-1/4 space-y-4 flex flex-col md:text-end'>
             <h4 className='text-2xl text-sky-600'>Open Hours</h4>
             <ul className='text-white'>
               <li>7:00 AM to 10:00 PM</li>
               <li>
-                <p>All In Freediving and Tour Services</p>
-                <span>San Agustin St. Barangay 4 Coron, Palawan 5316</span>
+                <p className='tracking-widest'>
+                  All In Freediving and Tour Services
+                </p>
+                <span className='tracking-wider'>
+                  San Agustin St. Barangay 4 Coron, Palawan 5316
+                </span>
               </li>
             </ul>
           </div>

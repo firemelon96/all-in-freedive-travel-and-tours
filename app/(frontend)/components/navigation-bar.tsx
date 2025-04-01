@@ -49,7 +49,7 @@ export function NavigationBar() {
     <header className='bg-white sticky top-0 z-50 p-1 shadow-sm'>
       <div className='flex items-center container mx-auto justify-between'>
         <Link href='/'>
-          <div className='relative h-10 w-24'>
+          <div className='relative h-10 w-24 md:hidden lg:block'>
             <Image src={'/logo-real.png'} fill alt='All in Freediving Logo' />
           </div>
         </Link>
