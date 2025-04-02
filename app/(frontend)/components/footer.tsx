@@ -28,7 +28,7 @@ export const Footer = () => {
             <FooterNav />
           </div>
 
-          <div className='md:w-1/4 space-y-4 flex flex-col md:text-end'>
+          <div className='md:w-1/4 space-y-4 flex flex-col '>
             <h4 className='text-2xl text-sky-600'>Open Hours</h4>
             <ul className='text-white'>
               <li>7:00 AM to 10:00 PM</li>
@@ -36,7 +36,7 @@ export const Footer = () => {
                 <p className='tracking-widest'>
                   All In Freediving and Tour Services
                 </p>
-                <span className='tracking-wider'>
+                <span className='tracking-widest'>
                   San Agustin St. Barangay 4 Coron, Palawan 5316
                 </span>
               </li>

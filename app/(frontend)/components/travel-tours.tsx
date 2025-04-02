@@ -23,7 +23,7 @@ export const TravelTours = () => {
       </div>
       <div className='absolute inset-0 bg-black/30'></div>
       <div className='flex z-10 items-center justify-center gap-6 w-full absolute inset-y-0 flex-col'>
-        <Headline heading='Explore Our Travel and Tour Services' />
+        <Headline heading='Our Travel and Tour Services' />
         <Carousel className='w-full container mx-auto'>
           {/* TODO: add a filter tour hekhek */}
           <CarouselContent className=''>

@@ -96,7 +96,7 @@ export const menuItems = [
     href: '/travel-and-tour-services',
   },
   {
-    name: 'Contact',
+    name: 'Contact/Work with Us',
     href: '/contact',
   },
 ];

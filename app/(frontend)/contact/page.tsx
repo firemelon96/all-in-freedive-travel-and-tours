@@ -7,6 +7,7 @@ import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { BusinessMap } from '@/components/map';
+import { Partner } from './_features/partner';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -55,10 +56,10 @@ const ContactPage = () => {
             </FadeInWrapper>
             <Card className='p-4 items-center justify-center flex flex-col gap-4'>
               <Link
-                href='https://api.whatsapp.com/send/?phone=639524777904'
+                href='https://api.whatsapp.com/send/?phone=639605589487'
                 className='flex gap-2 rounded-md underline'
               >
-                <FaWhatsapp className='size-6' /> <span> +63952-477-7904</span>
+                <FaWhatsapp className='size-6' /> <span> +63960-558-9487</span>
               </Link>
 
               <Link
@@ -88,6 +89,7 @@ const ContactPage = () => {
           </FadeInWrapper>
         </div>
       </section>
+      <Partner />
     </>
   );
 };
