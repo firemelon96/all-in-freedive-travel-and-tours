@@ -60,6 +60,10 @@ const partners = [
     logo: '/res/partner-logo/seangle.JPG',
     name: 'Seangle Breath',
   },
+  {
+    logo: '/res/partner-logo/divescapehub.jpg',
+    name: 'Divescape Hub',
+  },
 ];
 
 export const Partner = () => {
@@ -71,10 +75,10 @@ export const Partner = () => {
             Partner with Us
           </h5>
           <p className='text-center tracking-widest md:text-2xl text-xl'>
-            At All In Freediving and Tour Services, we believe in the power of
-            collaboration to create extraordinary experiences. Whether you’re a
-            dive shop, travel agency, resort, or brand looking to connect with
-            ocean enthusiasts, we’d love to work with you!
+            We believe in the power of collaboration to create extraordinary
+            experiences. Whether you’re a dive shop, travel agency, resort, or
+            brand looking to connect with ocean enthusiasts, we’d love to work
+            with you!
           </p>
 
           <h6 className='text-sky-700 font-semibold tracking-wider text-2xl text-center'>
@@ -126,7 +130,7 @@ export const Partner = () => {
       </section>
       <section className='py-10 bg-gray-100 text-center'>
         <h2 className='text-2xl text-sky-700 font-bold mb-6'>Our Partners</h2>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 items-center justify-center'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-6 items-center justify-center'>
           {partners.map((partner, index) => (
             <div key={index} className='flex justify-center'>
               <Image
