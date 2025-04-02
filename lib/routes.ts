@@ -21,7 +21,7 @@ export const menuItems = [
       },
       {
         name: 'Partner with Us',
-        href: 'partner-with-us',
+        href: '/partner-with-us',
         description:
           'Collaborate with us to create amazing experiences and grow together.',
       },
