@@ -7,7 +7,6 @@ import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { BusinessMap } from '@/components/map';
-import { Partner } from './_features/partner';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -89,7 +88,6 @@ const ContactPage = () => {
           </FadeInWrapper>
         </div>
       </section>
-      <Partner />
     </>
   );
 };

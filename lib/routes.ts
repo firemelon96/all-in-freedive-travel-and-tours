@@ -1,7 +1,7 @@
 export const menuItems = [
   {
-    name: 'About',
-    href: '#about',
+    name: 'Company',
+    href: '#company',
     submenu: [
       {
         name: 'About Us',
@@ -10,14 +10,20 @@ export const menuItems = [
           'Discover unforgettable tours and seamless travel experiences with us.',
       },
       {
+        name: 'Contact Us',
+        href: '/contact',
+        description: 'Get in touch with us for inquiries and assistance.',
+      },
+      {
         name: 'Meet the Team',
         href: '/meet-the-team',
         description: 'Get to know the passionate experts behind your journey.',
       },
       {
-        name: 'FAQ',
-        href: '/#faqs',
-        description: 'Find answers to common questions about our services.',
+        name: 'Partner with Us',
+        href: 'partner-with-us',
+        description:
+          'Collaborate with us to create amazing experiences and grow together.',
       },
       {
         name: 'Why choose us?',
@@ -30,10 +36,15 @@ export const menuItems = [
         href: '/#testimonials',
         description: 'See what our happy travelers have to say.',
       },
+      {
+        name: 'FAQ',
+        href: '/#faqs',
+        description: 'Find answers to common questions about our services.',
+      },
     ],
   },
   {
-    name: 'Courses and Certifications',
+    name: 'Courses & Certifications',
     href: '#courses',
     submenu: [
       {
@@ -92,11 +103,7 @@ export const menuItems = [
     ],
   },
   {
-    name: 'Travel and Tour Services',
+    name: 'Travel & Tour Services',
     href: '/travel-and-tour-services',
-  },
-  {
-    name: 'Contact/Work with Us',
-    href: '/contact',
   },
 ];
