@@ -5,20 +5,34 @@ import { Quote } from 'lucide-react';
 
 type Props = {
   name: string;
-  title: string;
+  text: string;
+  rating: number;
   profileImage: string;
-  message: string;
+  description: string;
 };
 
-export const ReviewCard = ({ name, title, profileImage, message }: Props) => {
+export const ReviewCard = ({
+  name,
+  text,
+  rating,
+  profileImage,
+  description,
+}: Props) => {
   return (
-    <Card className='p-4 h-full flex gap-2 flex-col justify-between bg-sky-950 text-white'>
+    <Card className='p-4 h-full flex gap-2 flex-col justify-between bg-sky-800 text-white'>
       <p className='text-xl italic flex'>
-        {message}
+        {text}
         <span>
           <Quote className='size-4' />
         </span>
       </p>
+      <div>
+        {Array.from({ length: rating }).map((_, i) => (
+          <span key={i} className='mr-1'>
+            ⭐️
+          </span>
+        ))}
+      </div>
       <div className='flex gap-2 items-center'>
         <Avatar>
           <AvatarImage src={profileImage} alt='diver' />
@@ -26,7 +40,7 @@ export const ReviewCard = ({ name, title, profileImage, message }: Props) => {
         </Avatar>
         <div className='flex flex-col'>
           <p>{name}</p>
-          <span>{title}</span>
+          <span className='text-xs text-secondary'>{description}</span>
         </div>
       </div>
     </Card>

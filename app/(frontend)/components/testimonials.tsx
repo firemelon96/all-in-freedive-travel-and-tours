@@ -1,21 +1,13 @@
-'use client';
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-// } from '@/components/ui/carousel';
 import { Headline } from './headlines';
 import { ImageCard } from './image-card';
-// import { ReviewCard } from './review-card';
-// import AutoPlay from 'embla-carousel-autoplay';
-// import { useRef } from 'react';
-// import { testimonials } from '@/app/data/testimonial';
 import FadeInWrapper from './fade-in-wrapper';
-import Image from 'next/image';
-import Link from 'next/link';
+import { getGoogleReviews } from '@/app/actions/google-reviews';
+import React from 'react';
+import { ReviewCarousel } from './review-carousel';
 
-export const Testimonial = () => {
-  // const plugin = useRef(AutoPlay({ delay: 5000, stopOnInteraction: false }));
+export const Testimonial = async () => {
+  const reviews = await getGoogleReviews();
+
   return (
     <section className='container mx-auto scroll-mt-10' id='testimonials'>
       <div className='py-10 mx-4'>
@@ -35,27 +27,14 @@ export const Testimonial = () => {
               heading='Share Your Experience Us.'
               className='text-slate-700 '
             />
-            {/* <Carousel plugins={[plugin.current]} opts={{ loop: true }}>
-              <CarouselContent>
-                {testimonials.map((entry) => (
-                  <CarouselItem className='' key={entry.name}>
-                    <ReviewCard
-                      name={entry.name}
-                      title={entry.title}
-                      message={entry.message}
-                      profileImage={entry.profileImage}
-                    />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel> */}
-            <div className='flex w-full items-center justify-center'>
+            <ReviewCarousel reviews={reviews} />
+            {/* <div className='flex w-full items-center justify-center'>
               <Link href='https://tinyurl.com/yzvmvcv6'>
                 <div className='relative h-40 w-40'>
                   <Image src='/res/feedback.png' fill alt='qr code' />
                 </div>
               </Link>
-            </div>
+            </div> */}
           </div>
           {/* <div className='col-span-2 row-span-2'></div> */}
         </div>
