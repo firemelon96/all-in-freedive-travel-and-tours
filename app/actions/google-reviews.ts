@@ -7,7 +7,9 @@ export async function getGoogleReviews() {
 
   const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,reviews&key=${apiKey}`;
 
-  const res = await fetch(url);
+  const res = await fetch(url, {
+    next: { revalidate: 3600 },
+  });
 
   if (!res.ok) {
     throw new Error('Failed to fetch Google reviews');
