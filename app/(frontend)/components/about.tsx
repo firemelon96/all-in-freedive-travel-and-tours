@@ -40,7 +40,7 @@ export const About = () => {
             </div>
           </FadeInWrapper>
           <FadeInWrapper delay={500} className='col-span-1'>
-            <TextCard count={0} label='Happy Clients' />
+            <TextCard count={75} label='Happy Clients' />
           </FadeInWrapper>
           <FadeInWrapper delay={600} className='col-span-1'>
             <TextCard count={0} label='Year in Service' />
