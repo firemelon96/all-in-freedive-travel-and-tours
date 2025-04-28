@@ -4,6 +4,7 @@ import { Footer } from './components/footer';
 import { Roboto } from 'next/font/google';
 import { Toaster } from 'sonner';
 import { NavigationBar } from './components/navigation-bar';
+import ClarityProvider from '@/components/providers/clarity-provider';
 
 const roboto = Roboto({
   weight: '500',
@@ -32,12 +33,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className='scroll-smooth'>
-      <body className={`${roboto.className} antialiased`}>
-        <Toaster />
-        <NavigationBar />
-        {children}
-        <Footer />
-      </body>
+      <ClarityProvider>
+        <body className={`${roboto.className} antialiased`}>
+          <Toaster />
+          <NavigationBar />
+          {children}
+          <Footer />
+        </body>
+      </ClarityProvider>
     </html>
   );
 }
