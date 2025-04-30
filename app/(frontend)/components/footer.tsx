@@ -20,6 +20,22 @@ export const Footer = () => {
               Our bespoke tours are designed to bring you closer to the
               unparalleled beauty and culture of this tropical paradise.
             </p>
+            <div className='flex flex-col gap-2'>
+              <p className='text-white'>
+                DOT Accredited:
+                <span className='font-medium ml-2 text-lg'>
+                  DOT-R4B-TOP-02928-2025
+                </span>
+              </p>
+              <div className='size-12 relative rounded-md overflow-hidden'>
+                <Image
+                  src={'/res/dot.jpeg'}
+                  fill
+                  alt='dot-logo'
+                  className='object-cover'
+                />
+              </div>
+            </div>
           </div>
           <div className='md:w-1/4 flex flex-col w-full  '>
             <h4 className='text-2xl text-sky-600 text-center'>
