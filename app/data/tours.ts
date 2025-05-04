@@ -391,8 +391,8 @@ export const tours = [
     ],
   },
   {
-    slug: 'calauit-town-tour-hotspring',
-    title: 'Calauit Town Tour + Hotspring',
+    slug: 'Coron-town-tour',
+    title: 'Coron Town Tour',
     description: [
       'Explore the vibrant town of Coron with this half-day tour featuring historical landmarks, scenic viewpoints, and a relaxing dip at Maquinit Hot Spring.',
       'Visit local attractions like Lualhati Park, the famous Cashew Factory, and the stunning Mt. Tapyas View Deck for a breathtaking sunset view before unwinding in the soothing waters of Maquinit Hot Spring.',
@@ -401,7 +401,7 @@ export const tours = [
     type: 'day tour',
     address: 'Coron, Palawan',
     duration: '1 Day',
-    price: 'PHP 800 | USD 14 per person',
+    price: 'PHP 1000 | USD 18 per person',
     itineraries: [
       {
         day: 'Day 1',
