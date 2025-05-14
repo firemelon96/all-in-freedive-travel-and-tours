@@ -17,7 +17,6 @@ export const servicesData = [
       'Entrance Fees',
       'Go Pro Rental',
       'Freediving Gears',
-      '(Mask, Snorkel and Fins)',
     ],
     images: [
       '/res/intro00.jpg',
