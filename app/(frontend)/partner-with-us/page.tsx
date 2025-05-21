@@ -90,6 +90,10 @@ const partners = [
     logo: '/res/partner-logo/freedive-thailand.jpg',
     name: 'Freedive Thailand',
   },
+  {
+    logo: '/res/partner-logo/limitless-logo.jpeg',
+    name: 'Limitless Freedive',
+  },
 ];
 
 const PartnerPage = () => {
@@ -176,7 +180,7 @@ const PartnerPage = () => {
               Our Partners
             </h2>
           </FadeInWrapper>
-          <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-2 items-center justify-center'>
+          <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-7 gap-2 items-center justify-center'>
             {partners.map((partner, index) => (
               <FadeInWrapper
                 delay={index * 200}
