@@ -12,12 +12,7 @@ export const servicesData = [
       'It is a sport that combines relaxation, mental focus, and physical conditioning, offering a profound connection to the underwater world.',
       'In this discovery lesson, students will learn the basics of freediving through a theory class and open-water line training. This includes breathing and relaxation techniques, basic equalization methods, and fundamental safety practices.',
     ],
-    paxInclusion: [
-      'Tourist Boat',
-      'Entrance Fees',
-      'Go Pro Rental',
-      'Freediving Gears',
-    ],
+    paxInclusion: ['Tourist Boat', 'Entrance Fees', 'Go Pro Rental'],
     images: [
       '/res/intro00.jpg',
       '/res/intro01.jpg',
