@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: 'Meet the Team',
   description:
     'Our team is made up of passionate travel experts, experienced freediving instructor, and knowledgeable local guides. We share a deep love for the Philippines and are dedicated to offering premium, immersive travel experiences that showcase the beauty and culture of this tropical paradise.',
+  metadataBase: new URL('https://allinfreedivingandtourservices.com'),
   openGraph: {
     title: 'Meet the Team',
     description:
