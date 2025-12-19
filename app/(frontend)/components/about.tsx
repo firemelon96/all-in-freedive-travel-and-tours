@@ -13,7 +13,7 @@ export const About = () => {
             delay={300}
             className='row-span-2 col-span-2 h-64 md:h-full'
           >
-            <ImageCard url='/about-img00.png' />
+            <ImageCard url='https://allinres.palawanwebsolutions.com/about-img00.png' />
           </FadeInWrapper>
           <FadeInWrapper
             delay={400}
@@ -46,7 +46,7 @@ export const About = () => {
             <TextCard count={0} label='Year in Service' />
           </FadeInWrapper>
           <FadeInWrapper delay={700} className='col-span-2 h-44 md:h-full'>
-            <ImageCard url='/about-img01.png' />
+            <ImageCard url='https://allinres.palawanwebsolutions.com/about-img01.png' />
           </FadeInWrapper>
         </div>
       </div>

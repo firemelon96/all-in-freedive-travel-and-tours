@@ -14,10 +14,10 @@ export const servicesData = [
     ],
     paxInclusion: ['Tourist Boat', 'Entrance Fees', 'Go Pro Rental'],
     images: [
-      '/res/intro00.jpg',
-      '/res/intro01.jpg',
-      '/res/intro02.jpg',
-      '/res/intro03.jpg',
+      'https://allinres.palawanwebsolutions.com/intro00.jpg',
+      'https://allinres.palawanwebsolutions.com/intro01.jpg',
+      'https://allinres.palawanwebsolutions.com/intro02.jpg',
+      'https://allinres.palawanwebsolutions.com/intro03.jpg',
     ],
     openWaterReqs: [
       'CWTB and Free Immersion: Dive to a depth of 24-30 meters in open water comfortably.',
@@ -56,11 +56,11 @@ export const servicesData = [
     paxInclusion: [],
     groupHighlights: [],
     images: [
-      '/res/line-training/lt00.avif',
-      '/res/line-training/lt01.avif',
-      '/res/line-training/lt02.avif',
-      '/res/line-training/lt03.avif',
-      '/res/line-training/lt04.avif',
+      'https://allinres.palawanwebsolutions.com/line-training/lt00.avif',
+      'https://allinres.palawanwebsolutions.com/line-training/lt01.avif',
+      'https://allinres.palawanwebsolutions.com/line-training/lt02.avif',
+      'https://allinres.palawanwebsolutions.com/line-training/lt03.avif',
+      'https://allinres.palawanwebsolutions.com/line-training/lt04.avif',
     ],
   },
   {
@@ -80,7 +80,7 @@ export const servicesData = [
       'Environmental Fees and Entrance Fees ',
       'Photos and Videos during the course.',
     ],
-    images: ['/res/mw-1/mw00.webp'],
+    images: ['https://allinres.palawanwebsolutions.com/mw-1/mw00.webp'],
     poolReqs: [
       'Basic swimming ability (comfortable swimming 200 meters unassisted).',
       'Static Apnea: Hold your breath for at least 1 minute and 30 seconds.',
@@ -110,7 +110,7 @@ export const servicesData = [
       'Environmental Fees and Entrance Fees ',
       'Photos and Videos during the course.',
     ],
-    images: ['/res/mw-2/mw01.jpeg'],
+    images: ['https://allinres.palawanwebsolutions.com/mw-2/mw01.jpeg'],
     poolReqs: [
       'Basic swimming ability (comfortable swimming 200 meters unassisted).',
       'Static Apnea: Hold your breath for at least 1 minute and 30 seconds.',
@@ -148,9 +148,9 @@ export const servicesData = [
       'Cave diving in Coron and Busuanga Palawan.',
     ],
     paxInclusion: [],
-    images: ['/res/dugong.jpeg'],
+    images: ['https://allinres.palawanwebsolutions.com/dugong.jpeg'],
     video:
-      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737385342/Coron_d8woxz.mp4',
+      'https:/https://allinres.palawanwebsolutions.com.cloudinary.com/dutkzg9la/video/upload/v1737385342/Coron_d8woxz.mp4',
   },
 
   //freediving tours
@@ -188,13 +188,13 @@ export const servicesData = [
     ],
     paxExclusions: ['Freediving Gears'],
     images: [
-      '/res/package-a/PA00.avif',
-      '/res/package-a/PA01.avif',
-      '/res/package-a/PA02.avif',
-      '/res/package-a/PA03.avif',
+      'https://allinres.palawanwebsolutions.com/package-a/PA00.avif',
+      'https://allinres.palawanwebsolutions.com/package-a/PA01.avif',
+      'https://allinres.palawanwebsolutions.com/package-a/PA02.avif',
+      'https://allinres.palawanwebsolutions.com/package-a/PA03.avif',
     ],
     videoUrl:
-      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737384615/package-a_o46ogy.mp4',
+      'https:/https://allinres.palawanwebsolutions.com.cloudinary.com/dutkzg9la/video/upload/v1737384615/package-a_o46ogy.mp4',
   },
   {
     id: 'package-b',
@@ -226,14 +226,14 @@ export const servicesData = [
     ],
     paxExclusions: ['Freediving Gears'],
     images: [
-      '/res/package-b/pb01.jpeg',
-      '/res/package-b/pb02.jpeg',
-      '/res/package-b/pb03.jpeg',
-      '/res/package-b/pb00.jpeg',
-      '/res/package-b/pb04.jpeg',
+      'https://allinres.palawanwebsolutions.com/package-b/pb01.jpeg',
+      'https://allinres.palawanwebsolutions.com/package-b/pb02.jpeg',
+      'https://allinres.palawanwebsolutions.com/package-b/pb03.jpeg',
+      'https://allinres.palawanwebsolutions.com/package-b/pb00.jpeg',
+      'https://allinres.palawanwebsolutions.com/package-b/pb04.jpeg',
     ],
     videoUrl:
-      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737384632/package-b_vbdsnf.mp4',
+      'https:/https://allinres.palawanwebsolutions.com.cloudinary.com/dutkzg9la/video/upload/v1737384632/package-b_vbdsnf.mp4',
   },
   {
     id: 'package-c',
@@ -265,14 +265,14 @@ export const servicesData = [
     ],
     paxExclusions: ['Freediving Gears'],
     images: [
-      '/res/package-c/pc03.avif',
-      '/res/package-c/pc02.avif',
-      '/res/package-c/pc00.avif',
-      '/res/package-c/pc01.avif',
-      '/res/package-c/pc04.avif',
+      'https://allinres.palawanwebsolutions.com/package-c/pc03.avif',
+      'https://allinres.palawanwebsolutions.com/package-c/pc02.avif',
+      'https://allinres.palawanwebsolutions.com/package-c/pc00.avif',
+      'https://allinres.palawanwebsolutions.com/package-c/pc01.avif',
+      'https://allinres.palawanwebsolutions.com/package-c/pc04.avif',
     ],
     videoUrl:
-      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737384640/package-c_d7mq0q.mp4',
+      'https:/https://allinres.palawanwebsolutions.com.cloudinary.com/dutkzg9la/video/upload/v1737384640/package-c_d7mq0q.mp4',
   },
 
   //freediving expeditions
@@ -297,9 +297,9 @@ export const servicesData = [
       'Freediving in historical World War II Shipwrecks.',
     ],
     paxInclusion: [],
-    images: ['/res/package-b/pb03.jpeg'],
+    images: ['https://allinres.palawanwebsolutions.com/package-b/pb03.jpeg'],
     videoUrl:
-      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737680897/busuanga-new_mb27t2.mp4',
+      'https:/https://allinres.palawanwebsolutions.com.cloudinary.com/dutkzg9la/video/upload/v1737680897/busuanga-new_mb27t2.mp4',
   },
   {
     slug: 'apo-reef-freedive-expedition',
@@ -323,8 +323,8 @@ export const servicesData = [
     ],
     specials: [''],
     paxInclusion: [],
-    images: ['/res/package-b/pb04.jpeg'],
+    images: ['https://allinres.palawanwebsolutions.com/package-b/pb04.jpeg'],
     videoUrl:
-      'https://res.cloudinary.com/dutkzg9la/video/upload/v1737531924/Apo_Reef_rnh8fx.mp4',
+      'https:/https://allinres.palawanwebsolutions.com.cloudinary.com/dutkzg9la/video/upload/v1737531924/Apo_Reef_rnh8fx.mp4',
   },
 ];

@@ -18,7 +18,7 @@ export const Testimonial = async () => {
               direction='left'
               className=' bg-red-50 h-64 md:h-full'
             >
-              <ImageCard url='/team.avif' />
+              <ImageCard url='https://allinres.palawanwebsolutions.com/team.avif' />
             </FadeInWrapper>
           </div>
           <div className='flex flex-col md:w-1/2 w-full gap-2'>
@@ -31,7 +31,7 @@ export const Testimonial = async () => {
             {/* <div className='flex w-full items-center justify-center'>
               <Link href='https://tinyurl.com/yzvmvcv6'>
                 <div className='relative h-40 w-40'>
-                  <Image src='/res/feedback.png' fill alt='qr code' />
+                  <Image src='https://allinres.palawanwebsolutions.com/res/feedback.png' fill alt='qr code' />
                 </div>
               </Link>
             </div> */}

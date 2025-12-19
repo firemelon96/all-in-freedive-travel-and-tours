@@ -6,7 +6,7 @@ export const Features = () => {
       <div className='grid grid-cols-4 grid-rows-2 gap-4'>
         <div className='row-span-2 col-span-2 w-full h-full bg-green-400 overflow-hidden rounded-md'>
           <Image
-            src='/diver.jpg'
+            src='https://allinres.palawanwebsolutions.com/diver.jpg'
             height={1500}
             width={1000}
             alt='image'

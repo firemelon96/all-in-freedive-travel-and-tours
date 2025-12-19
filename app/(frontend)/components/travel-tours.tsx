@@ -14,7 +14,7 @@ export const TravelTours = () => {
     <section className='h-[700px] relative scroll-mt-10' id='tours'>
       <div className='absolute inset-0 w-full h-full'>
         <Image
-          src='/travel.avif' // Replace with your image path
+          src='https://allinres.palawanwebsolutions.com/travel.avif' // Replace with your image path
           alt='Background'
           fill
           className='object-cover'

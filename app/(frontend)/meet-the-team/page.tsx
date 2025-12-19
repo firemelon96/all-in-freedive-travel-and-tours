@@ -33,7 +33,10 @@ export const metadata: Metadata = {
 const TeamPage = () => {
   return (
     <>
-      <BannerImage imageUrl='/team.avif' title='Meet the Team' />
+      <BannerImage
+        imageurl='https://allinres.palawanwebsolutions.com/team.avif'
+        title='Meet the Team'
+      />
       <section className='container mx-auto'>
         <FadeInWrapper delay={200} className='p-4'>
           <p className='md:text-2xl text-xl text-justify md:mt-10'>

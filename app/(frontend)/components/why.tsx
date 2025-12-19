@@ -15,7 +15,7 @@ export const Why = () => {
               direction='left'
               className='h-64 md:h-full'
             >
-              <ImageCard url='/contact-model.png' />
+              <ImageCard url='https://allinres.palawanwebsolutions.com/contact-model.png' />
             </FadeInWrapper>
             <div className='col-span-2'>
               <Headline

@@ -9,7 +9,12 @@ export const Footer = () => {
         <div className='flex flex-col mx-4 md:flex-row text-center items-center md:text-start md:items-start gap-4'>
           <div className='md:flex-1 w-full space-y-4'>
             <div className='flex items-center justify-center md:items-start md:justify-start'>
-              <Image src='/logo-real.png' width={150} height={60} alt='logo' />
+              <Image
+                src='https://allinres.palawanwebsolutions.com/logo-real.png'
+                width={150}
+                height={60}
+                alt='logo'
+              />
             </div>
             <p className='text-white md:text-justify text-center'>
               We specialize in crafting unforgettable, premium travel
@@ -29,7 +34,7 @@ export const Footer = () => {
               </p>
               <div className='size-12 relative rounded-md overflow-hidden'>
                 <Image
-                  src={'/res/dot.jpeg'}
+                  src={'https://allinres.palawanwebsolutions.com/dot.jpeg'}
                   fill
                   alt='dot-logo'
                   className='object-cover'

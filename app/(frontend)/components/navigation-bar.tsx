@@ -50,7 +50,11 @@ export function NavigationBar() {
       <div className='flex items-center container mx-auto justify-between'>
         <Link href='/'>
           <div className='relative h-10 w-24 '>
-            <Image src={'/logo-real.png'} fill alt='All in Freediving Logo' />
+            <Image
+              src={'https://allinres.palawanwebsolutions.com/logo-real.png'}
+              fill
+              alt='All in Freediving Logo'
+            />
           </div>
         </Link>
         {/* mobile navigation */}

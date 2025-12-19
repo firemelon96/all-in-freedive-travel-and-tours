@@ -37,7 +37,7 @@ export default function NewHero() {
         }}
       >
         <Image
-          src='/hero.avif' // Replace with your image path
+          src='https://allinres.palawanwebsolutions.com/hero.avif' // Replace with your image path
           alt='Background'
           fill
           className='object-cover'
