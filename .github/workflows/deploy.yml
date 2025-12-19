@@ -1,0 +1,28 @@
+name: CI/CD Deploy
+
+on:
+  push:
+    branches:
+      - main # or your deployment branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.8.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_KEY }}
+
+      - name: Deploy to VPS
+        run: |
+          ssh -o StrictHostKeyChecking=no deploy@72.61.113.213 "
+          cd /var/www/projects/all-in-freediving &&
+          git pull origin main &&
+          docker-compose build &&
+          docker-compose up -d --remove-orphans
+          "
