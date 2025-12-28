@@ -34,7 +34,7 @@ const TeamPage = () => {
   return (
     <>
       <BannerImage
-        imageurl='https://allinres.palawanwebsolutions.com/team.avif'
+        imageUrl='https://allinres.palawanwebsolutions.com/team.avif'
         title='Meet the Team'
       />
       <section className='container mx-auto'>
