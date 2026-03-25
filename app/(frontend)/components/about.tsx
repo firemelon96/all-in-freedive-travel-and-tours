@@ -43,7 +43,7 @@ export const About = () => {
             <TextCard count={75} label='Happy Clients' />
           </FadeInWrapper>
           <FadeInWrapper delay={600} className='col-span-1'>
-            <TextCard count={0} label='Year in Service' />
+            <TextCard count={1} label='Year in Service' />
           </FadeInWrapper>
           <FadeInWrapper delay={700} className='col-span-2 h-44 md:h-full'>
             <ImageCard url='https://allinres.palawanwebsolutions.com/about-img01.png' />
