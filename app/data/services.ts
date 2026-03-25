@@ -159,7 +159,7 @@ export const servicesData = [
     slug: 'coron-island-freediving-tours',
     title: 'Package A - Coron Island Freediving Tours',
     location: 'Coron, Palawan, Philippines',
-    price: '2500 pesos | 45 USD Joiner Tour',
+    price: '3000 pesos | 50 USD Joiner Tour',
     duration: '1 Day',
     type: 'freedive-tour',
     description: [
