@@ -67,31 +67,31 @@ const opportunities = [
 
 const partners = [
   {
-    logo: '/res/partner-logo/wetified.webp',
+    logo: 'https://allinres.palawanwebsolutions.com/res/wetified.jpg',
     name: 'Wetified Freediver',
   },
   {
-    logo: '/res/partner-logo/seangle.JPG',
+    logo: 'https://allinres.palawanwebsolutions.com/res/seangle-logo.jpg',
     name: 'Seangle Breath',
   },
   {
-    logo: '/res/partner-logo/freediveproject.jpeg',
+    logo: 'https://allinres.palawanwebsolutions.com/res/freedive-logo.jpg',
     name: 'Freedive Project',
   },
   {
-    logo: '/res/partner-logo/amlak.JPG',
+    logo: 'https://allinres.palawanwebsolutions.com/res/amlak-logo.jpg',
     name: 'AMLAK Freediving',
   },
   {
-    logo: '/res/partner-logo/divescapehub.jpg',
+    logo: 'https://allinres.palawanwebsolutions.com/res/divescape-logo.jpg',
     name: 'Divescape Hub',
   },
   {
-    logo: '/res/partner-logo/freedive-thailand.jpg',
+    logo: 'https://allinres.palawanwebsolutions.com/res/freedive-thai-logo.jpg',
     name: 'Freedive Thailand',
   },
   {
-    logo: '/res/partner-logo/limitless-logo.jpeg',
+    logo: 'https://allinres.palawanwebsolutions.com/res/limitless-logo.jpg',
     name: 'Limitless Freedive',
   },
 ];
